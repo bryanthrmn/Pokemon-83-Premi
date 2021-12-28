@@ -192,7 +192,16 @@ DelVar X
 Goto 31
 Lbl 90
 DelVar WDelVar θ
+
+If P≤0
+Then
+Output(6,1,"----------------
+Output(7,1,"Ton pokemon est faible.
+Output(8,1,"Va le soigner!
+Pause 
 EffÉcran
+Goto 1
+Else
 Output(6,1,"----------------
 Output(7,1,"Un pokémon sauvage
 Output(8,1,"fait son apparition !
