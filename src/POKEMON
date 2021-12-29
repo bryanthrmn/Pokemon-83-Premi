@@ -39,7 +39,7 @@ Menu(" ·.*POKEMON 83 PREMIUM*.·     ","NOUVELLE PARTIE",0,"CONTINUER PARTIE",1
 
 Lbl K
 Disp "VERSION: 1.7 [BÊTA]"
-Disp "28 Décembre 2021"
+Disp "30 Décembre 2021"
 Disp ""
 Disp "- 100 pokémons disponibles"
 Disp "- Changement du 4e membre"
@@ -49,11 +49,12 @@ Disp "- Ajout d'une description"
 Disp "  CEsium"
 Pause
 EffÉcran
-Disp "VERSION: 1.7 [BÊTA]"
+Disp "VERSION: 1.7 [BÊTA 2]"
 Disp "28 Décembre 2021"
 Disp ""
 Disp "- Disponibilité de fuir"
 Disp "  les combats"
+Disp "- Ajout d'une boutique"
 Disp "- Correcions de langue"
 Disp "- Corrections de bugs"
 Pause 
