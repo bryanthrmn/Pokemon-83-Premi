@@ -182,7 +182,7 @@ Pause
 EffÉcran
 Goto 88
 Else
-Menu("Secret Dungeon","Ermite Willy",41,"Louis-Ferdinand Stinx",70,"Lewis Minda",62,"Bryan Thirimanna",VI,"Retour",Z
+Menu("Secret Dungeon","Ermite Willy",41,"Louis-Ferdinand Stinx",70,"Lewis Minda",62,"Bryan Thirimanna",VI,"Return",Z
 Lbl 62
 DelVar X
 1→W
@@ -200,7 +200,7 @@ Pause
 EffÉcran
 Goto 88
 Else
-Menu("Boutique", "Achat potions soin",PS,"Achat potions attaque",PA,"Achat pokémon",AP,"Achat équipements",AG,"Retour",Z
+Menu("Shop", "Buy health potion",PS,"Buy attack potion",PA,"Buy pokemons",AP,"Buy gears",AG,"Return",Z
 Lbl PS
 Goto 88
 Lbl PA
@@ -237,19 +237,19 @@ DelVar WDelVar θ
 If P≤0
 Then
 Output(6,1,"----------------
-Output(7,1,"Ton pokémon est faible.
-Output(8,1,"Va le soigner!
+Output(7,1,"Your pokemon seems to be weak.
+Output(8,1,"Go and heal him!
 Pause 
 EffÉcran
 Goto 1
 Else
 Output(6,1,"----------------
-Output(7,1,"Un pokémon sauvage
-Output(8,1,"fait son apparition !
+Output(7,1,"A wild pokémon just
+Output(8,1,"appeared on your path !
 Pause 
 EffÉcran
 Output(6,1,"----------------
-Output(7,1,"Au combat,
+Output(7,1,"Let's fight it,
 Output(7,12,Chn2
 Pause 
 EffÉcran
