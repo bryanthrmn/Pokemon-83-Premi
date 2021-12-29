@@ -5,7 +5,7 @@ DelVar θDelVar W
 Output(1,1,"--------------------------
 Output(2,2,"·.*POKEMON 83 PREMIUM*.·
 
-Output(3,9,"V:1.7 BÊTA 2
+Output(3,9,"V:1.7 BETA 2
 Output(5,8,"By KENSHI
 Output(7,4,"Revived by CAPYSQUID
 Output(10,1,"--------------------------
@@ -746,11 +746,12 @@ If P≤0:Goto 26
 If P>0:Goto 29
 Lbl 26
 Output(6,1,"----------------
-Output(7,1,"Vous êtes mort !
+Output(7,1,"Your pokemon has been defeated!
+Pause
 Goto 1
 Lbl 28
 Output(6,1,"----------------
-Output(7,1,"Vous avez gagné !
+Output(7,1,"You win !
 nbrAléatEnt(26,100)→L
 Disp "EXP: +
 Disp L
@@ -770,7 +771,7 @@ A+15→A
 P+10→P
 R+10→R
 Output(6,1,"----------------
-Output(7,1,"Niveau supérieur:
+Output(7,1,"Level up:
 Output(7,18,N
 Pause 
 If Chn2="Brindibou" et N≥25 et J=0:Goto 99
@@ -781,25 +782,25 @@ Output(6,1,"----------------
 1→J
 EffÉcran
 Output(6,1,"----------------
-Output(7,1,"Brindibou a évolué !
+Output(7,1,"Rowlet has evolved !
 Pause 
 EffÉcran
-Output(5,1,"Animation en développement'
+Output(5,1,"Animation in development'
 "
 "Archeduc"→Chn2
 "Tir multiple !"→Chn3
 "Tranche nuit !"→Chn4
 Pause 
 EffÉcran
-Output(6,1,"Il s'est évolué en
-Output(7,1,"Archeduc !?"
+Output(6,1,"Did he just evolved
+Output(7,1,"into Decidueye !?"
 Pause 
 EffÉcran
 If Chn2="Pikachu" et N≥19 et J=0:Goto 98
 Goto 1
 Lbl 98
-Output(7,1,"Pikachu a évolué
-Output(8,1,"Whaou !
+Output(7,1,"Pikachu has evolved
+Output(8,1,"Wow !
 Pause 
 EffÉcran
 "Raichu"→Chn2
@@ -817,7 +818,7 @@ Output(6,7,"==>
 Pause 
 EffÉcran
 Output(6,1,"----------------
-Output(7,1,"Pikachu s'est
-Output(8,1,"transformé en Raichu !
+Output(7,1,"Pikachu has
+Output(8,1,"transform into Raichu!
 Pause 
 Goto 1
