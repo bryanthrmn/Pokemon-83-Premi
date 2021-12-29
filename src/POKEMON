@@ -5,7 +5,7 @@ DelVar θDelVar W
 Output(1,1,"--------------------------
 Output(2,2,"·.*POKEMON 83 PREMIUM*.·
 
-Output(3,9,"V:1.7 BÊTA
+Output(3,9,"V:1.7 BÊTA 2
 Output(5,8,"De KENSHI
 Output(7,4,"Reprit par CAPYSQUID
 Output(10,1,"--------------------------
@@ -180,7 +180,11 @@ Then
 Output(6,1,"----------------
 Output(7,1,"Se débloque au niveau 25
 Output(8,1,"Revenez plus tard...
-Menu("Donjon Secret","Ermite Willy",41,"Louis-Ferdinand Stinx",70,"Lewis Minda",62,"Bryan Thirimanna",VI
+Pause
+EffÉcran
+Goto 88
+Else
+Menu("Donjon Secret","Ermite Willy",41,"Louis-Ferdinand Stinx",70,"Lewis Minda",62,"Bryan Thirimanna",VI,"Retour",Z
 Lbl 62
 DelVar X
 1→W
@@ -188,6 +192,25 @@ DelVar X
 "Lougaroc"→Chn5
 245→E
 49→B
+Lbl BO
+If N<10
+Then
+Output(6,1,"----------------
+Output(7,1,"Se débloque au niveau 10
+Output(8,1,"Revenez plus tard...
+Pause
+EffÉcran
+Goto 88
+Else
+Menu("Boutique", "Achat potions soin",PS,"Achat potions attaque",PA,"Achat pokémon",AP,"Achat équipements",AG,"Retour",Z
+Lbl PS
+Goto 88
+Lbl PA
+Goto 88
+Lbl AP
+Goto 88
+Lbl AG
+Goto 88
 Lbl 70
 DelVar X
 1→W
