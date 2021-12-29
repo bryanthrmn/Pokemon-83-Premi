@@ -152,7 +152,7 @@ Pause
 P→R
 1→N
 Lbl 1
-Menu("Menu principal","Discover the forest",DE,"Fighting arena",90,"Secret dungeon",CO,"My Pokemons",PO,"Heal",SO,"Shop",BO,"Return",Z
+Menu("Main menu","Discover the forest",DE,"Fighting arena",90,"Secret dungeon",CO,"My Pokemons",PO,"Heal",SO,"Shop",BO,"Return",Z
 Lbl DE
 EffÉcran
 Output(6,1,"----------------
