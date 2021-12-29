@@ -152,7 +152,7 @@ Pause
 P→R
 1→N
 Lbl 1
-Menu("Menu principal","Discover the forest",DE,"Fighting arena",90,"Secret dungeon",CO,"My Pokemons",PO,"Heal",SO,"Shop",BO,"Back",Z
+Menu("Menu principal","Discover the forest",DE,"Fighting arena",90,"Secret dungeon",CO,"My Pokemons",PO,"Heal",SO,"Shop",BO,"Return",Z
 Lbl DE
 EffÉcran
 Output(6,1,"----------------
@@ -663,14 +663,14 @@ If X=102:208→B
 Lbl 31
 EffÉcran
 Output(6,1,"----------------
-Output(7,1,"Pokémon ennemi:
+Output(7,1,"Opponent Pokemon:
 Output(8,1,Chn5
 Pause 
 EffÉcran
 Lbl 29
-Menu("COMBAT!",Chn3,21,Chn4,22,"Capturer",JT,"Fuir",FU
+Menu("FIGHT!",Chn3,21,Chn4,22,"Capture",JT,"Run away",FU
 Lbl FU
-Menu("Confirmer la fuite ?","Oui, fuir",OF,"Non, rester dans l'arène",ON
+Menu("Confirme leak?","Yes, leak",OF,"No, stay in the arena",ON
 Lbl OF
 Goto 1
 Lbl ON
@@ -678,7 +678,7 @@ Goto 29
 Lbl JT
 If θ=0
 Then
-Menu("Tu perdras ton pokémon actuel...","Continuer",XY,"Retour",29
+Menu("You will lose your actual pokémon...","Continue",XY,"Return",29
 Else
 Lbl XY
 nbrAléatEnt(1,6)→L
@@ -686,7 +686,7 @@ If L=1
 Then
 EffÉcran
 Output(6,1,"-----------------
-Output(7,1,"Tu l'as capturé !
+Output(7,1,"You caught him!
 Chn5→Chn2
 B→A
 E→P
@@ -697,7 +697,7 @@ Else
 If L≠1
 EffÉcran
 Output(6,1,"-----------------
-Output(7,1,"Il s'est libéré !
+Output(7,1,"He freed himself!
 Pause 
 EffÉcran
 Goto 50
@@ -721,7 +721,7 @@ EffÉcran
 E-A→E
 If E≤0:Goto 28
 Output(6,1,"----------------
-Output(7,1,"C'est très efficace !
+Output(7,1,"That is usefull!
 Pause 
 EffÉcran
 Lbl 50
@@ -739,7 +739,7 @@ Pause
 EffÉcran
 P-B→P
 Output(6,1,"----------------
-Output(7,1,"Ca fait mal !
+Output(7,1,"That is painfull!
 Pause 
 EffÉcran
 If P≤0:Goto 26
