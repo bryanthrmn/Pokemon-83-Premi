@@ -5,7 +5,7 @@ DelVar θDelVar W
 Output(1,1,"--------------------------
 Output(2,2,"·.*POKEMON 83 PREMIUM*.·
 
-Output(3,9,"V:1.7 BÊTA 2
+Output(3,9,"V:1.7 BETA 2
 Output(5,8,"By KENSHI
 Output(7,4,"Revived by CAPYSQUID
 Output(10,1,"--------------------------
@@ -200,7 +200,7 @@ Pause
 EffÉcran
 Goto 88
 Else
-Menu("Shop", "Buy health potion",PS,"Buy attack potion",PA,"Buy pokemons",AP,"Buy gears",AG,"Return",Z
+Menu("Shop", "Buy health potion",PS,"Buy attack potion",PA,"Buy pokeball",BP,"Buy pokemons",AP,"Buy gears",AG,"Return",Z
 Lbl PS
 Goto 88
 Lbl PA
@@ -208,6 +208,8 @@ Goto 88
 Lbl AP
 Goto 88
 Lbl AG
+Goto 88
+Lbl BP
 Goto 88
 Lbl 70
 DelVar X
@@ -244,7 +246,7 @@ EffÉcran
 Goto 1
 Else
 Output(6,1,"----------------
-Output(7,1,"A wild pokémon just
+Output(7,1,"A wild pokemon just
 Output(8,1,"appeared on your path !
 Pause 
 EffÉcran
@@ -663,14 +665,14 @@ If X=102:208→B
 Lbl 31
 EffÉcran
 Output(6,1,"----------------
-Output(7,1,"Pokémon ennemi:
+Output(7,1,"Opponent Pokemon:
 Output(8,1,Chn5
 Pause 
 EffÉcran
 Lbl 29
-Menu("COMBAT!",Chn3,21,Chn4,22,"Capturer",JT,"Fuir",FU
+Menu("FIGHT!",Chn3,21,Chn4,22,"Capture",JT,"Run away",FU
 Lbl FU
-Menu("Confirmer la fuite ?","Oui, fuir",OF,"Non, rester dans l'arène",ON
+Menu("Confirm leak ?","Yes, leak",OF,"No, stay in the arena",ON
 Lbl OF
 Goto 1
 Lbl ON
@@ -678,7 +680,7 @@ Goto 29
 Lbl JT
 If θ=0
 Then
-Menu("Tu perdras ton pokémon actuel...","Continuer",XY,"Retour",29
+Menu("You will lose your actual pokemon...","Continue",XY,"Return",29
 Else
 Lbl XY
 nbrAléatEnt(1,6)→L
@@ -686,7 +688,7 @@ If L=1
 Then
 EffÉcran
 Output(6,1,"-----------------
-Output(7,1,"Tu l'as capturé !
+Output(7,1,"You caught it !
 Chn5→Chn2
 B→A
 E→P
@@ -697,7 +699,7 @@ Else
 If L≠1
 EffÉcran
 Output(6,1,"-----------------
-Output(7,1,"Il s'est libéré !
+Output(7,1,"He freed himself !
 Pause 
 EffÉcran
 Goto 50
@@ -721,7 +723,7 @@ EffÉcran
 E-A→E
 If E≤0:Goto 28
 Output(6,1,"----------------
-Output(7,1,"C'est très efficace !
+Output(7,1,"That is usefull !
 Pause 
 EffÉcran
 Lbl 50
@@ -731,26 +733,27 @@ Output(2,7,"VS
 Output(3,1,Chn5
 Output(3,13,E
 Output(6,1,"----------------
-Output(7,1,"Attaque de
-Output(7,12,Chn5
-Output(8,1,"dégâts:
+Output(7,1,"Chn2's 
+Output(7,12,attack
+Output(8,1,"damage:
 Output(8,9,B
 Pause 
 EffÉcran
 P-B→P
 Output(6,1,"----------------
-Output(7,1,"Ca fait mal !
+Output(7,1,"That is painfull!
 Pause 
 EffÉcran
 If P≤0:Goto 26
 If P>0:Goto 29
 Lbl 26
 Output(6,1,"----------------
-Output(7,1,"Vous êtes mort !
+Output(7,1,"Your pokemon has been defeated!
+Pause
 Goto 1
 Lbl 28
 Output(6,1,"----------------
-Output(7,1,"Vous avez gagné !
+Output(7,1,"You win !
 nbrAléatEnt(26,100)→L
 Disp "EXP: +
 Disp L
@@ -770,7 +773,7 @@ A+15→A
 P+10→P
 R+10→R
 Output(6,1,"----------------
-Output(7,1,"Niveau supérieur:
+Output(7,1,"Level up:
 Output(7,18,N
 Pause 
 If Chn2="Brindibou" et N≥25 et J=0:Goto 99
@@ -817,7 +820,7 @@ Output(6,7,"==>
 Pause 
 EffÉcran
 Output(6,1,"----------------
-Output(7,1,"Pikachu s'est
-Output(8,1,"transformé en Raichu !
+Output(7,1,"Pikachu has
+Output(8,1,"transform into Raichu !
 Pause 
 Goto 1
