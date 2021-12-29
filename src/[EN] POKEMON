@@ -5,7 +5,7 @@ DelVar θDelVar W
 Output(1,1,"--------------------------
 Output(2,2,"·.*POKEMON 83 PREMIUM*.·
 
-Output(3,9,"V:1.7 BETA 2
+Output(3,9,"V:1.7 BÊTA 2
 Output(5,8,"By KENSHI
 Output(7,4,"Revived by CAPYSQUID
 Output(10,1,"--------------------------
@@ -200,7 +200,7 @@ Pause
 EffÉcran
 Goto 88
 Else
-Menu("Shop", "Buy health potion",PS,"Buy attack potion",PA,"Buy pokeball",BP,"Buy pokemons",AP,"Buy gears",AG,"Return",Z
+Menu("Shop", "Buy health potion",PS,"Buy attack potion",PA,"Buy pokemons",AP,"Buy equipment",AG,"Return",Z
 Lbl PS
 Goto 88
 Lbl PA
@@ -208,8 +208,6 @@ Goto 88
 Lbl AP
 Goto 88
 Lbl AG
-Goto 88
-Lbl BP
 Goto 88
 Lbl 70
 DelVar X
@@ -246,8 +244,8 @@ EffÉcran
 Goto 1
 Else
 Output(6,1,"----------------
-Output(7,1,"A wild pokemon just
-Output(8,1,"appeared on your path !
+Output(7,1,"A wild pokémon just
+Output(8,1,"appeared on your path!
 Pause 
 EffÉcran
 Output(6,1,"----------------
@@ -258,8 +256,8 @@ EffÉcran
 If θ=1 et W>1:Goto 32
 nbrAléatEnt(1,102)→X
 If X=1:Chn2→Chn5
-If X=2:"Monaflèmit"→Chn5
-If X=3:"Ethernatos"→Chn5
+If X=2:"Slaking"→Chn5
+If X=3:"Eternatos"→Chn5
 If X=4:"Mewtwo"→Chn5
 If X=5:"Groudon"→Chn5
 If X=6:"Kyogre"→Chn5
@@ -267,26 +265,26 @@ If X=7:"Zekrom"→Chn5
 If X=8:"Reshiram"→Chn5
 If X=9:"Dialga"→Chn5
 If X=10:"Meloetta"→Chn5
-If X=11:"Carchacrok"→Chn5
+If X=11:"Garchomp"→Chn5
 If X=12:"Blizzeval"→Chn5
 If X=13:"Ho-Oh"→Chn5
 If X=14:"Rayquaza"→Chn5
-If X=15:"Tyranocif"→Chn5
+If X=15:"Tyranitar"→Chn5
 If X=16:"Zarude"→Chn5
 If X=17:"Zamazenta"→Chn5
 If X=18:"Zacian"→Chn5
 If X=19:"Latios"→Chn5
-If X=20:"Dracolosse"→Chn5
-If X=21:"Métalosse"→Chn5
-If X=22:"Drattak"→Chn5
-If X=23:"Rhinastoc"→Chn5
+If X=20:"Dragonite"→Chn5
+If X=21:"Metagross"→Chn5
+If X=22:"Salamence"→Chn5
+If X=23:"Ryperior"→Chn5
 If X=24:"Lugia"→Chn5
 If X=25:"Keldeo"→Chn5
 If X=26:"Terrakium"→Chn5
-If X=27:"Pyrax"→Chn5
+If X=27:"Volcarona"→Chn5
 If X=28:"Volcanion"→Chn5
-If X=29:"Trioxhydre"→Chn5
-If X=30:"Shifours"→Chn5
+If X=29:"Hydreigon"→Chn5
+If X=30:"Urshifu"→Chn5
 If X=31:"Melmetal"→Chn5
 If X=32:"Tranchodon"→Chn5
 If X=33:"Démétéros"→Chn5
@@ -665,14 +663,14 @@ If X=102:208→B
 Lbl 31
 EffÉcran
 Output(6,1,"----------------
-Output(7,1,"Opponent Pokemon:
+Output(7,1,"Pokémon ennemi:
 Output(8,1,Chn5
 Pause 
 EffÉcran
 Lbl 29
-Menu("FIGHT!",Chn3,21,Chn4,22,"Capture",JT,"Run away",FU
+Menu("COMBAT!",Chn3,21,Chn4,22,"Capturer",JT,"Fuir",FU
 Lbl FU
-Menu("Confirm leak ?","Yes, leak",OF,"No, stay in the arena",ON
+Menu("Confirmer la fuite ?","Oui, fuir",OF,"Non, rester dans l'arène",ON
 Lbl OF
 Goto 1
 Lbl ON
@@ -680,7 +678,7 @@ Goto 29
 Lbl JT
 If θ=0
 Then
-Menu("You will lose your actual pokemon...","Continue",XY,"Return",29
+Menu("Tu perdras ton pokémon actuel...","Continuer",XY,"Retour",29
 Else
 Lbl XY
 nbrAléatEnt(1,6)→L
@@ -688,7 +686,7 @@ If L=1
 Then
 EffÉcran
 Output(6,1,"-----------------
-Output(7,1,"You caught it !
+Output(7,1,"Tu l'as capturé !
 Chn5→Chn2
 B→A
 E→P
@@ -699,7 +697,7 @@ Else
 If L≠1
 EffÉcran
 Output(6,1,"-----------------
-Output(7,1,"He freed himself !
+Output(7,1,"Il s'est libéré !
 Pause 
 EffÉcran
 Goto 50
@@ -723,7 +721,7 @@ EffÉcran
 E-A→E
 If E≤0:Goto 28
 Output(6,1,"----------------
-Output(7,1,"That is usefull !
+Output(7,1,"C'est très efficace !
 Pause 
 EffÉcran
 Lbl 50
@@ -733,27 +731,26 @@ Output(2,7,"VS
 Output(3,1,Chn5
 Output(3,13,E
 Output(6,1,"----------------
-Output(7,1,"Chn2's 
-Output(7,12,attack
-Output(8,1,"damage:
+Output(7,1,"Attaque de
+Output(7,12,Chn5
+Output(8,1,"dégâts:
 Output(8,9,B
 Pause 
 EffÉcran
 P-B→P
 Output(6,1,"----------------
-Output(7,1,"That is painfull!
+Output(7,1,"Ca fait mal !
 Pause 
 EffÉcran
 If P≤0:Goto 26
 If P>0:Goto 29
 Lbl 26
 Output(6,1,"----------------
-Output(7,1,"Your pokemon has been defeated!
-Pause
+Output(7,1,"Vous êtes mort !
 Goto 1
 Lbl 28
 Output(6,1,"----------------
-Output(7,1,"You win !
+Output(7,1,"Vous avez gagné !
 nbrAléatEnt(26,100)→L
 Disp "EXP: +
 Disp L
@@ -773,7 +770,7 @@ A+15→A
 P+10→P
 R+10→R
 Output(6,1,"----------------
-Output(7,1,"Level up:
+Output(7,1,"Niveau supérieur:
 Output(7,18,N
 Pause 
 If Chn2="Brindibou" et N≥25 et J=0:Goto 99
@@ -820,7 +817,7 @@ Output(6,7,"==>
 Pause 
 EffÉcran
 Output(6,1,"----------------
-Output(7,1,"Pikachu has
-Output(8,1,"transform into Raichu !
+Output(7,1,"Pikachu s'est
+Output(8,1,"transformé en Raichu !
 Pause 
 Goto 1
