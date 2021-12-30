@@ -78,6 +78,11 @@ DelVar Chn2
 DelVar Chn3
 DelVar Chn4
 DelVar Chn5
+DelVar Chn6
+DelVar Chn7
+DelVar Chn8
+DelVar Chn9
+DelVar Chn0
 DelVar FDelVar J
 100→G
 Input "Entrer votre nom :",Chn1
@@ -104,7 +109,7 @@ Output(7,1,"Tu as fait un bon choix.
 Output(6,1,"----------------
 "Metang"→Chn2
 "Ultralaser"→Chn3
-"Belier"→Chn4
+"Bélier"→Chn4
 132→A
 138→P
 P→R
@@ -145,7 +150,7 @@ EffÉcran
 Output(6,1,"----------------
 Output(7,1,"Dommage pour toi :
 Output(8,1,"tes ennemis seront 
-Output(9,1,"difficile a vaincre.
+Output(9,1,"difficile à vaincre.
 Pause 
 "Pikachu"→Chn2
 "Queue éclair !"→Chn3
@@ -171,12 +176,15 @@ Goto 88
 Lbl PO
 EffÉcran
 Disp "Pokémon 1:",Chn2
+If N>10
+Then
+Disp "Pokémon 2:",Chn6
 Pause 
 Goto 1
 Lbl SO
-Menu("Soigner pokemons","Utiliser potions de soin",UP,"Patienter pour reanimer",PR,"Retour",OF
+Menu("Soigner pokémons","Utiliser potions de soin",UP,"Patienter pour réanimer",PR,"Retour",OF
 Lbl UP
-Menu("Choix de potion","+25 pts de sante",1A,"+50 pts de sante",1B,"+100 pts de sante",1C,"+250 pts de sante",1D,"Boost max",1E,"Retour",ZZ
+Menu("Choix de potion","+25 points de santé",1A,"+50 points de santé",1B,"+100 points de santé",1C,"+250 points de santé",1D,"Boost max",1E,"Retour",ZZ
 Lbl 1A
 P+25→P
 If P>R
@@ -184,49 +192,111 @@ Then
 P-25→P
 EffÉcran
 Output(4,1,"----------------
-Output(5,1,"Limite de points de UUU5U
-
+Output(5,1,"Limite de points de santé
+Output(6,1,"atteinte !
+Output(8,1,"Potion non utilisée
+Output(9,1,"Potions restantes :
+Pause
+EffÉcran
+Goto UP
 Else
 EffÉcran
-Output(6,1,"----------------
-Output(7,1,"Potion utilisee avec succes.
+Output(4,1,"----------------
+Output(5,1,Chn2
+Output(6,1,"a gagné 25 PV !
 Output(8,1,"Potions restantes :999999
 Pause 
 EffÉcran
 Goto UP
 Lbl 1B
 P+50→P
+If P>R
+Then
+P-50→P
 EffÉcran
-Output(6,1,"----------------
-Output(7,1,"Potion utilisee avec succes.
+Output(4,1,"----------------
+Output(5,1,"Limite de points de santé
+Output(6,1,"atteinte !
+Output(8,1,"Potion non utilisée
+Output(9,1,"Potions restantes :
+Pause
+EffÉcran
+Goto UP
+Else
+EffÉcran
+Output(4,1,"----------------
+Output(5,1,Chn2
+Output(6,1,"a gagné 50 PV !
 Output(8,1,"Potions restantes :999999
 Pause 
 EffÉcran
 Goto UP
 Lbl 1C
 P+100→P
+If P>R
+Then
+P-100→P
 EffÉcran
-Output(6,1,"----------------
-Output(7,1,"Potion utilisee avec succes.
+Output(4,1,"----------------
+Output(5,1,"Limite de points de santé
+Output(6,1,"atteinte !
+Output(8,1,"Potion non utilisée
+Output(9,1,"Potions restantes :
+Pause
+EffÉcran
+Goto UP
+Else
+EffÉcran
+Output(4,1,"----------------
+Output(5,1,Chn2
+Output(6,1,"a gagné 100 PV !
 Output(8,1,"Potions restantes :999999
 Pause 
 EffÉcran
 Goto UP
 Lbl 1D
 P+250→P
+If P>R
+Then
+P-250→P
 EffÉcran
-Output(6,1,"----------------
-Output(7,1,"Potion utilisee avec succes.
+Output(4,1,"----------------
+Output(5,1,"Limite de points de santé
+Output(6,1,"atteinte !
+Output(8,1,"Potion non utilisée
+Output(9,1,"Potions restantes :
+Pause
+EffÉcran
+Goto UP
+Else
+EffÉcran
+Output(4,1,"----------------
+Output(5,1,Chn2
+Output(6,1,"a gagné 250 PV !
 Output(8,1,"Potions restantes :999999
 Pause 
 EffÉcran
 Goto UP
 Lbl 1E
 R→P
+If P=R
+Then
 EffÉcran
-Output(6,1,"----------------
-Output(7,1,"Potion utilisee avec succes.
-Output(8,1,"Potions restantes :999999
+Output(4,1,"----------------
+Output(5,1,"Limite de points de santé
+Output(6,1,"atteinte !
+Output(8,1,"Potion non utilisée
+Output(9,1,"Potions restantes :
+Pause
+EffÉcran
+Goto UP
+Else
+EffÉcran
+Output(4,1,"----------------
+Output(5,1,Chn2
+Output(6,1,"a regagné tous
+Output(7,1,"ses PV !
+Output(9,1,"Potions restantes :999999
 Pause 
 EffÉcran
 Goto UP
@@ -268,7 +338,7 @@ Pause
 EffÉcran
 Goto 1
 Else
-Menu("Boutique","Achat potions soin",PS,"Achat potions attaque",PA,"Achat pokémon",AP,"Achat équipements",AG,"Retour",ZZ
+Menu("Boutique","Inventaire",IN,"Achat potions soin",PS,"Achat potions attaque",PA,"Achat pokémon",AP,"Achat équipements",AG,"Retour",ZZ
 Lbl PS
 Goto 1
 Lbl PA
