@@ -176,8 +176,11 @@ Goto 88
 Lbl PO
 EffÉcran
 Disp "Pokémon 1:",Chn2
+Pause 
+Goto 1
 If N>10
 Then
+Disp "Pokémon 1:",Chn2
 Disp "Pokémon 2:",Chn6
 Pause 
 Goto 1
@@ -196,7 +199,7 @@ Output(5,1,"Limite de points de santé
 Output(6,1,"atteinte !
 Output(8,1,"Potion non utilisée
 Output(9,1,"Potions restantes :
-Pause
+Pause 
 EffÉcran
 Goto UP
 Else
@@ -219,7 +222,7 @@ Output(5,1,"Limite de points de santé
 Output(6,1,"atteinte !
 Output(8,1,"Potion non utilisée
 Output(9,1,"Potions restantes :
-Pause
+Pause 
 EffÉcran
 Goto UP
 Else
@@ -242,7 +245,7 @@ Output(5,1,"Limite de points de santé
 Output(6,1,"atteinte !
 Output(8,1,"Potion non utilisée
 Output(9,1,"Potions restantes :
-Pause
+Pause 
 EffÉcran
 Goto UP
 Else
@@ -265,7 +268,7 @@ Output(5,1,"Limite de points de santé
 Output(6,1,"atteinte !
 Output(8,1,"Potion non utilisée
 Output(9,1,"Potions restantes :
-Pause
+Pause 
 EffÉcran
 Goto UP
 Else
@@ -287,7 +290,7 @@ Output(5,1,"Limite de points de santé
 Output(6,1,"atteinte !
 Output(8,1,"Potion non utilisée
 Output(9,1,"Potions restantes :
-Pause
+Pause 
 EffÉcran
 Goto UP
 Else
