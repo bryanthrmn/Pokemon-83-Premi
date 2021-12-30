@@ -987,7 +987,7 @@ Else
          Lbl 29
          Menu("FIGHT!",Str3,21,Str4,22,"Capture",JT,"Run away",FU
          Lbl FU
-         Menu("Confirme leak?","Yes, leak",OF,"No, stay in the arena",ON
+         Menu("Confirm escape?","Yes, escape",OF,"No, stay in the arena",ON
          Lbl OF
          Goto 1
          Lbl ON
@@ -1014,7 +1014,7 @@ Else
                If L≠1
                   ClrHome
                Output(6,1,"-----------------
-               Output(7,1,"He freed himself!
+               Output(7,1,"He broke out!
                Pause 
                ClrHome
                Goto 50
@@ -1051,9 +1051,9 @@ Else
                Output(3,1,Str5
                Output(3,13,E
                Output(6,1,"----------------
-               Output(7,1,"Attaque de
+               Output(7,1,"Attack of
                Output(7,12,Str5
-               Output(8,1,"dégâts:
+               Output(8,1,"damage:
                Output(8,9,B
                Pause 
                ClrHome
@@ -1097,7 +1097,7 @@ Else
             Output(7,1,"Level up:
             Output(7,18,N
             Pause 
-            If Str2="Brindibou" and N≥25 and J=0
+            If Str2="Rowlet" and N≥25 and J=0
                Goto 99
             Goto 1
             Lbl 99
@@ -1111,26 +1111,26 @@ Else
             ClrHome
             Output(5,1,"Animation in development'
             "
-            "Archeduc"→Str2
-            "Tir multiple !"→Str3
-            "Tranche nuit !"→Str4
+            "Decidueye"→Str2
+            "Double Slap"→Str3
+            "Night Slash"→Str4
             Pause 
             ClrHome
-            Output(6,1,"Did he just evolved
-            Output(7,1,"into Decidueye !?"
+            Output(6,1,"Did he just evolve
+            Output(7,1,"into Decidueye!?"
             Pause 
             ClrHome
             If Str2="Pikachu" and N≥19 and J=0
                Goto 98
             Goto 1
             Lbl 98
-            Output(7,1,"Pikachu has evolved
-            Output(8,1,"Wow !
+            Output(7,1,"Pikachu has evolved!
+            Output(8,1,"Wow!
             Pause 
             ClrHome
             "Raichu"→Str2
-            "Foudre fatale !"→Str3
-            "Attaque vive !"→Str4
+            "Thunder"→Str3
+            "Quick Attack!"→Str4
             1→J
             For(I,1,10
                60!
@@ -1146,6 +1146,6 @@ Else
                ClrHome
                Output(6,1,"----------------
                Output(7,1,"Pikachu has
-               Output(8,1,"transform into Raichu!
+               Output(8,1,"evolved into Raichu!
                Pause 
                Goto 1
