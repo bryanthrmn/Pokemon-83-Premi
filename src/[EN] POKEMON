@@ -70,7 +70,7 @@ Lbl Q
 ClrHome
 Stop
 Lbl C
-Disp "POKEMON 83 PREMIUM [ENGLISH VERSION]","","         Producer : ","    Kenshi Corporation","","      Developers :","       Capysquid","         Shadow"
+Disp "POKEMON 83 PREMIUM [ENGLISH VERSION]","","         Producer : ","    Kenshi Corporation","","      Developers :","       Shadow","         TIny_Hacker"
 Output(10,1,"Copyright 2014 - 2021
 Pause 
 ClrHome
