@@ -38,7 +38,7 @@ Lbl 88
 Menu(" ·.*POKEMON 83 PREMIUM*.·     ","NOUVELLE PARTIE",0,"CONTINUER PARTIE",1,"CREDITS",C,"AMELIORATIONS DU JEU",K,"QUITTER",Q
 
 Lbl K
-Disp "VERSION: 1.7 [BÊTA]"
+Disp "VERSION: 1.7 [BÊTA 2]"
 Disp "30 Décembre 2021"
 Disp ""
 Disp "- 100 pokémons disponibles"
@@ -47,10 +47,10 @@ Disp "  du conseil"
 Disp "- Ajout d'un logo CEsium"
 Disp "- Ajout d'une description" 
 Disp "  CEsium"
-Pause
+Pause 
 EffÉcran
 Disp "VERSION: 1.7 [BÊTA 2]"
-Disp "28 Décembre 2021"
+Disp "30 Décembre 2021"
 Disp ""
 Disp "- Disponibilité de fuir"
 Disp "  les combats"
@@ -160,10 +160,11 @@ Lbl DE
 EffÉcran
 Output(6,1,"----------------
 Output(7,1,"Découvrir la fôret
-Output(8,1,"A venir dans la version 1.9 du jeu...
-Pause
+Output(8,1,"A venir dans la 
+Output(9,1,"version 1.9 du jeu...
+Pause 
 EffÉcran
-Goto 88
+Goto 1
 Lbl Z
 EffÉcran
 Goto 88
@@ -173,17 +174,81 @@ Disp "Pokémon 1:",Chn2
 Pause 
 Goto 1
 Lbl SO
+Menu("Soigner pokemons","Utiliser potions de soin",UP,"Patienter pour reanimer",PR,"Retour",OF
+Lbl UP
+Menu("Choix de potion","+25 pts de sante",1A,"+50 pts de sante",1B,"+100 pts de sante",1C,"+250 pts de sante",1D,"Boost max",1E,"Retour",ZZ
+Lbl 1A
+P+25→P
+If P>R
+Then
+P-25→P
+EffÉcran
+Output(4,1,"----------------
+Output(5,1,"Limite de points de UUU5U
+
+Else
+EffÉcran
+Output(6,1,"----------------
+Output(7,1,"Potion utilisee avec succes.
+Output(8,1,"Potions restantes :999999
+Pause 
+EffÉcran
+Goto UP
+Lbl 1B
+P+50→P
+EffÉcran
+Output(6,1,"----------------
+Output(7,1,"Potion utilisee avec succes.
+Output(8,1,"Potions restantes :999999
+Pause 
+EffÉcran
+Goto UP
+Lbl 1C
+P+100→P
+EffÉcran
+Output(6,1,"----------------
+Output(7,1,"Potion utilisee avec succes.
+Output(8,1,"Potions restantes :999999
+Pause 
+EffÉcran
+Goto UP
+Lbl 1D
+P+250→P
+EffÉcran
+Output(6,1,"----------------
+Output(7,1,"Potion utilisee avec succes.
+Output(8,1,"Potions restantes :999999
+Pause 
+EffÉcran
+Goto UP
+Lbl 1E
 R→P
-Goto 1
+EffÉcran
+Output(6,1,"----------------
+Output(7,1,"Potion utilisee avec succes.
+Output(8,1,"Potions restantes :999999
+Pause 
+EffÉcran
+Goto UP
+Lbl ZZ
+EffÉcran
+Goto SO
+Lbl PR
+EffÉcran
+HorlAct
+actMintr
+Pause 
+EffÉcran
+Goto SO
 Lbl CO
 If N<25
 Then
 Output(6,1,"----------------
 Output(7,1,"Se débloque au niveau 25
 Output(8,1,"Revenez plus tard...
-Pause
+Pause 
 EffÉcran
-Goto 88
+Goto 1
 Else
 Menu("Donjon Secret","Ermite Willy",41,"Louis-Ferdinand Stinx",70,"Lewis Minda",62,"Bryan Thirimanna",VI,"Retour",Z
 Lbl 62
@@ -199,19 +264,19 @@ Then
 Output(6,1,"----------------
 Output(7,1,"Se débloque au niveau 10
 Output(8,1,"Revenez plus tard...
-Pause
+Pause 
 EffÉcran
-Goto 88
+Goto 1
 Else
-Menu("Boutique", "Achat potions soin",PS,"Achat potions attaque",PA,"Achat pokémon",AP,"Achat équipements",AG,"Retour",Z
+Menu("Boutique","Achat potions soin",PS,"Achat potions attaque",PA,"Achat pokémon",AP,"Achat équipements",AG,"Retour",ZZ
 Lbl PS
-Goto 88
+Goto 1
 Lbl PA
-Goto 88
+Goto 1
 Lbl AP
-Goto 88
+Goto 1
 Lbl AG
-Goto 88
+Goto 1
 Lbl 70
 DelVar X
 1→W
@@ -769,9 +834,9 @@ Lbl 99
 EffÉcran
 G+200→G
 N+1→N
-A+15→A
-P+10→P
-R+10→R
+A+3→A
+P+7→P
+R+7→R
 Output(6,1,"----------------
 Output(7,1,"Niveau supérieur:
 Output(7,18,N
