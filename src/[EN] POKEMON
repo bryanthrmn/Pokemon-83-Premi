@@ -7,7 +7,7 @@ DelVar W
 Output(1,1,"--------------------------
 Output(2,2,"·.*POKEMON 83 PREMIUM*.·
 
-Output(3,9,"V:1.7 BETA 2
+Output(3,9,"V:1.7 BETA 1
 Output(5,8,"By KENSHI
 Output(7,4,"Remake by CAPYSQUID
 Output(10,1,"--------------------------
@@ -47,7 +47,7 @@ Lbl 88
 Menu(" ·.*POKEMON 83 PREMIUM*.·     ","NEW GAME",0,"RESUME GAME",1,"CREDITS",C,"GAME IMPROVEMENTS",K,"QUIT",Q
 
 Lbl K
-Disp "VERSION: 1.7 [BETA]"
+Disp "VERSION: 1.7 [BETA 1]"
 Disp "30 December 2021"
 Disp ""
 Disp "- 100 pokémons available"
@@ -56,7 +56,7 @@ Disp "- Added a CEsium"
 Disp "  description"
 Pause
 ClrHome
-Disp "VERSION: 1.7 [BETA 2]"
+Disp "VERSION: 1.7 [BETA 1]"
 Disp "30 December 2021"
 Disp ""
 Disp "- Ability to flee"
