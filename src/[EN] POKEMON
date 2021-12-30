@@ -9,7 +9,7 @@ Output(2,2,"·.*POKEMON 83 PREMIUM*.·
 
 Output(3,9,"V:1.7 BETA 2
 Output(5,8,"By KENSHI
-Output(7,4,"Revived by CAPYSQUID
+Output(7,4,"Remake by CAPYSQUID
 Output(10,1,"--------------------------
 For(I,1,10
    40!
@@ -98,7 +98,7 @@ Pause
 ClrHome
 Output(6,1,"----------------
 Output(7,1,"I am Professor
-Output(8,1,"Oephorbe !
+Output(8,1,"Oephorbe!
 Pause 
 ClrHome
 Output(6,1,"----------------
@@ -111,8 +111,8 @@ Lbl ZR
 Output(7,1,"You've made a good choice.
 Output(6,1,"----------------
 "Metang"→Str2
-"Ultralaser"→Str3
-"Belier"→Str4
+"Hyper Beam"→Str3
+"Take Down"→Str4
 132→A
 138→P
 P→R
@@ -125,9 +125,9 @@ Output(7,1,"A good choice...
 Output(8,1,"Don't forget that your 
 Output(9,1,"enemies will be strong.
 Output(6,1,"----------------
-"Brindibou"→Str2
-"Pic-pic !"→Str3
-"Fouet liannes !"→Str4
+"Rowlet"→Str2
+"Peck"→Str3
+"Vine Whip"→Str4
 55→A
 68→P
 P→R
@@ -141,8 +141,8 @@ Output(7,1,"Excellent choice !
 Pause 
 ClrHome
 "Magikarp"→Str2
-"Pistolet A.O !"→Str3
-"Trempette !"→Str4
+"Water gun"→Str3
+"Splash"→Str4
 78→A
 1→N
 29→P
@@ -156,7 +156,7 @@ Output(8,1,"your ennemies will be
 Output(9,1,"hard to defeat.
 Pause 
 "Pikachu"→Str2
-"Queue éclair !"→Str3
+"Iron Tail"→Str3
 "Charge"→Str4
 98→A
 112→P
@@ -198,7 +198,7 @@ Else
    DelVar X
    1→W
    1→θ
-   "Lougaroc"→Str5
+   "Lycanroc"→Str5
    245→E
    49→B
    Lbl BO
@@ -211,7 +211,7 @@ Else
       ClrHome
       Goto 88
    Else
-      Menu("Shop", "Buy health potion",PS,"Buy attack potion",PA,"Buy pokemons",AP,"Buy equipment",AG,"Return",Z
+      Menu("Shop", "Buy health potion",PS,"Buy attack potion",PA,"Buy pokeballs",AP,"Buy equipment",AG,"Return",Z
       Lbl PS
       Goto 88
       Lbl PA
@@ -224,7 +224,7 @@ Else
       DelVar X
       1→W
       1→θ
-      "Carchacrock"→Str5
+      "Garchomp"→Str5
       402→E
       115→B
       Goto 31
@@ -331,27 +331,27 @@ Else
          If X=31
             "Melmetal"→Str5
          If X=32
-            "Tranchodon"→Str5
+            "Haxorus"→Str5
          If X=33
-            "Démétéros"→Str5
+            "Landorus"→Str5
          If X=34
             "Kyurem"→Str5
          If X=35
-            "Lanssorien"→Str5
+            "Dragapult"→Str5
          If X=36
-            "Electhor"→Str5
+            "Zapdos"→Str5
          If X=37
             "Latias"→Str5
          If X=38
             "Entei"→Str5
          If X=39
-            "Sulfura"→Str5
+            "Moltres"→Str5
          If X=40
             "Raikou"→Str5
          If X=41
-            "Léviator"→Str5
+            "Gyarados"→Str5
          If X=42
-            "Spectreval"→Str5
+            "Spectrier"→Str5
          If X=43
             "Giratina"→Str5
          If X=44
@@ -359,23 +359,23 @@ Else
          If X=45
             "Genesect"→Str5
          If X=46
-            "Fulguris"→Str5
+            "Thundurus"→Str5
          If X=47
-            "Boréas"→Str5
+            "Tornadus"→Str5
          If X=48
-            "Bétochef"→Str5
+            "Conkledurr"→Str5
          If X=49
             "Togekiss"→Str5
          If X=50
-            "Aéroptéryx"→Str5
+            "Archeops"→Str5
          If X=51
-            "Mammochon"→Str5
+            "Mammoswine"→Str5
          If X=52
-            "Gorythmic"→Str5
+            "Rillaboom"→Str5
          If X=53
-            "Charkos"→Str5
+            "Rampardos"→Str5
          If X=54
-            "Lugulabre"→Str5
+            "Chandelure"→Str5
          If X=55
             "Porygon-Z"→Str5
          If X=56
@@ -385,93 +385,93 @@ Else
          If X=58
             "Mew"→Str5
          If X=59
-            "Minotaupe"→Str5
+            "Excadrill"→Str5
          If X=60
-            "Gigalithe"→Str5
+            "Gigalith"→Str5
          If X=61
-            "Ronflex"→Str5
+            "Snorlax"→Str5
          If X=62
-            "Dolman"→Str5
+            "Stonjourner"→Str5
          If X=63
-            "Magnézone"→Str5
+            "Magnezone"→Str5
          If X=64
-            "Rhinoféros"→Str5
+            "Rhydon"→Str5
          If X=65
-            "Mentali"→Str5
+            "Espeon"→Str5
          If X=66
             "Deoxys"→Str5
          If X=67
-            "Maganon"→Str5
+            "Magmortar"→Str5
          If X=68
-            "Givrali"→Str5
+            "Glaceon"→Str5
          If X=69
             "Regice"→Str5
          If X=70
-            "Aquali"→Str5
+            "Vaporeon"→Str5
          If X=71
-            "Darumacho"→Str5
+            "Darmanitan"→Str5
          If X=72
-            "Scarhino"→Str5
+            "Heracross"→Str5
          If X=73
-            "Gallame"→Str5
+            "Gallade"→Str5
          If X=74
             "Gardevoir"→Str5
          If X=75
-            "Gueriaigle"→Str5
+            "Braviary"→Str5
          If X=76
-            "Hippodocus"→Str5
+            "Hippowdon"→Str5
          If X=77
-            "Elekable"→Str5
+            "Electivire"→Str5
          If X=78
-            "Duralugon"→Str5
+            "Duraludon"→Str5
          If X=79
-            "Corayôme"→Str5
+            "Cursola"→Str5
          If X=80
-            "Polthégeist"→Str5
+            "Polteageist"→Str5
          If X=81
             "Alakazam"→Str5
          If X=82
-            "Mackogneur"→Str5
+            "Machamp"→Str5
          If X=83
-            "Artikodin"→Str5
+            "Articuno"→Str5
          If X=84
-            "Crocorible"→Str5
+            "Krookodile"→Str5
          If X=85
-            "Polagriffe"→Str5
+            "Beartic"→Str5
          If X=86
-            "Bouldeneu"→Str5
+            "Tangrowth"→Str5
          If X=87
-            "Pyroli"→Str5
+            "Flareon"→Str5
          If X=88
-            "Arcanin"→Str5
+            "Arcanine"→Str5
          If X=89
-            "Viridium"→Str5
+            "Virizion"→Str5
          If X=90
-            "Cobaltium"→Str5
+            "Cobalion"→Str5
          If X=91
-            "Pyrobut"→Str5
+            "Cinderace"→Str5
          If X=92
-            "Noadkoko"→Str5
+            "Exeggutor"→Str5
          If X=93
             "Donphan"→Str5
          If X=94
-            "Dimoret"→Str5
+            "Weavile"→Str5
          If X=95
-            "Milobellus"→Str5
+            "Milotic"→Str5
          If X=96
-            "Cizayox"→Str5
+            "Scizor"→Str5
          If X=97
-            "Galeking"→Str5
+            "Aggron"→Str5
          If X=98
-            "Scolocendre"→Str5
+            "Centiskorch"→Str5
          If X=99
-            "Palarticho"→Str5
+            "Sirfetch'd"→Str5
          If X=100
             "Suicune"→Str5
          If X=101
-            "Roitiflam"→Str5
+            "Emboar"→Str5
          If X=102
-            "Pachyradjah"→Str5
+            "Copperajah"→Str5
          Lbl 31
          If X=2
             233→E
