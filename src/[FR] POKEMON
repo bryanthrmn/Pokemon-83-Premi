@@ -228,7 +228,7 @@ Disp "Pokémon 2:",Chn6
 Pause 
 Goto 1
 Lbl SO
-Menu("Soigner pokémons","Utiliser potions de soin",UP,"Patienter pour réanimer",PR,"Retour",OF
+Menu("Soigner pokémons","Utiliser potions de soin",UP,"Patienter pour réanimer",RA,"Retour",OF
 Lbl UP
 Menu("Choix de potion","+25 points de santé",1A,"+50 points de santé",1B,"+100 points de santé",1C,"+250 points de santé",1D,"Boost max",1E,"Retour",ZZ
 If P≤0
