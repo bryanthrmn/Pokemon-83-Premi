@@ -1,13 +1,13 @@
-:"Pokémon 83 Premium
+:"Pokemon 83 Premium
 :"888888888888888888883333333388888883222222223888883222222222238883222222222222388322222222222238832222222222223883222233332222388F33333DD33333F883BBBB3333BBBB3883BBBBBBBBBBBB3883BBBBBBBBBBBB3883BBBBBBBBBBBB38883BBBBBBBBBB38888833333333338888888888888888888"
 EffÉcran
 DelVar θDelVar W
 Output(1,1,"--------------------------
 Output(2,2,"·.*POKEMON 83 PREMIUM*.·
 
-Output(3,9,"V:1.7 BÊTA 2
+Output(3,9,"V:1.7 BETA 2
 Output(5,8,"De KENSHI
-Output(7,4,"Reprit par CAPYSQUID
+Output(7,4,"Remaked par CAPYSQUID
 Output(10,1,"--------------------------
 For(I,1,10
 40!:End
@@ -35,41 +35,38 @@ Pause
 Lbl M
 EffÉcran
 Lbl 88
-Menu(" ·.*POKEMON 83 PREMIUM*.·     ","NOUVELLE PARTIE",0,"CONTINUER PARTIE",1,"CREDITS",C,"AMELIORATIONS DU JEU",K,"QUITTER",Q
+Menu(" ·.*POKEMON 83 PREMIUM*.·     ","NEW GAME",0,"RESUME GAME",1,"CREDITS",C,"GAME IMPROVEMENTS",K,"QUIT",Q
 
 Lbl K
-Disp "VERSION: 1.7 [BÊTA 2]"
-Disp "31 Décembre 2021"
+Disp "VERSION: 1.7 [BETA 2]"
+Disp "31 December 2021"
 Disp ""
-Disp "- 100 pokémons disponibles"
-Disp "- Changement du 4e membre"
-Disp "  du conseil"
-Disp "- Ajout d'un logo CEsium"
-Disp "- Ajout d'une description" 
-Disp "  CEsium"
+Disp "- 100 pokemons available"
+Disp "- Added a CEsium logo"
+Disp "- Added a CEsium" 
+Disp "  description"
 Pause 
 EffÉcran
-Disp "VERSION: 1.7 [BÊTA 2]"
-Disp "31 Décembre 2021"
+Disp "VERSION: 1.7 [BETA 2]"
+Disp "31 December 2021"
 Disp ""
 Disp "- Disponibilité de fuir"
 Disp "  les combats"
-Disp "- Ajout d'une boutique"
-Disp "- Correcions de langue"
-Disp "- Corrections de bugs"
+Disp "- Added a shop"
+Disp "- Bug fixes"
 Pause 
 EffÉcran
 Goto 88
 Lbl Q
 EffÉcran:Stop
 Lbl C
-Disp "POKEMON 83 PREMIUM","","       Producteur : ","    Kenshi Corporation","","      Réalisateurs :","       Capysquid","         Shadow"
+Disp "POKEMON 83 PREMIUM","","       Producer : ","    Kenshi Corporation","","      Directors :","       Capysquid","         Shadow"
 Output(10,1,"Copyright 2014 - 2021
 Pause 
 EffÉcran
 Goto 88
 Lbl 0
-Menu("Confirmer ?","Oui",89,"Non",88
+Menu("Confirm ?","Yes",89,"No",88
 Lbl 89
 Pause 
 EffÉcran
@@ -85,25 +82,25 @@ DelVar Chn9
 DelVar Chn0
 DelVar FDelVar J
 100→G
-Input "Entrer votre nom :",Chn1
+Input "Enter name :",Chn1
 EffÉcran
 Output(6,1,"----------------
-Output(7,1,"Bonjour
+Output(7,1,"Hey
 Output(7,9,Chn1
 Output(7,15,"!
 Pause 
 EffÉcran
 Output(6,1,"----------------
-Output(7,1,"Je suis le professeur
-Output(8,1,"Oephorbe !
+Output(7,1,"I am Professor
+Output(8,1,"Oephorbe!
 Pause 
 EffÉcran
 Output(6,1,"----------------
-Output(7,1,"Choisis ton          
-Output(8,1,"Pokémon, vite!
+Output(7,1,"Choose your          
+Output(8,1,"Pokemon, quick!
 Pause 
 EffÉcran
-Menu("CHOIX DU POKEMON","MAGICARPE",11,"PIKACHU",12,"BRINDIBOU",48,"MÉTANG",ZR
+Menu("POKEMON CHOICE","MAGIKARP",11,"PIKACHU",12,"BRINDIBOU",48,"METANG",ZR
 Lbl ZR
 Output(7,1,"Tu as fait un bon choix.
 Output(6,1,"----------------
