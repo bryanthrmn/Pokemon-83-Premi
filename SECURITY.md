@@ -43,6 +43,10 @@ The latest OS of the TI-83 Premium CE / TI-84 Plus CE is 5.7.0.
 
 By members on https://tiplanet.org
 
-Developers : Capysquid, Shadow and TIny_Hacker
+Producer : Kenshi Corporation
+
+Developers (french version): Capysquid, Shadow and TIny_Hacker
+
+Developers (english version): Shadow and TIny_Hacker
 
 If you have any suggestions or bug report, please contact us via : Bryankaveen14@gmail.com
