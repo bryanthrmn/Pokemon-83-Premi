@@ -1,4 +1,4 @@
-:"Pokémon 83 Premium
+:"Pokemon 83 Premium
 :"888888888888888888883333333388888883222222223888883222222222238883222222222222388322222222222238832222222222223883222233332222388F33333DD33333F883BBBB3333BBBB3883BBBBBBBBBBBB3883BBBBBBBBBBBB3883BBBBBBBBBBBB38883BBBBBBBBBB38888833333333338888888888888888888"
 EffÉcran
 DelVar θDelVar W
@@ -170,10 +170,10 @@ Menu("Menu principal","Découvrir la fôret",DE,"Arène de combat",90,"Donjon se
 Lbl PR
 EffÉcran
 Output(1,7,"Vue de profil
-If N=0:G=40
+If N=0:G=20
 If N=1:G=70
-If N=2:G=140
-If N=3:G=290
+If N=2:G=170
+If N=3:G=370
 If N=4:G=480
 If N=5:G=800
 If N=6:G=1250
@@ -369,7 +369,7 @@ Pause
 EffÉcran
 Goto 1
 Else
-Menu("Donjon Secret","Ermite Willy",41,"Louis-Ferdinand Stinx",70,"Lewis Minda",62,"Bryan Thirimanna",VI,"Retour",Z
+Menu("Donjon Secret","Ermite Willy",41,"Louis-Ferdinand Stinx",70,"Gareth Owen",62,"Bryan Thirimanna",VI,"Retour",Z
 Lbl 62
 DelVar X
 1→W
@@ -415,7 +415,7 @@ Goto 31
 Lbl VI
 DelVar X
 "Shadow"→Chn5
-964→E
+4096→E
 83→B
 Goto 31
 Lbl 90
@@ -938,8 +938,8 @@ Output(6,1,"----------------
 Output(7,1,"Vous avez gagné !
 If N=0
 Then
-40→G
-nbrAléatEnt(10,20)→L
+20→G
+nbrAléatEnt(5,10)→L
 Disp "EXP: +
 Disp L
 F+L→F
@@ -952,7 +952,7 @@ Else
 If N=1
 Then
 70→G
-nbrAléatEnt(15,30)→L
+nbrAléatEnt(10,15)→L
 Disp "EXP: +
 Disp L
 F+L→F
@@ -964,7 +964,7 @@ Goto 58
 Else
 If N=2
 Then
-140→G
+170→G
 nbrAléatEnt(25,35)→L
 Disp "EXP: +
 Disp L
@@ -977,7 +977,7 @@ Goto 58
 Else
 If N=3
 Then
-290→G
+370→G
 nbrAléatEnt(35,55)→L
 Disp "EXP: +
 Disp L
@@ -990,7 +990,7 @@ Goto 58
 Else
 If N=4
 Then
-480→G
+770→G
 nbrAléatEnt(45,65)→L
 Disp "EXP: +
 Disp L
@@ -1003,7 +1003,7 @@ Goto 58
 Else
 If N=5
 Then
-800→G
+1770→G
 nbrAléatEnt(55,80)→L
 Disp "EXP: +
 Disp L
@@ -1016,7 +1016,7 @@ Goto 58
 Else
 If N=6
 Then
-1250→G
+3770→G
 nbrAléatEnt(70,105)→L
 Disp "EXP: +
 Disp L
@@ -1029,7 +1029,7 @@ Goto 58
 Else
 If N=7
 Then
-2048→G
+8770→G
 nbrAléatEnt(95,145)→L
 Disp "EXP: +
 Disp L
@@ -1042,7 +1042,7 @@ Goto 58
 Else
 If N=8
 Then
-3160→G
+8770→G
 nbrAléatEnt(110,185)→L
 Disp "EXP: +
 Disp L
@@ -1055,7 +1055,7 @@ Goto 58
 Else
 If N=9
 Then
-4790→G
+18770→G
 nbrAléatEnt(155,215)→L
 Disp "EXP: +
 Disp L
@@ -1068,7 +1068,7 @@ Goto 58
 Else
 If N=10
 Then
-6930→G
+38770→G
 nbrAléatEnt(205,295)→L
 Disp "EXP: +
 Disp L
@@ -1081,7 +1081,7 @@ Goto 58
 Else
 If N=11
 Then
-9725→G
+73770→G
 nbrAléatEnt(285,400)→L
 Disp "EXP: +
 Disp L
