@@ -35,7 +35,7 @@ If you are on one of the restricted versions, you can still execute these type o
     
 A tutorial is available here (french) : https://tiplanet.org/forum/viewtopic.php?f=63&t=25252 
 
-The latest OS of the TI-83 Premium CE is 5.7.0.
+The latest OS of the TI-83 Premium CE / TI-84 Plus CE is 5.7.0.
 
 
 ## Reporting a Vulnerability
