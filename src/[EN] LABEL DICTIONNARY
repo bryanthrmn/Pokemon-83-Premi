@@ -1,25 +1,65 @@
 # This document will serve as a dictionary for the next updates of the game
 
-# Old label dictionnary (version 1.7)
-0; Main menu
-1;
+## Old label dictionnary (version 1.7)
+#Strings
+Str1: Player's name
+Str2: Pokemon #1 name
+Str3: Name of Pokémon #1's attack #1
+Str4: Name of Pokemon #1's attack #2
+Str5: Enemy Pokemon's name 
+Str6: /
+Str7: /
+Str8: /
+Str9: /
+Str0: /
+
+
+## New label dictionnary (> version 1.8)
+#Strings
+Str1 : Player 1 name
+Str2 : Pokemon #1
+Str3 : Name of Pokemon #1's attack #1
+Str4 : Name of Pokemon #1's attack #2
+Str5 : Pokemon #2 name
+Str6 : Name of Pokemon #2's attack #1
+Str7 : Name of Pokemon #2's attack #2
+Str8 : Nom du Pokemon ennemi
+Str9: Name of the enemy Pokémon's attack #1; random function required
+Str0: Name of enemy Pokémon's attack #2; random function required
+
+#Labels
+  0; Home menu
+1; Home Menu >> New game
+2; Home menu >> Continue game (Main menu)
+3; Home Menu >> Credits (need to add TIny_Hacker on "Developers" and "Translators")
+4; Home menu >> Game improvements
+5; Home menu >> Quit
+
+  6; Main menu
+7; Main menu >> Special events; version 1.8
+8; Main menu >> Discover the forest; program this part in graphics
+9; Main menu >> Battle Arena; make available at level 13 (version 1.8)
+10; Main menu >> My Pokémon; show a detailed status for each pokémon
+11; Main menu >> Laboratory ; 
+12; Main menu >> Shop ; add a currency + add "my inventory
+13; Main menu >> My profile ; display the discovered pokémon (by battle)
+14; Main menu >> Back (Home menu)
+15;
+16;
+17;
+18;
+19;
+1A;
+1B;
+1C;
+1D;
 
 
 
-# New label dictionnary (> version 1.8)
-0;
-1;
-2;
-3;
-4;
-5;
-6;
-7;
-8;
-9;
-A;
-B;
-C;
-D;
-E;
-F;
+#Data
+A; Attack of pokemon #1
+B; Health of pokemon #1
+C; Defense of pokemon #1
+D; Attack of pokemon #2
+E; Health of pokemon #2
+F; Defense of pokemon #2
