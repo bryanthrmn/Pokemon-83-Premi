@@ -23,7 +23,7 @@ Str4 : Name of Pokemon #1's attack #2
 Str5 : Pokemon #2 name
 Str6 : Name of Pokemon #2's attack #1
 Str7 : Name of Pokemon #2's attack #2
-Str8 : Nom du Pokemon ennemi
+Str8 : Name of enemy Pokemon
 Str9: Name of the enemy Pokémon's attack #1; random function required
 Str0: Name of enemy Pokémon's attack #2; random function required
 
@@ -37,7 +37,7 @@ Str0: Name of enemy Pokémon's attack #2; random function required
 
   6; Main menu
 7; Main menu >> Special events; version 1.8
-8; Main menu >> Discover the forest; program this part in graphics
+8; Main menu >> Enter the forest; program this part in graphics
 9; Main menu >> Battle Arena; make available at level 13 (version 1.8)
 10; Main menu >> My Pokémon; show a detailed status for each pokémon
 11; Main menu >> Laboratory ; 
