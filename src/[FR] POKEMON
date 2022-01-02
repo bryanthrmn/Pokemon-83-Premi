@@ -39,7 +39,7 @@ Menu(" ·.*POKEMON 83 PREMIUM*.·     ","NOUVELLE PARTIE",0,"CONTINUER PARTIE",1
 
 Lbl K
 Disp "VERSION: 1.7 [BÊTA 2]"
-Disp "31 Décembre 2021"
+Disp "02 Janvier 2022"
 Disp ""
 Disp "- 100 pokémons disponibles"
 Disp "- Changement du 4e membre"
@@ -50,7 +50,7 @@ Disp "  CEsium"
 Pause 
 EffÉcran
 Disp "VERSION: 1.7 [BÊTA 2]"
-Disp "31 Décembre 2021"
+Disp "02 Janvier 2022"
 Disp ""
 Disp "- Disponibilité de fuir"
 Disp "  les combats"
@@ -64,7 +64,7 @@ Lbl Q
 EffÉcran:Stop
 Lbl C
 Disp "POKEMON 83 PREMIUM","","       Producteur : ","    Kenshi Corporation","","      Réalisateurs :","       Capysquid","         Shadow"
-Output(10,1,"Copyright 2014 - 2021
+Output(10,1,"Copyright 2014 - 2022
 Pause 
 EffÉcran
 Goto 88
@@ -83,8 +83,8 @@ DelVar Chn7
 DelVar Chn8
 DelVar Chn9
 DelVar Chn0
+DelVar T
 DelVar FDelVar J
-100→G
 Input "Entrer votre nom :",Chn1
 EffÉcran
 Output(6,1,"----------------
@@ -107,14 +107,14 @@ Menu("CHOIX DU POKEMON","MAGICARPE",11,"PIKACHU",12,"BRINDIBOU",48,"MÉTANG",ZR
 Lbl ZR
 Output(7,1,"Tu as fait un bon choix.
 Output(6,1,"----------------
-"Metang"→Chn2
+"Métang"→Chn2
 "Ultralaser"→Chn3
 "Bélier"→Chn4
 132→A
 138→P
 P→R
-0→N
-40→G
+1→N
+20→G
 Pause 
 EffÉcran
 Goto 1
@@ -130,8 +130,8 @@ Output(6,1,"----------------
 55→A
 68→P
 P→R
-0→N
-40→G
+1→N
+20→G
 Pause 
 EffÉcran
 Goto 1
@@ -145,10 +145,10 @@ EffÉcran
 "Pistolet A.O !"→Chn3
 "Trempette !"→Chn4
 78→A
-0→N
+1→N
 29→P
 P→R
-40→G
+20→G
 Goto 1
 Lbl 12
 EffÉcran
@@ -163,28 +163,36 @@ Pause
 98→A
 112→P
 P→R
-0→N
-40→G
+1→N
+20→G
 Lbl 1
+If N≤0 ou N>14 ou G≤0 ou G>888870 ou T<0
+Then
+Output(5,1,"----------------
+Output(6,1,"Pas de sauvegarde  
+Output(7,1,"retrouvée !
+Pause 
+EffÉcran
+Goto 88
+Else
 Menu("Menu principal","Découvrir la fôret",DE,"Arène de combat",90,"Donjon secret",CO,"Mes Pokémons",PO,"Laboratoire",SO,"Boutique",BO,"Mon profil",PR,"Retour",Z
 Lbl PR
 EffÉcran
 Output(1,7,"Vue de profil
-If N=0:G=20
-If N=1:G=70
-If N=2:G=170
-If N=3:G=370
-If N=4:G=480
-If N=5:G=800
-If N=6:G=1250
-If N=7:G=2048
-If N=8:G=3160
-If N=9:G=4710
-If N=10:G=6200
-If N=11:G=8092
-If N=12:G=11300
-If N=13:G=15275
-If N=14:G=20000
+If N=1:20→G
+If N=2:70→G
+If N=3:170→G
+If N=4:370→G
+If N=5:870→G
+If N=6:1870→G
+If N=7:3870→G
+If N=8:8870→G
+If N=9:18870→G
+If N=10:38870→G
+If N=11:88870→G
+If N=12:188870→G
+If N=13:388870→G
+If N=14:888870→G
 Output(3,9,Chn1
 Output(4,1,"--------------------------
 Output(5,1,"Niveau"
@@ -193,13 +201,16 @@ Output(6,1,"EXP:
 Output(6,6,F
 Output(6,11,""
 Output(6,12,G
-
-
-
-
-
-
-
+Output(8,1,"Nombre de victoires :
+Output(8,23,T
+Pause 
+EffÉcran
+Goto 1
+If N>14
+Output(3,9,Chn1
+Output(4,1,"--------------------------
+Output(5,1,"Niveau 15
+Output(6,1,"EXP: 888870 (max)
 Pause 
 EffÉcran
 Goto 1
@@ -253,7 +264,7 @@ EffÉcran
 Output(4,1,"----------------
 Output(5,1,Chn2
 Output(6,1,"a gagné 25 PV !
-Output(8,1,"Potions restantes :999999
+Output(8,1,"Potions restantes :
 Pause 
 EffÉcran
 Goto UP
@@ -276,7 +287,7 @@ EffÉcran
 Output(4,1,"----------------
 Output(5,1,Chn2
 Output(6,1,"a gagné 50 PV !
-Output(8,1,"Potions restantes :999999
+Output(8,1,"Potions restantes :
 Pause 
 EffÉcran
 Goto UP
@@ -299,7 +310,7 @@ EffÉcran
 Output(4,1,"----------------
 Output(5,1,Chn2
 Output(6,1,"a gagné 100 PV !
-Output(8,1,"Potions restantes :999999
+Output(8,1,"Potions restantes :
 Pause 
 EffÉcran
 Goto UP
@@ -322,7 +333,7 @@ EffÉcran
 Output(4,1,"----------------
 Output(5,1,Chn2
 Output(6,1,"a gagné 250 PV !
-Output(8,1,"Potions restantes :999999
+Output(8,1,"Potions restantes :
 Pause 
 EffÉcran
 Goto UP
@@ -345,7 +356,7 @@ Output(4,1,"----------------
 Output(5,1,Chn2
 Output(6,1,"a regagné tous
 Output(7,1,"ses PV !
-Output(9,1,"Potions restantes :999999
+Output(9,1,"Potions restantes :
 Pause 
 EffÉcran
 Goto UP
@@ -930,13 +941,21 @@ If P>0:Goto 29
 Lbl 26
 Output(6,1,"----------------
 Output(7,1,"Vous êtes mort !
-Pause 
+nbrAléatEnt(2,7)→L
+Disp "EXP: +
+Disp L
+F+L→F
+Output(6,1,"----------------
+Output(7,1,"
 0→P
-Goto 1
+Pause 
+EffÉcran
+Goto 58
 Lbl 28
 Output(6,1,"----------------
 Output(7,1,"Vous avez gagné !
-If N=0
+T+1→T
+If N=1
 Then
 20→G
 nbrAléatEnt(5,10)→L
@@ -949,7 +968,7 @@ Pause
 EffÉcran
 Goto 58
 Else
-If N=1
+If N=2
 Then
 70→G
 nbrAléatEnt(10,15)→L
@@ -962,7 +981,7 @@ Pause
 EffÉcran
 Goto 58
 Else
-If N=2
+If N=3
 Then
 170→G
 nbrAléatEnt(25,35)→L
@@ -975,7 +994,7 @@ Pause
 EffÉcran
 Goto 58
 Else
-If N=3
+If N=4
 Then
 370→G
 nbrAléatEnt(35,55)→L
@@ -988,7 +1007,7 @@ Pause
 EffÉcran
 Goto 58
 Else
-If N=4
+If N=5
 Then
 770→G
 nbrAléatEnt(45,65)→L
@@ -1001,7 +1020,7 @@ Pause
 EffÉcran
 Goto 58
 Else
-If N=5
+If N=6
 Then
 1770→G
 nbrAléatEnt(55,80)→L
@@ -1014,7 +1033,7 @@ Pause
 EffÉcran
 Goto 58
 Else
-If N=6
+If N=7
 Then
 3770→G
 nbrAléatEnt(70,105)→L
@@ -1027,7 +1046,7 @@ Pause
 EffÉcran
 Goto 58
 Else
-If N=7
+If N=8
 Then
 8770→G
 nbrAléatEnt(95,145)→L
@@ -1040,23 +1059,10 @@ Pause
 EffÉcran
 Goto 58
 Else
-If N=8
-Then
-8770→G
-nbrAléatEnt(110,185)→L
-Disp "EXP: +
-Disp L
-F+L→F
-Output(6,1,"----------------
-Output(7,1,"
-Pause 
-EffÉcran
-Goto 58
-Else
 If N=9
 Then
-18770→G
-nbrAléatEnt(155,215)→L
+18700→G
+nbrAléatEnt(110,185)→L
 Disp "EXP: +
 Disp L
 F+L→F
@@ -1069,7 +1075,7 @@ Else
 If N=10
 Then
 38770→G
-nbrAléatEnt(205,295)→L
+nbrAléatEnt(155,215)→L
 Disp "EXP: +
 Disp L
 F+L→F
@@ -1081,7 +1087,20 @@ Goto 58
 Else
 If N=11
 Then
-73770→G
+88770→G
+nbrAléatEnt(205,295)→L
+Disp "EXP: +
+Disp L
+F+L→F
+Output(6,1,"----------------
+Output(7,1,"
+Pause 
+EffÉcran
+Goto 58
+Else
+If N=12
+Then
+188770→G
 nbrAléatEnt(285,400)→L
 Disp "EXP: +
 Disp L
@@ -1091,9 +1110,9 @@ Output(7,1,"
 Pause 
 EffÉcran
 Goto 58
-If N=12
+If N=13
 Then
-11375→G
+388770→G
 nbrAléatEnt(315,520)→L
 Disp "EXP: +
 Disp L
@@ -1103,8 +1122,23 @@ Output(7,1,"
 Pause 
 EffÉcran
 Goto 58
-
-
+If N=14
+Then
+888770→G
+nbrAléatEnt(315,520)→L
+Disp "EXP: +
+Disp L
+F+L→F
+Output(6,1,"----------------
+Output(7,1,"
+Pause 
+EffÉcran
+Goto 58
+If N>14
+Then
+Output(6,1,"----------------
+Output(7,1,"Niveau maximum !
+Goto 1
 Lbl 58
 If F≥G:Goto 99
 Goto 1
@@ -1116,6 +1150,7 @@ N+1→N
 A+3→A
 P+7→P
 R+7→R
+R→P
 Output(6,1,"----------------
 Output(7,1,"Niveau supérieur:
 Output(7,18,N
