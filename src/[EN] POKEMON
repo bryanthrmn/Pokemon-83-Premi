@@ -7,7 +7,7 @@ Output(2,2,"·.*POKEMON 83 PREMIUM*.·
 
 Output(3,9,"V:1.7 BETA 2
 Output(5,8,"By KENSHI
-Output(7,4,"Revived by CAPYSQUID
+Output(7,4,"Remade by CAPYSQUID
 Output(10,1,"--------------------------
 For(I,1,10
 40!:End
@@ -35,13 +35,13 @@ Pause
 Lbl M
 ClrHome
 Lbl 88
-Menu(" ·.*POKEMON 83 PREMIUM*.·     ","NEW GAME",0,"RESUME GAME",1,"CREDITS",C,"GAME IMPROVEMENTS",K,"QUIT",Q
+Menu(" ·.*POKéMON 83 PREMIUM*.·     ","NEW GAME",0,"RESUME GAME",1,"CREDITS",C,"GAME IMPROVEMENTS",K,"QUIT",Q
 
 Lbl K
 Disp "VERSION: 1.7 [BETA 2]"
 Disp "02 January 2022"
 Disp ""
-Disp "- 100 pokemons available"
+Disp "- 100 Pokémon available"
 Disp "- Added a CEsium logo"
 Disp "- Added a CEsium" 
 Disp "  description"
@@ -51,8 +51,8 @@ Disp "VERSION: 1.7 [BETA 2]"
 Disp "02 January 2022"
 Disp ""
 Disp "- Ability to flee"
-Disp "  every fight"
-Disp "- Added a shop in-game"
+Disp "  from any fight"
+Disp "- Added an in-game shop"
 Disp "- Bug fixes"
 Pause 
 ClrHome
@@ -60,7 +60,7 @@ Goto 88
 Lbl Q
 ClrHome:Stop
 Lbl C
-Disp "POKEMON 83 PREMIUM","","       Producer : ","    Kenshi Corporation","","      Developers :","       Capysquid","         Shadow"
+Disp "POKéMON 83 PREMIUM","","       Producer : ","    Kenshi Corporation","","      Developers :","       Capysquid","         Shadow"
 Output(10,1,"Copyright 2014 - 2022
 Pause 
 ClrHome
@@ -93,12 +93,12 @@ Pause
 ClrHome
 Output(6,1,"----------------
 Output(7,1,"I am Professor
-Output(8,1,"Oephorbe !
+Output(8,1,"Oephorbe!
 Pause 
 ClrHome
 Output(6,1,"----------------
 Output(7,1,"Choose your         
-Output(8,1,"Pokemon, quick!
+Output(8,1,"Pokémon, quick!
 Pause 
 ClrHome
 Menu("POKEMON CHOICE","MAGIKARP",11,"PIKACHU",12,"ROWLET",48,"METANG",ZR
@@ -164,7 +164,7 @@ P→R
 1→N
 20→G
 Lbl 1
-Menu("Main menu","Discover the forest",DE,"Fighting arena",90,"Secret dungeon",CO,"My Pokemons",PO,"Heal",SO,"Shop",BO,"My profile",PR,"Return",Z
+Menu("Main menu","Enter the forest",DE,"Fighting arena",90,"Secret dungeon",CO,"My Pokémon",PO,"Heal",SO,"Shop",BO,"My profile",PR,"Return",Z
 Lbl PR
 ClrHome
 Output(1,7,"View profile
@@ -206,7 +206,7 @@ Goto 1
 Lbl DE
 ClrHome
 Output(6,1,"----------------
-Output(7,1,"Discover the forest
+Output(7,1,"Enter the forest
 Output(8,1,"Added in version 1.9 of the game...
 Pause 
 ClrHome
@@ -216,20 +216,20 @@ ClrHome
 Goto 88
 Lbl PO
 ClrHome
-Disp "Pokemon #1:",Str2
+Disp "Pokémon #1:",Str2
 Pause 
 ClrHome
 Goto 1
 If N>9
 Then
-Disp "Pokemon #1:",Str2
-Disp "Pokemon #2:",Str6
+Disp "Pokémon #1:",Str2
+Disp "Pokémon #2:",Str6
 Pause 
 Goto 1
 Lbl SO
-Menu("Heal pokemons","Use health potion",UP,"Let pokemon rest",PR,"Retour",OF
+Menu("Heal Pokémon","Use health potion",UP,"Let Pokémon rest",PR,"Back",OF
 Lbl UP
-Menu("Choix de potion","+25 health points",1A,"+50 health points",1B,"+100 health points",1C,"+250 health points",1D,"Max boost",1E,"Return",ZZ
+Menu("Choose potion","+25 health points",1A,"+50 health points",1B,"+100 health points",1C,"+250 health points",1D,"Max boost",1E,"Back",ZZ
 If P≤0
 Then
 0→P
@@ -251,7 +251,7 @@ Else
 ClrHome
 Output(4,1,"----------------
 Output(5,1,Str2
-Output(6,1,"just won 25 HP!
+Output(6,1,"just gained 25 HP!
 Output(8,1,"Potions left:
 Pause 
 ClrHome
@@ -274,7 +274,7 @@ Else
 ClrHome
 Output(4,1,"----------------
 Output(5,1,Str2
-Output(6,1,"a just won 50 HP!
+Output(6,1,"just gained 50 HP!
 Output(8,1,"Potions left:
 Pause 
 ClrHome
@@ -297,7 +297,7 @@ Else
 ClrHome
 Output(4,1,"----------------
 Output(5,1,Str2
-Output(6,1,"just won 100 HP!
+Output(6,1,"just gained 100 HP!
 Output(8,1,"Potions left:
 Pause 
 ClrHome
@@ -320,7 +320,7 @@ Else
 ClrHome
 Output(4,1,"----------------
 Output(5,1,Str2
-Output(6,1,"just won 250 HP!
+Output(6,1,"just gained 250 HP!
 Output(8,1,"Potions left:
 Pause 
 ClrHome
@@ -373,7 +373,7 @@ Lbl 62
 DelVar X
 1→W
 1→θ
-"Lougaroc"→Str5
+"Lycanroc"→Str5
 245→E
 49→B
 Lbl BO
@@ -386,7 +386,7 @@ Pause
 ClrHome
 Goto 1
 Else
-Menu("Shop","My inventory",IN,"Buy health potion",PS,"Buy attack potion",PA,"Buy pokeballs",AP,"Buy equipment",AG,"Return",OF
+Menu("Shop","My inventory",IN,"Buy health potion",PS,"Buy attack potion",PA,"Buy pokéballs",AP,"Buy equipment",AG,"Back",OF
 Lbl PS
 Goto 1
 Lbl PA
@@ -399,7 +399,7 @@ Lbl 70
 DelVar X
 1→W
 1→θ
-"Carchacrock"→Str5
+"Garchomp"→Str5
 402→E
 115→B
 Goto 31
@@ -423,14 +423,14 @@ DelVar WDelVar θ
 If P≤0
 Then
 Output(6,1,"----------------
-Output(7,1,"Your pokemon seems to be weak.
-Output(8,1,"Go and heal him!
+Output(7,1,"Your Pokémon seems to be weak.
+Output(8,1,"You should heal him!
 Pause 
 ClrHome
 Goto 1
 Else
 Output(6,1,"----------------
-Output(7,1,"A wild pokemon just
+Output(7,1,"A wild Pokémon just
 Output(8,1,"appeared on your path!
 Pause 
 ClrHome
@@ -442,7 +442,7 @@ ClrHome
 If θ=1 and W>1:Goto 32
 randInt(1,102)→X
 If X=1:Str2→Str5
-If X=2:"Stalking"→Str5
+If X=2:"Slaking"→Str5
 If X=3:"Eternatos"→Str5
 If X=4:"Mewtwo"→Str5
 If X=5:"Groudon"→Str5
@@ -452,7 +452,7 @@ If X=8:"Reshiram"→Str5
 If X=9:"Dialga"→Str5
 If X=10:"Meloetta"→Str5
 If X=11:"Garchomp"→Str5
-If X=12:"Blizzeval"→Str5
+If X=12:"Glastrier"→Str5
 If X=13:"Ho-Oh"→Str5
 If X=14:"Rayquaza"→Str5
 If X=15:"Tyranitar"→Str5
@@ -467,7 +467,7 @@ If X=23:"Ryperior"→Str5
 If X=24:"Lugia"→Str5
 If X=25:"Keldeo"→Str5
 If X=26:"Terrakium"→Str5
-If X=27:"Volcanora"→Str5
+If X=27:"Volcorona"→Str5
 If X=28:"Volcanion"→Str5
 If X=29:"Hydreigon"→Str5
 If X=30:"Urshifu"→Str5
@@ -491,7 +491,7 @@ If X=47:"Tornadus"→Str5
 If X=48:"Conkledurr"→Str5
 If X=49:"Togekiss"→Str5
 If X=50:"Archeops"→Str5
-If X=51:"Mammoswine"→Str5
+If X=51:"Mamoswine"→Str5
 If X=52:"Rillaboom"→Str5
 If X=53:"Rampardos"→Str5
 If X=54:"Chandelure"→Str5
@@ -862,7 +862,7 @@ Goto 1
 Lbl ON
 Goto 29
 Lbl JT
-Menu("You will lose your actual pokemon...","Continue",XY,"Return",29
+Menu("You will lose your Pokémon...","Continue",XY,"Return",29
 Lbl XY
 randInt(1,6)→L
 If L=1
@@ -879,7 +879,7 @@ Goto 28
 Else
 ClrHome
 Output(6,1,"-----------------
-Output(7,1,"He broke out!
+Output(7,1,"He broke free!
 Pause 
 ClrHome
 Goto 50
@@ -903,7 +903,7 @@ ClrHome
 E-A→E
 If E≤0:Goto 28
 Output(6,1,"----------------
-Output(7,1,"That is usefull!
+Output(7,1,"That is useful!
 Pause 
 ClrHome
 Lbl 50
@@ -921,14 +921,14 @@ Pause
 ClrHome
 P-B→P
 Output(6,1,"----------------
-Output(7,1,"That is painfull!
+Output(7,1,"That is painful!
 Pause 
 ClrHome
 If P≤0:Goto 26
 If P>0:Goto 29
 Lbl 26
 Output(6,1,"----------------
-Output(7,1,"Your pokemon has been defeated!
+Output(7,1,"Your Pokémon has been defeated!
 nbrAléatEnt(2,7)→L
 Disp "EXP: +
 Disp L
