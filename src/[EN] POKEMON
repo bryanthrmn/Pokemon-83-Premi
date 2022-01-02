@@ -39,7 +39,7 @@ Menu(" ·.*POKEMON 83 PREMIUM*.·     ","NEW GAME",0,"RESUME GAME",1,"CREDITS",C
 
 Lbl K
 Disp "VERSION: 1.7 [BETA 2]"
-Disp "31 December 2021"
+Disp "02 January 2022"
 Disp ""
 Disp "- 100 pokemons available"
 Disp "- Added a CEsium logo"
@@ -48,7 +48,7 @@ Disp "  description"
 Pause 
 ClrHome
 Disp "VERSION: 1.7 [BETA 2]"
-Disp "31 December 2021"
+Disp "02 January 2022"
 Disp ""
 Disp "- Ability to flee"
 Disp "  every fight"
@@ -61,7 +61,7 @@ Lbl Q
 ClrHome:Stop
 Lbl C
 Disp "POKEMON 83 PREMIUM","","       Producer : ","    Kenshi Corporation","","      Developers :","       Capysquid","         Shadow"
-Output(10,1,"Copyright 2014 - 2021
+Output(10,1,"Copyright 2014 - 2022
 Pause 
 ClrHome
 Goto 88
@@ -81,7 +81,8 @@ DelVar Str8
 DelVar Str9
 DelVar Str0
 DelVar FDelVar J
-100→G
+DelVar T
+DelVar N
 Input "Enter name:",Str1
 ClrHome
 Output(6,1,"----------------
@@ -110,7 +111,7 @@ Output(6,1,"----------------
 132→A
 138→P
 P→R
-0→N
+1→N
 40→G
 Pause 
 ClrHome
@@ -127,8 +128,8 @@ Output(6,1,"----------------
 55→A
 68→P
 P→R
-0→N
-40→G
+1→N
+20→G
 Pause 
 ClrHome
 Goto 1
@@ -142,10 +143,10 @@ ClrHome
 "Water gun"→Str3
 "Splash"→Str4
 78→A
-0→N
+1→N
 29→P
 P→R
-40→G
+20→G
 Goto 1
 Lbl 12
 ClrHome
@@ -160,28 +161,27 @@ Pause
 98→A
 112→P
 P→R
-0→N
-40→G
+1→N
+20→G
 Lbl 1
 Menu("Main menu","Discover the forest",DE,"Fighting arena",90,"Secret dungeon",CO,"My Pokemons",PO,"Heal",SO,"Shop",BO,"My profile",PR,"Return",Z
 Lbl PR
 ClrHome
 Output(1,7,"View profile
-If N=0:G=40
-If N=1:G=70
-If N=2:G=140
-If N=3:G=290
-If N=4:G=480
-If N=5:G=800
-If N=6:G=1250
-If N=7:G=2048
-If N=8:G=3160
-If N=9:G=4710
-If N=10:G=6200
-If N=11:G=8092
-If N=12:G=11300
-If N=13:G=15275
-If N=14:G=20000
+If N=1:20→G
+If N=2:70→G
+If N=3:170→G
+If N=4:370→G
+If N=5:870→G
+If N=6:1870→G
+If N=7:3870→G
+If N=8:8870→G
+If N=9:18870→G
+If N=10:38870→G
+If N=11:88870→G
+If N=12:188870→G
+If N=13:388870→G
+If N=14:888870→G
 Output(3,9,Str1
 Output(4,1,"--------------------------
 Output(5,1,"Level"
@@ -190,13 +190,16 @@ Output(6,1,"EXP:
 Output(6,6,F
 Output(6,11,""
 Output(6,12,G
-
-
-
-
-
-
-
+Output(8,1,"Number of victories :
+Output(8,23,T
+Pause 
+EffÉcran
+Goto 1
+If N>14
+Output(3,9,Chn1
+Output(4,1,"--------------------------
+Output(5,1,"Level max
+Output(6,1,"EXP: 888870 (max)
 Pause 
 ClrHome
 Goto 1
@@ -853,7 +856,7 @@ ClrHome
 Lbl 29
 Menu("FIGHT!",Str3,21,Str4,22,"Capture",JT,"Run away",FU
 Lbl FU
-Menu("Confirm escape?","yes, escape",OF,"No, stay in the arena",ON
+Menu("Confirm escape?","Yes, escape",OF,"No, stay in the arena",ON
 Lbl OF
 Goto 1
 Lbl ON
@@ -926,15 +929,23 @@ If P>0:Goto 29
 Lbl 26
 Output(6,1,"----------------
 Output(7,1,"Your pokemon has been defeated!
-Pause 
+nbrAléatEnt(2,7)→L
+Disp "EXP: +
+Disp L
+F+L→F
+Output(6,1,"----------------
+Output(7,1," 
 0→P
-Goto 1
+Pause 
+EffÉcran
+Goto 58
 Lbl 28
 Output(6,1,"----------------
 Output(7,1,"You win!
-If N=0
+T+1→T
+If N=1
 Then
-40→G
+20→G
 randInt(10,20)→L
 Disp "EXP: +
 Disp L
@@ -945,7 +956,7 @@ Pause
 ClrHome
 Goto 58
 Else
-If N=1
+If N=2
 Then
 70→G
 randInt(15,30)→L
@@ -958,23 +969,10 @@ Pause
 ClrHome
 Goto 58
 Else
-If N=2
-Then
-140→G
-randInt(25,35)→L
-Disp "EXP: +
-Disp L
-F+L→F
-Output(6,1,"----------------
-Output(7,1,"
-Pause 
-ClrHome
-Goto 58
-Else
 If N=3
 Then
-290→G
-randInt(35,55)→L
+170→G
+randInt(25,35)→L
 Disp "EXP: +
 Disp L
 F+L→F
@@ -986,8 +984,8 @@ Goto 58
 Else
 If N=4
 Then
-480→G
-randInt(45,65)→L
+370→G
+randInt(35,55)→L
 Disp "EXP: +
 Disp L
 F+L→F
@@ -999,8 +997,8 @@ Goto 58
 Else
 If N=5
 Then
-800→G
-randInt(55,80)→L
+870→G
+randInt(45,65)→L
 Disp "EXP: +
 Disp L
 F+L→F
@@ -1012,8 +1010,8 @@ Goto 58
 Else
 If N=6
 Then
-1250→G
-randInt(70,105)→L
+1870→G
+randInt(55,80)→L
 Disp "EXP: +
 Disp L
 F+L→F
@@ -1025,8 +1023,8 @@ Goto 58
 Else
 If N=7
 Then
-2048→G
-randInt(95,145)→L
+3870→G
+randInt(70,105)→L
 Disp "EXP: +
 Disp L
 F+L→F
@@ -1038,8 +1036,8 @@ Goto 58
 Else
 If N=8
 Then
-3160→G
-randInt(110,185)→L
+8870→G
+randInt(95,145)→L
 Disp "EXP: +
 Disp L
 F+L→F
@@ -1051,8 +1049,8 @@ Goto 58
 Else
 If N=9
 Then
-4790→G
-randInt(155,215)→L
+18870→G
+randInt(110,185)→L
 Disp "EXP: +
 Disp L
 F+L→F
@@ -1064,8 +1062,8 @@ Goto 58
 Else
 If N=10
 Then
-6930→G
-randInt(205,295)→L
+38870→G
+randInt(155,215)→L
 Disp "EXP: +
 Disp L
 F+L→F
@@ -1077,7 +1075,20 @@ Goto 58
 Else
 If N=11
 Then
-9725→G
+88870→G
+randInt(205,295)→L
+Disp "EXP: +
+Disp L
+F+L→F
+Output(6,1,"----------------
+Output(7,1,"
+Pause 
+ClrHome
+Goto 58
+Else
+If N=12
+Then
+188870→G
 randInt(285,400)→L
 Disp "EXP: +
 Disp L
@@ -1087,9 +1098,9 @@ Output(7,1,"
 Pause 
 ClrHome
 Goto 58
-If N=12
+If N=13
 Then
-11375→G
+388870→G
 randInt(315,520)→L
 Disp "EXP: +
 Disp L
@@ -1099,7 +1110,23 @@ Output(7,1,"
 Pause 
 ClrHome
 Goto 58
-
+If N=14
+Then
+888770→G
+nbrAléatEnt(315,520)→L
+Disp "EXP: +
+Disp L
+F+L→F
+Output(6,1,"----------------
+Output(7,1,"
+Pause 
+ClrHome
+Goto 58
+If N>14
+Then
+Output(6,1,"----------------
+Output(7,1,"Level max!
+Goto 1
 
 Lbl 58
 If F≥G:Goto 99
@@ -1112,6 +1139,7 @@ N+1→N
 A+3→A
 P+7→P
 R+7→R
+R→P
 Output(6,1,"----------------
 Output(7,1,"Level up:
 Output(7,18,N
