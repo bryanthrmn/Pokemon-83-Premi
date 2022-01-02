@@ -6,20 +6,52 @@
 
 
 
-# Dictionnaire des labels (version 1.8 et supérieur)
-0;
-1;
-2;
-3;
-4;
-5;
-6;
-7;
-8;
-9;
-A;
-B;
-C;
-D;
-E;
-F;
+## Dictionnaire des labels (version 1.8 et supérieur)
+#Chaînes
+Chn1 : Nom du joueur
+Chn2 : Nom du Pokémon n°1
+Chn3 : Nom de l'attaque n°1 du Pokémon n°1
+Chn4 : Nom de l'attaque n°2 du Pokémon n°1
+Chn5 : Nom du Pokémon n°2
+Chn6 : Nom de l'attaque n°1 du Pokémon n°2
+Chn7 : Nom de l'attaque n°2 du Pokémon n°2
+Chn8 : Nom du Pokémon ennemi
+Chn9 : Nom de l'attaque n°1 du Pokémon ennemi ; fonction aléatoire nécessaire
+Chn0 : Nom de l'attaque n°2 du Pokémon ennemi ; fonction aléatoire nécessaire
+
+#Labels
+  0; Menu d'accueil
+1; Menu d'accueil >> Nouvelle partie
+2; Menu d'accueil >> Continuer partie (Menu principal)
+3; Menu d'accueil >> Crédits
+4; Menu d'accueil >> Améliorations du jeu
+5; Menu d'accueil >> Quitter
+
+  6; Menu principal
+7; Menu principal >> Evènements spéciaux ; version 1.8
+8; Menu principal >> Découvrir la forêt ; programmer cette partie en graphique
+9; Menu principal >> Arène de combat ; rendre disponible au niveau 13 (version 1.8)
+10; Menu principal >> Mes Pokémons ; afficher un statut détaillé pour chaque pokémon
+11; Menu principal >> Laboratoire ; 
+12; Menu principal >> Boutique ; ajouter une monnaie + ajouter "mon inventaire"
+13; Menu principal >> Mon profil ; afficher les pokémon découverts (par combat)
+14; Menu principal >> Retour (Menu d'accueil)
+15;
+16;
+17;
+18;
+19;
+1A;
+1B;
+1C;
+1D;
+
+
+
+#Données
+A; Attaque du pokémon n°1
+B; Santé du pokémon n°1
+C; Défense du pokémon n°1
+D; Attaque du pokémon n°2
+E; Santé du pokémon n°2
+F; Défense du pokémon n°2
