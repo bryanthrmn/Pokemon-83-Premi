@@ -1,6 +1,7 @@
 :"Pokemon 83 Premium
 :"888888888888888888883333333388888883222222223888883222222222238883222222222222388322222222222238832222222222223883222233332222388F33333DD33333F883BBBB3333BBBB3883BBBBBBBBBBBB3883BBBBBBBBBBBB3883BBBBBBBBBBBB38883BBBBBBBBBB38888833333333338888888888888888888"
 EffÉcran
+
 DelVar θDelVar W
 Output(1,1,"--------------------------
 Output(2,2,"·.*POKEMON 83 PREMIUM*.·
@@ -67,6 +68,10 @@ Disp "POKEMON 83 PREMIUM","","       Producteur : ","    Kenshi Corporation","",
 Output(10,1,"Copyright 2014 - 2022
 Pause 
 EffÉcran
+Disp "      Réalisateurs :","       TIny-Hacker","      Lil Nas X3009",""," Traducteurs [version EN]","         Shadow","       TIny-Hacker"
+Output(10,1,"Copyright 2014 - 2022
+Pause 
+EffÉcran
 Goto 88
 Lbl 0
 Menu("Confirmer ?","Oui",89,"Non",88
@@ -85,12 +90,13 @@ DelVar Chn9
 DelVar Chn0
 DelVar T
 DelVar FDelVar J
+DelVar N
 Input "Entrer votre nom :",Chn1
 EffÉcran
 Output(6,1,"----------------
 Output(7,1,"Bonjour
 Output(7,9,Chn1
-Output(7,15,"!
+Output(7,16,"!
 Pause 
 EffÉcran
 Output(6,1,"----------------
@@ -103,11 +109,11 @@ Output(7,1,"Choisis ton
 Output(8,1,"Pokémon, vite!
 Pause 
 EffÉcran
-Menu("CHOIX DU POKEMON","MAGICARPE",11,"PIKACHU",12,"BRINDIBOU",48,"MÉTANG",ZR
+Menu("Choix du pokémon","Magicarpe",11,"Pikachu",12,"Brindibou",48,"Métang",ZR
 Lbl ZR
 Output(7,1,"Tu as fait un bon choix.
 Output(6,1,"----------------
-"Métang"→Chn2
+"Metang"→Chn2
 "Ultralaser"→Chn3
 "Bélier"→Chn4
 132→A
@@ -170,7 +176,7 @@ If N≤0 ou N>14 ou G≤0 ou G>888870 ou T<0
 Then
 Output(5,1,"----------------
 Output(6,1,"Pas de sauvegarde  
-Output(7,1,"retrouvée !
+Output(7,1,"retrouvee !
 Pause 
 EffÉcran
 Goto 88
@@ -180,19 +186,18 @@ Lbl PR
 EffÉcran
 Output(1,7,"Vue de profil
 If N=1:20→G
-If N=2:70→G
-If N=3:170→G
-If N=4:370→G
-If N=5:870→G
-If N=6:1870→G
-If N=7:3870→G
-If N=8:8870→G
-If N=9:18870→G
-If N=10:38870→G
-If N=11:88870→G
-If N=12:188870→G
-If N=13:388870→G
-If N=14:888870→G
+If N=2:50→G
+If N=3:100→G
+If N=4:200→G
+If N=5:500→G
+If N=6:1000→G
+If N=7:2000→G
+If N=8:5000→G
+If N=9:10000→G
+If N=10:20000→G
+If N=11:35000→G
+If N=12:50000→G
+If N=13:80000→G
 Output(3,9,Chn1
 Output(4,1,"--------------------------
 Output(5,1,"Niveau"
@@ -206,11 +211,11 @@ Output(8,23,T
 Pause 
 EffÉcran
 Goto 1
-If N>14
+If N=14
 Output(3,9,Chn1
 Output(4,1,"--------------------------
-Output(5,1,"Niveau 15
-Output(6,1,"EXP: 888870 (max)
+Output(5,1,"Niveau 14
+Output(6,1,"EXP: maximum
 Pause 
 EffÉcran
 Goto 1
@@ -228,15 +233,20 @@ EffÉcran
 Goto 88
 Lbl PO
 EffÉcran
-Disp "Pokémon 1:",Chn2
-Pause 
-EffÉcran
-Goto 1
-If N>9
+If N≥9
 Then
-Disp "Pokémon 1:",Chn2
-Disp "Pokémon 2:",Chn6
-Pause 
+Goto 62
+EffÉcran
+Else
+Goto 61
+EffÉcran
+Lbl 61
+Menu("Mes pokémons",Chn2,27,"Retour",OF
+Lbl 27
+Goto 1
+Lbl 62
+Menu("Mes pokémons",Chn2,27,Chn6,28,"Retour",OF
+Lbl 28
 Goto 1
 Lbl SO
 Menu("Soigner pokémons","Utiliser potions de soin",UP,"Patienter pour réanimer",RA,"Retour",OF
@@ -865,8 +875,18 @@ Output(7,1,"Pokémon ennemi:
 Output(8,1,Chn5
 Pause 
 EffÉcran
+If N<6
+Goto 29
+If N<9
+Goto 30
+If N≥9
+Goto 31
 Lbl 29
 Menu("COMBAT!",Chn3,21,Chn4,22,"Capturer",JT,"Fuir",FU
+Lbl 30
+Menu("COMBAT!",Chn3,21,Chn4,22,"Utiliser potion",46,"Capturer",JT,"Fuir",FU
+Lbl 31
+Menu("COMBAT!",Chn3,21,Chn4,22,"Utiliser potion",46,"Changer de pokémon",38,"Capturer",JT,"Fuir",FU
 Lbl FU
 Menu("Confirmer la fuite ?","Oui, fuir",OF,"Non, rester dans l'arène",ON
 Lbl OF
@@ -874,20 +894,25 @@ Goto 1
 Lbl ON
 Goto 29
 Lbl JT
-Menu("Tu perdras ton pokémon actuel...","Continuer",XY,"Retour",29
+Menu("Un pokémon risque d'être perdu","Continuer",XY,"Retour",29
 Lbl XY
+Menu("Choix de pokéball","Pokéball simple",3A,"Super ball",3B,"Hyper ball",3C
+Lbl 3A
+nbrAléatEnt(1,8)→L
+Goto 5G
+Lbl 3B
 nbrAléatEnt(1,6)→L
+Goto 5G
+Lbl 3A
+nbrAléatEnt(1,4)→L
+Goto 5G
+Lbl 5G
 If L=1
 Then
 EffÉcran
 Output(6,1,"-----------------
 Output(7,1,"Tu l'as capturé !
-Pause 
-Chn5→Chn2
-B→A
-E→P
-P→R
-Goto 28
+Goto 4A
 Else
 EffÉcran
 Output(6,1,"-----------------
@@ -895,6 +920,42 @@ Output(7,1,"Il s'est libéré !
 Pause 
 EffÉcran
 Goto 50
+Lbl 4A
+If N≥9:
+Menu("Choix de l'emplacement",Chn1,6A,Chn6,6B,"Abandonner la pokéball",6C
+Else
+Menu("Choix de l'emplacement",Chn1,6A,"Abandonner la pokéball",6C
+Lbl 6A
+Output(4,1,"-----------------
+Output(5,1,Chn2
+Output(6,1,"a été remplacé par
+Output(7,1,Chn5
+Pause 
+Chn5→Chn2
+B→A
+E→P
+P→R
+Goto 28
+Lbl 6B
+Output(4,1,"-----------------
+Output(5,1,Chn6
+Output(6,1,"a été remplacé par
+Output(7,1,Chn5
+Pause 
+Chn5→Chn6
+B→U
+E→Q
+Q→H
+Goto 28
+Lbl 6C
+Menu("Confirmer ?","Oui",5M,"Non",5L
+Lbl 5M
+Output(5,1,"-----------------
+Output(6,1,Chn5
+Output(6,1,"a été abandonné
+Pause
+EffÉcran
+Goto 28
 Lbl 21
 21→Z
 Goto 27
@@ -970,7 +1031,7 @@ Goto 58
 Else
 If N=2
 Then
-70→G
+50→G
 nbrAléatEnt(10,15)→L
 Disp "EXP: +
 Disp L
@@ -983,7 +1044,7 @@ Goto 58
 Else
 If N=3
 Then
-170→G
+100→G
 nbrAléatEnt(25,35)→L
 Disp "EXP: +
 Disp L
@@ -996,7 +1057,7 @@ Goto 58
 Else
 If N=4
 Then
-370→G
+200→G
 nbrAléatEnt(35,55)→L
 Disp "EXP: +
 Disp L
@@ -1009,7 +1070,7 @@ Goto 58
 Else
 If N=5
 Then
-770→G
+500→G
 nbrAléatEnt(45,65)→L
 Disp "EXP: +
 Disp L
@@ -1022,7 +1083,7 @@ Goto 58
 Else
 If N=6
 Then
-1770→G
+1000→G
 nbrAléatEnt(55,80)→L
 Disp "EXP: +
 Disp L
@@ -1035,7 +1096,7 @@ Goto 58
 Else
 If N=7
 Then
-3770→G
+2000→G
 nbrAléatEnt(70,105)→L
 Disp "EXP: +
 Disp L
@@ -1048,7 +1109,7 @@ Goto 58
 Else
 If N=8
 Then
-8770→G
+5000→G
 nbrAléatEnt(95,145)→L
 Disp "EXP: +
 Disp L
@@ -1061,7 +1122,7 @@ Goto 58
 Else
 If N=9
 Then
-18700→G
+10000→G
 nbrAléatEnt(110,185)→L
 Disp "EXP: +
 Disp L
@@ -1074,7 +1135,7 @@ Goto 58
 Else
 If N=10
 Then
-38770→G
+20000→G
 nbrAléatEnt(155,215)→L
 Disp "EXP: +
 Disp L
@@ -1087,7 +1148,7 @@ Goto 58
 Else
 If N=11
 Then
-88770→G
+35000→G
 nbrAléatEnt(205,295)→L
 Disp "EXP: +
 Disp L
@@ -1100,7 +1161,7 @@ Goto 58
 Else
 If N=12
 Then
-188770→G
+50000→G
 nbrAléatEnt(285,400)→L
 Disp "EXP: +
 Disp L
@@ -1112,7 +1173,7 @@ EffÉcran
 Goto 58
 If N=13
 Then
-388770→G
+80000→G
 nbrAléatEnt(315,520)→L
 Disp "EXP: +
 Disp L
@@ -1124,21 +1185,14 @@ EffÉcran
 Goto 58
 If N=14
 Then
-888770→G
-nbrAléatEnt(315,520)→L
-Disp "EXP: +
-Disp L
-F+L→F
 Output(6,1,"----------------
-Output(7,1,"
+Output(7,1,"Niveau maximum !
+Goto 1
 Pause 
 EffÉcran
 Goto 58
 If N>14
 Then
-Output(6,1,"----------------
-Output(7,1,"Niveau maximum !
-Goto 1
 Lbl 58
 If F≥G:Goto 99
 Goto 1
@@ -1148,13 +1202,63 @@ Lbl 99
 EffÉcran
 N+1→N
 A+3→A
-P+7→P
-R+7→R
+P+4→P
+R+4→R
 R→P
-Output(6,1,"----------------
-Output(7,1,"Niveau supérieur:
-Output(7,18,N
+Output(1,1,"----------------
+Output(3,6,"Niveau supérieur:
+Output(3,23,N
+Output(5,1,"Récompenses :
+Output(6,1," +3 points d'attaque
+Output(7,1," +4 points de santé
+If N=6:Output(9,1," Boutique debloquée !
+If N=9:Output(9,1," Pokemon n°2 debloqué !
+If N=13:Output(9,1," Donjon secret débloqué !
+Goto 71
+Lbl 71
+Menu("Choix du pokémon n°2","Evoli",8A,"Héricendre",8B,"Larméléon",8C,"Germignon",8D,"Laisser emplacement vide",8E
+Lbl 8A
+"Evoli"→Chn6
+"Relais"→Chn7
+"Dernier recours"→Chn8
+250→Q
+110→U
+250→H
 Pause 
+Goto 1
+Lbl 8B
+"Héricendre"→Chn6
+"Roue de feu"→Chn7
+"Nitrocharge"→Chn8
+250→Q
+110→U
+250→H
+Pause 
+Goto 1
+Lbl 8C
+"Larméléon"→Chn6
+"Torent"→Chn7
+"Sniper"→Chn8
+250→Q
+110→U
+250→H
+Pause 
+Goto 1
+Lbl 8D
+"Germignon"→Chn6
+"Engrais"→Chn7
+"Feuille garde"→Chn8
+250→Q
+110→U
+250→H
+Pause 
+Goto 1
+Lbl 8E
+Menu("Laisser l'emplacement vide ?","Oui",DP,"Non",LP
+Lbl DP
+Goto 1
+Lbl LP
+Goto 71
 If Chn2="Brindibou" et N≥25 et J=0:Goto 99
 Goto 1
 Lbl 99
@@ -1166,8 +1270,7 @@ Output(6,1,"----------------
 Output(7,1,"Brindibou a évolué !
 Pause 
 EffÉcran
-Output(5,1,"Animation en développement'
-"
+Output(5,1,"Animation en développement
 "Archeduc"→Chn2
 "Tir multiple !"→Chn3
 "Tranche nuit !"→Chn4
