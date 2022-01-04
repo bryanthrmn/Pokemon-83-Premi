@@ -45,7 +45,7 @@ By members on https://tiplanet.org
 
 Producer : Kenshi Corporation
 
-Developers (french version): Capysquid, Shadow and TIny_Hacker
+Developers (french version): Capysquid, Shadow, Lil Nas X3009, TIny_Hacker and Oh11115
 
 Developers (english version): Shadow and TIny_Hacker
 
