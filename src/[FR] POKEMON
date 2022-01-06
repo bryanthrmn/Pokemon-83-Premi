@@ -176,7 +176,7 @@ If N≤0 ou N>14 ou G≤0 ou G>888870 ou T<0
 Then
 Output(5,1,"----------------
 Output(6,1,"Pas de sauvegarde  
-Output(7,1,"retrouvee !
+Output(7,1,"retrouvée !
 Pause 
 EffÉcran
 Goto 88
@@ -446,7 +446,7 @@ If P≤0
 Then
 Output(6,1,"----------------
 Output(7,1,"Ton pokémon est faible.
-Output(8,1,"Va le soigner!
+Output(8,1,"Va le soigner !
 Pause 
 EffÉcran
 Goto 1
