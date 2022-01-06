@@ -6,4 +6,4 @@
 
  [[FR] Pokemon Download](https://github.com/Square-Programming/Pokemon-83-Premium/raw/main/%5BFR%5D%20POKEMON.8xp)
 
- [[EN]Pokemon Download](https://github.com/Square-Programming/Pokemon-83-Premium/raw/main/%5BEN%5D%20POKEMON.8xp)
+ [[EN] Pokemon Download](https://github.com/Square-Programming/Pokemon-83-Premium/raw/main/%5BEN%5D%20POKEMON.8xp)
