@@ -4,6 +4,4 @@
 
 ![image](https://user-images.githubusercontent.com/85101130/147591399-f779c566-3d9c-4708-9eea-43768592f1b2.gif)
 
-   [[FR]  Pokemon Download](https://github.com/Square-Programming/Pokemon-83-Premium/raw/main/%5BFR%5D%20POKEMON.8xp)
-
-   [[EN]  Pokemon Download](https://github.com/Square-Programming/Pokemon-83-Premium/raw/main/%5BEN%5D%20POKEMON.8xp)
+[To download Pokemon-83](https://square-programming.github.io/Pokemon-83-Premium/Download)
