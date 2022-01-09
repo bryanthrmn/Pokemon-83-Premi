@@ -132,7 +132,22 @@
         </nav>
 
         <div class="conteneur">
-          <img alt="GIF DU PROJET" src="https://user-images.githubusercontent.com/85101130/147591399-f779c566-3d9c-4708-9eea-43768592f1b2.gif">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="https://user-images.githubusercontent.com/85101130/147591399-f779c566-3d9c-4708-9eea-43768592f1b2.gif" alt="GIF DU PROJET" width="32" height="32">
+
+            <p>The function bigImg() is triggered when the user moves the mouse pointer over the image.</p>
+            <p>The function normalImg() is triggered when the mouse pointer is moved out of the image.</p>
+
+            <script>
+            function bigImg(x) {
+                x.style.height = "64px";
+                x.style.width = "64px";
+            }
+
+            function normalImg(x) {
+                x.style.height = "32px";
+                x.style.width = "32px";
+            }
+            </script>
         </div>
         </div>
 </html>
