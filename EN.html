@@ -103,13 +103,74 @@
             display: block;
             text-align: center;
           }
+            
+          .wrapper {
+            margin: 80px auto;
+            text-align: center;
+            width: 100%;
+            position: relative;
+            }
+            .TitreB {
+            padding: 15px 100px;
+            margin:10px 4px;
+            color: #ffffff;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            text-align: center;
+            position: relative;
+            text-decoration: none;
+            display:inline-block;
+            }
+            .TitreB{
+            border:1px solid transparent; 
+            -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+            transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+            }
+            .TitreB::before {
+            content: '';
+            position: absolute;
+            left: 0px;
+            bottom:0px;
+            z-index:-1;
+            width: 0%;
+            height:1px;
+            background: #003177;
+            box-shadow: inset 0px 0px 0px #b6cdef;
+            display: block;
+            -webkit-transition: all 0.4s cubic-bezier(.5, .24, 0, 1);
+            transition: all 0.4s cubic-bezier(.5, .24, 0, 1)
+            }
+            .TitreB:hover::before {
+            width:100%;
+            }
+            .TitreB::after {
+            content: '';
+            position: absolute;
+            right: 0px;
+            top:0px;
+            z-index:-1;
+            width: 0%;
+            height:1px;
+            background: #a9c1e8;
+            -webkit-transition: all 0.4s cubic-bezier(.7, .25, 0, 1);
+            transition: all 0.4s cubic-bezier(.7, .25, 0,1)
+            }
+            .TitreB:hover::after {
+            width:100%;
+            }
+            .TitreB:hover{
+            border-left:1px solid #b6cdef;
+            border-right:1px solid #6098FF;
+            }
         </style>
       <style>@media print {#ghostery-tracker-tally {display:none !important}}</style></head>
       <body>
 
+          <div class="wrapper">
+              <a href="https://square-programming.github.io/Pokemon-83-Premium/" class="TitreB">Pokemon 83 Ti</a>
+          </div>
         <div class="txt-center">
         <div class="txt-center">
-            <a href="https://square-programming.github.io/Pokemon-83-Premium/EN">Pokemon 83 Ti</a>
         <nav>
         <nav>
           <ul>
