@@ -1,17 +1,13 @@
 :"Pokemon 83 Premium
 :"888888888888888888883333333388888883222222223888883222222222238883222222222222388322222222222238832222222222223883222233332222388F33333DD33333F883BBBB3333BBBB3883BBBBBBBBBBBB3883BBBBBBBBBBBB3883BBBBBBBBBBBB38883BBBBBBBBBB38888833333333338888888888888888888"
 EffÉcran
-DelVar θDelVar WDelVar NDelVar XDelVar I
-Goto 7N
-Lbl 7N
+DelVar θDelVar WDelVar NDelVar XDelVar IDelVar A
 Output(1,1,"--------------------------
 Output(2,2,"·.*POKEMON 83 PREMIUM*.·
 Output(3,8,"V:1.7 BÊTA 3
 Output(5,3,"De KENSHI CORPORATION
 Output(7,3,"Par SQUARE PROGRAMMING 
 Output(10,1,"--------------------------
-Goto 6P
-Lbl 6P
 nbrAléatEnt(10,20)→X
 For(N,1,X:
 For(I,1,10
@@ -61,24 +57,23 @@ While θ≠105 ou θ≠45
 getKey→θ
 Output(9,1,"                     
 If θ=45:Then:Goto Q:End
-If θ=105:Then:Goto M:End
+If θ=105:Then:Goto 88:End
 Wait 0.5
 Output(9,1," APPUYER SUR [ENTRER]
 If θ=45:Then:Goto Q:End
-If θ=105:Then:Goto M:End
+If θ=105:Then:Goto 88:End
 Wait 0.5
 End
+DelVar X
 Pause 
-Lbl M
-EffÉcran
 Lbl 88
+EffÉcran
 Menu("  .*POKEMON 83 PREMIUM*.      ","NOUVELLE PARTIE",0,"CONTINUER PARTIE",1,"CREDITS",C,"AMELIORATIONS DU JEU",K,"QUITTER",Q
-Goto 88
 Lbl K
 Disp "VERSION: 1.7 [BÊTA 3]"
 Disp "10 Janvier 2022"
 Disp ""
-Disp "- 100 pokémons disponibles"
+Disp "- 115 pokémons disponibles"
 Disp "- Ajout de nouveaux membres"
 Disp "  au conseil"
 Disp "- Compatibilité CEsium"
@@ -101,7 +96,6 @@ Disp "https://square-programming"
 Disp ".github.io/Pokemon-83
 Disp "-Premium/"
 Pause 
-EffÉcran
 Goto 88
 Lbl Q
 EffÉcran:Stop
@@ -113,99 +107,75 @@ EffÉcran
 Disp "      Réalisateurs :","      Lil Nas X3009","       TIny-Hacker",""," Traducteurs [version EN]","         Shadow","       TIny-Hacker"
 Output(10,1,"License CC BY-SA 2.0
 Pause 
-EffÉcran
 Goto 88
 Lbl 0
+EffÉcran
 Menu("Confirmer ?","Oui",89,"Non",88
 Lbl 89
-EffÉcran
 DelVar Chn1DelVar Chn2DelVar Chn3DelVar Chn4DelVar Chn5DelVar Chn6DelVar Chn7DelVar Chn8DelVar Chn9DelVar Chn0
 {1,20,0,0,1}→⌊PSA
+{0,0,0,0,0}→⌊PSB
+{0,0,0}→⌊PSC
+{2,2,2,2,2,2}→⌊PTA
+{2,2,2,2,2}→⌊PTB
+{2,2,2,2,2}→⌊PTC
+{2,2,2}→⌊PTD
 Output(4,1,"----------------
-Output(5,1,"Tous les caractères sont supportés
-Output(6,1,"12 caractères max
-Output(10,1,"Pokemon 83 PCE (2021-2022)
+Output(5,1,"Tous caractères autorisés
+Output(6,1,"8 caractères max
+Output(10,1,"Pokémon 83 PCE (2021-2022)
 Input "Entrer votre nom :",Chn1
 EffÉcran
 Output(6,1,"----------------
 Output(7,1,"Bonjour
 Output(7,9,Chn1
-Output(7,16,"!
-Pause 
-EffÉcran
-Output(6,1,"----------------
-Output(7,1,"Je suis le professeur
+Output(7,17,"!
+Wait 2 
+Output(7,1,"Je suis le professeur  
 Output(8,1,"Oephorbe !
+Wait 2
+Output(7,1,"Choisis ton                     
+Output(8,1,"Pokémon, vite !
 Pause 
-EffÉcran
-Output(6,1,"----------------
-Output(7,1,"Choisis ton          
-Output(8,1,"Pokémon, vite!
-Pause 
-EffÉcran
+Output(8,1,"               
 Menu("Choix du pokémon","Magicarpe",11,"Pikachu",12,"Brindibou",48,"Métang",ZR
 Lbl ZR
-Output(7,1,"Tu as fait un bon choix.
-Output(6,1,"----------------
+Output(7,1,"Très bon choix !
 "Métang"→Chn2
 "Ultralaser"→Chn3
 "Bélier"→Chn4
-{138,138,132,132,176,176,0,0,0,0,0,1}→⌊P1
-{0,0,0,0,0,0}→⌊PTA
-{0,0,0,0,0}→⌊PTB
-{0,0,0,0,0}→⌊PTC
-{0,0,0}→⌊PTD
+{268,268,132,132,46,46,0,0,0,0,0,1}→⌊P1
 Pause 
-EffÉcran
 Goto 1
 Lbl 48
-EffÉcran
 Output(7,1,"Un choix correct...
 Output(8,1,"N'oublie pas que tes 
 Output(9,1,"ennemis seront puissants.
-Output(6,1,"----------------
 "Brindibou"→Chn2
 "Pic-pic !"→Chn3
 "Fouet liannes !"→Chn4
-{68,68,55,55,55,55,0,0,0,0,0,1}→⌊P1
-{0,0,0,0,0,0}→⌊PTA
-{0,0,0,0,0}→⌊PTB
-{0,0,0,0,0}→⌊PTC
-{0,0,0}→⌊PTD
+{98,98,55,55,25,25,0,0,0,0,0,1}→⌊P1
 Pause 
-EffÉcran
 Goto 1
 Lbl 11
-EffÉcran
-Output(6,1,"----------------
-Output(7,1,"Très bon choix !
-Pause 
-EffÉcran
-"Magicarpe"→Chn2
-"Pistolet A.O !"→Chn3
-"Trempette !"→Chn4
-{29,29,78,78,85,85,0,0,0,0,0,1}→⌊P1
-{0,0,0,0,0,0}→⌊PTA
-{0,0,0,0,0}→⌊PTB
-{0,0,0,0,0}→⌊PTC
-{0,0,0}→⌊PTD
-Goto 1
-Lbl 12
-EffÉcran
-Output(6,1,"----------------
 Output(7,1,"Dommage pour toi :
 Output(8,1,"tes ennemis seront 
 Output(9,1,"difficile à vaincre.
 Pause 
+"Magicarpe"→Chn2
+"Pistolet A.O !"→Chn3
+"Trempette !"→Chn4
+{69,69,78,78,45,45,0,0,0,0,0,1}→⌊P1
+Goto 1
+Lbl 12
+Output(7,1,"Tu as fait un bon choix.
+Pause 
 "Pikachu"→Chn2
 "Queue éclair !"→Chn3
 "Charge"→Chn4
-{112,112,98,98,96,96,0,0,0,0,0,1}→⌊P1
-{0,0,0,0,0,0}→⌊PTA
-{0,0,0,0,0}→⌊PTB
-{0,0,0,0,0}→⌊PTC
-{0,0,0}→⌊PTD
+{162,162,98,98,46,46,0,0,0,0,0,1}→⌊P1
 Lbl 1
+EffÉcran
 5→dim(⌊PSA)
 If ⌊PSA(1)=0
 Then
@@ -213,13 +183,12 @@ Output(5,1,"----------------
 Output(6,1,"Pas de sauvegarde  
 Output(7,1,"retrouvée !
 Pause 
-EffÉcran
 Goto 88
 Else
 End
-Menu("Menu principal","Découvrir la forêt",DE,"Arène de combat",90,"Donjon secret",CO,"Mes Pokémons",PO,"Laboratoire",LB,"Boutique",BO,"Mon profil",PR,"Retour",Z
+DelVar A
+Menu("Menu principal","Découvrir la forêt",DE,"Arène de combat",90,"Donjon secret",CO,"Mes Pokémons",PO,"Laboratoire",LB,"Boutique",BO,"Mon profil",PR,"Retour",88
 Lbl PR
-EffÉcran
 Output(1,7,"Vue de profil
 Output(3,9,Chn1
 Output(4,1,"--------------------------
@@ -232,7 +201,6 @@ Output(6,12,⌊PSA(2
 Output(8,1,"Nombre de victoires :
 Output(8,23,⌊PSA(4
 Pause 
-EffÉcran
 Goto 1
 If ⌊PSA(1)=14
 Output(3,9,Chn1
@@ -240,14 +208,8 @@ Output(4,1,"--------------------------
 Output(5,1,"Niveau 14
 Output(6,1,"EXP: maximum
 Pause 
-EffÉcran
 Goto 1
 Lbl DE
-EffÉcran
-Output(6,1,"----------------
-Output(7,1,"Découvrir la forêt
-Output(8,1,"A venir dans la 
-Output(9,1,"version 1.9 du jeu...
 If ⌊PSA(1)>14 
 Then
 ArrPlanAff MARRON
@@ -273,11 +235,45 @@ Ligne(­9,2,­3.5,2,ROUGE
 Ligne(­9,­2,­9,2,ROUGE
 Ligne(­3.5,­2,­3.5,2,ROUGE
 Pause 
-EffÉcran
 Goto 1
 Else
 Lbl J7
+If ⌊P1(1)≤0
+Then
+Output(6,1,"----------------
+Output(7,1,"Ton pokémon est faible.
+Output(8,1,"Va le soigner !
+If ⌊PSA(1)≥9:Output(9,1,"[5] Pour changer de pokemon:0→A:0→B:getKey→A:getKey→B:Output(10,1,Chn2:If B=83:Output(10,1,Chn6:Pause :If B=83:Output(10,1,Chn2:Pause :If A=105:Pause :Goto 1
+Else
+0→I
+nbrAléatEnt(1,3)→X
+If X=1:Output(10,4,"Bonne année à tous !
+If X=2:Output(10,3,"Visitez la boutique 
+If X=3:Output(10,1,"Méfiez-vous des ténèbres !
+DelVar X
+For(I,1,100:
+Output(2,1,"-------------------------- 
+Output(4,8,"Chargement :
+Output(5,9,I
+Output(5,11,"  %  100%
+Output(9,10,"Astuce :
+I+1→I
+End
+Lbl PQ
+EffÉcran
+Output(6,1,"----------------
+Output(7,1,"Un pokémon sauvage
+Output(8,1,"fait son apparition !
+Wait 2
+Output(7,1,"Au combat,  
+Output(7,11,"                 
+Output(7,12,Chn2        
+Output(8,1,"                      
+Pause 
+End 
+Lbl J6
 nbrAléatEnt(1,15→X
+1→A
 If X=1:Chn2→Chn5
 If X=2:"Magicarpe"→Chn5:{78,78,29,29,85,85,0,0,0,0,1}→⌊P3
 If X=3:"Barpau"→Chn5:{78,78,29,29,85,85,0,0,0,0,1}→⌊P3
@@ -293,24 +289,38 @@ If X=12:"Chrysacier"→Chn5:{118,118,45,45,80,80,0,0,0,0,1}→⌊P3
 If X=13:"Aspicot"→Chn5:{105,105,63,63,50,50,0,0,0,0,1}→⌊P3
 If X=14:"Marill"→Chn5:{146,146,37,37,93,93,0,0,0,0,1}→⌊P3
 If X=15:"Pichu"→Chn5:{78,78,77,77,53,53,0,0,0,0,1}→⌊P3
-If ⌊P3(5)>⌊P1(3)
+If ⌊P3(5)≥⌊P1(3)
 Then
-Goto J7
+Goto J6
 Else
-Goto 3Q
-Goto 1
-Lbl Z
-EffÉcran
-Goto 88
+Goto K6
 Lbl PO
 EffÉcran
 If ⌊PSA(1)≥9
 Then
-Goto 62
+Lbl 62
+Menu("Mes pokémons",Chn2,27,Chn6,28,"Retour",1
+Lbl 28
+EffÉcran
+Output(1,1,"Statistiques du pokémon
+Output(2,1,"--------------------------
+Output(3,1,"Nom :
+Output(3,7,Chn6
+Output(4,1,"PV :
+Output(4,6,⌊P2(1
+Output(4,11,"/
+Output(4,13,⌊P2(2
+Output(5,1,"ATQ :
+Output(5,7,⌊P2(3
+Output(6,1,Chn7
+Output(7,1,Chn8
+Output(8,1,"DEF :
+Output(8,7,⌊P2(5 
+Pause
+If A=1:Goto F8
+Goto PO
 Else
-Goto 61
-Lbl 61
-Menu("Mes pokémons",Chn2,27,"Retour",OF
+Menu("Mes pokémons",Chn2,27,"Retour",1
 Lbl 27
 EffÉcran
 Output(1,1,"Statistiques du pokémon
@@ -328,41 +338,24 @@ Output(7,1,Chn4
 Output(8,1,"DEF :
 Output(8,7,⌊P1(5
 Pause 
-EffÉcran
-Goto 61
-Lbl 62
-Menu("Mes pokémons",Chn2,27,Chn6,28,"Retour",OF
-Lbl 28
-EffÉcran
-Output(1,1,"Statistiques du pokémon
-Output(2,1,"--------------------------
-Output(3,1,"Nom :
-Output(3,7,Chn6
-Output(4,1,"PV :
-Output(4,6,⌊P2(1
-Output(4,11,"/
-Output(4,13,⌊P2(2
-Output(5,1,"ATQ :
-Output(5,7,⌊P2(3
-Output(6,1,Chn7
-Output(7,1,Chn8
-Output(8,1,"DEF :
-Output(8,7,⌊P2(5
-Pause 
-EffÉcran
-Goto 62
+If A=1:Goto F8
+Goto PO 
 Lbl LB
-Menu("Laboratoire","Soin",SO,"Attaque",AK,"Défense",DF,"Equipements",EP,"Retour",OF
+EffÉcran
+Menu("Laboratoire","Soin",SO,"Attaque",AK,"Défense",DF,"Equipements",EP,"Retour",1
 Lbl AK
+EffÉcran
 If ⌊PSA(1)≥3
 Then
+EffÉcran
+Output(6,1,"----------------
 Menu("Choix de potion","+5 points d'attaque",2A,"+10 points d'attaque",2B,"+25 points d'attaque",2C,"+50 points d'attaque",2D,"+100 points d'attaque",2E,"Retour",LB
 Else
+Lbl UI
 Output(6,1,"----------------
 Output(7,1,"Se débloque au niveau 3
 Output(8,1,"Revenez plus tard...
 Pause 
-EffÉcran
 Goto LB
 Lbl 2A
 If ⌊PTB(1)≤0
@@ -370,7 +363,6 @@ Output(6,1,"----------------
 Output(7,1,"Pas de potions +5 ATQ
 Output(8,1,"dans l'inventaire !
 Pause 
-EffÉcran
 Goto AK
 Else
 ⌊P1(3)+5→⌊P1(3)
@@ -386,24 +378,19 @@ Output(8,1,"Potion non utilisée
 Output(9,1,"Potions restantes :
 Output(9,21,⌊PTB(1)
 Pause 
-EffÉcran
 Goto AK
 Else
 Output(5,1,"Chn2
-Output(6,1,"a gagné 5 ATK !
+Output(6,1,"a gagné 5 ATK !        
 Output(8,1,"Potions restantes :
 Output(8,21,⌊PTB(1)
 Pause 
-EffÉcran
 Goto AK
-
 Lbl 2B
 If ⌊PTB(2)≤0
-Output(6,1,"----------------
 Output(7,1,"Pas de potions +10 ATQ
 Output(8,1,"dans l'inventaire !
 Pause 
-EffÉcran
 Goto AK
 Else
 ⌊P1(3)+10→⌊P1(3)
@@ -419,7 +406,6 @@ Output(8,1,"Potion non utilisée
 Output(9,1,"Potions restantes :
 Output(9,21,⌊PTB(2)
 Pause 
-EffÉcran
 Goto AK
 Else
 Output(5,1,"Chn2
@@ -427,16 +413,13 @@ Output(6,1,"a gagné 10 ATK !
 Output(8,1,"Potions restantes :
 Output(8,21,⌊PTB(2)
 Pause 
-EffÉcran
 Goto AK
 
 Lbl 2C
 If ⌊PTB(3)≤0
-Output(6,1,"----------------
 Output(7,1,"Pas de potions +25 ATQ
 Output(8,1,"dans l'inventaire !
 Pause 
-EffÉcran
 Goto AK
 Else
 ⌊P1(3)+25→⌊P1(3)
@@ -452,7 +435,6 @@ Output(8,1,"Potion non utilisée
 Output(9,1,"Potions restantes :
 Output(9,21,⌊PTB(3)
 Pause 
-EffÉcran
 Goto AK
 Else
 Output(5,1,"Chn2
@@ -460,7 +442,6 @@ Output(6,1,"a gagné 25 ATK !
 Output(8,1,"Potions restantes :
 Output(8,21,⌊PTB(3)
 Pause 
-EffÉcran
 Goto AK
 
 Lbl 2D
@@ -469,7 +450,6 @@ Output(6,1,"----------------
 Output(7,1,"Pas de potions +50 ATQ
 Output(8,1,"dans l'inventaire !
 Pause 
-EffÉcran
 Goto AK
 Else
 ⌊P1(3)+50→⌊P1(3)
@@ -485,7 +465,6 @@ Output(8,1,"Potion non utilisée
 Output(9,1,"Potions restantes :
 Output(9,21,⌊PTB(4)
 Pause 
-EffÉcran
 Goto AK
 Else
 Output(5,1,"Chn2
@@ -497,11 +476,9 @@ EffÉcran
 Goto AK
 Lbl 2E
 If ⌊PTB(1)≤0
-Output(6,1,"----------------
 Output(7,1,"Pas de potions +100 ATQ
-Output(8,1,"dans l'inventaire !
+Output(8,1,"dans l'inventaire !    
 Pause 
-EffÉcran
 Goto AK
 Else
 ⌊P1(3)+100→⌊P1(3)
@@ -517,7 +494,6 @@ Output(8,1,"Potion non utilisée
 Output(9,1,"Potions restantes :
 Output(9,21,⌊PTB(5)
 Pause 
-EffÉcran
 Goto AK
 Else
 Output(5,1,"Chn2
@@ -525,18 +501,15 @@ Output(6,1,"a gagné 100 ATK !
 Output(8,1,"Potions restantes :
 Output(8,21,⌊PTB(5)
 Pause 
-EffÉcran
 Goto AK
 Lbl DF
+EffÉcran
 If ⌊PSA(1)≥3
 Then
+Output(6,1,"----------------
 Menu("Choix de potion","+5 points de défense",3A,"+10 points de défense",3B,"+25 points de défense",2C,"+50 points de défense",3C,"+100 points de défense",3D,"Retour",LB
 Else
-Output(6,1,"----------------
-Output(7,1,"Se débloque au niveau 3
-Output(8,1,"Revenez plus tard...
-Pause 
-EffÉcran
+Goto UI
 Goto LB
 Lbl 3A
 If ⌊PTB(1)≤0
@@ -544,7 +517,6 @@ Output(6,1,"----------------
 Output(7,1,"Pas de potions +5 DEF
 Output(8,1,"dans l'inventaire !
 Pause 
-EffÉcran
 Goto DF
 Else
 ⌊P1(5)+5→⌊P1(5)
@@ -560,7 +532,6 @@ Output(8,1,"Potion non utilisée
 Output(9,1,"Potions restantes :
 Output(9,21,⌊PTC(1)
 Pause 
-EffÉcran
 Goto DF
 Else
 Output(5,1,"Chn2
@@ -568,7 +539,6 @@ Output(6,1,"a gagné 5 DEF !
 Output(8,1,"Potions restantes :
 Output(8,21,⌊PTC(1)
 Pause 
-EffÉcran
 Goto DF
 
 Lbl 3B
@@ -577,8 +547,7 @@ Output(6,1,"----------------
 Output(7,1,"Pas de potions +10 DEF
 Output(8,1,"dans l'inventaire !
 Pause 
-EffÉcran
-Goto AK
+Goto DF
 Else
 ⌊P1(5)+10→⌊P1(5)
 ⌊PTC(2)-1→⌊PTC(2)
@@ -593,7 +562,6 @@ Output(8,1,"Potion non utilisée
 Output(9,1,"Potions restantes :
 Output(9,21,⌊PTC(2)
 Pause 
-EffÉcran
 Goto DF
 Else
 Output(5,1,"Chn2
@@ -601,7 +569,6 @@ Output(6,1,"a gagné 10 DEF !
 Output(8,1,"Potions restantes :
 Output(8,21,⌊PTC(2)
 Pause 
-EffÉcran
 Goto DF
 
 Lbl 3C
@@ -610,7 +577,6 @@ Output(6,1,"----------------
 Output(7,1,"Pas de potions +25 DEF
 Output(8,1,"dans l'inventaire !
 Pause 
-EffÉcran
 Goto DF
 Else
 ⌊P1(5)+25→⌊P1(5)
@@ -626,7 +592,6 @@ Output(8,1,"Potion non utilisée
 Output(9,1,"Potions restantes :
 Output(9,21,⌊PTC(3)
 Pause 
-EffÉcran
 Goto DF
 Else
 Output(5,1,"Chn2
@@ -634,7 +599,6 @@ Output(6,1,"a gagné 25 DEF !
 Output(8,1,"Potions restantes :
 Output(8,21,⌊PTC(3)
 Pause 
-EffÉcran
 Goto DF
 
 Lbl 3D
@@ -643,7 +607,6 @@ Output(6,1,"----------------
 Output(7,1,"Pas de potions +50 DEF
 Output(8,1,"dans l'inventaire !
 Pause 
-EffÉcran
 Goto DF
 Else
 ⌊P1(5)+50→⌊P1(5)
@@ -659,7 +622,6 @@ Output(8,1,"Potion non utilisée
 Output(9,1,"Potions restantes :
 Output(9,21,⌊PTC(4)
 Pause 
-EffÉcran
 Goto DF
 Else
 Output(5,1,"Chn2
@@ -667,7 +629,6 @@ Output(6,1,"a gagné 50 DEF !
 Output(8,1,"Potions restantes :
 Output(8,21,⌊PTC(4)
 Pause 
-EffÉcran
 Goto DF
 Lbl 3E
 If ⌊PTC(5)≤0
@@ -675,7 +636,6 @@ Output(6,1,"----------------
 Output(7,1,"Pas de potions +100 DEF
 Output(8,1,"dans l'inventaire !
 Pause 
-EffÉcran
 Goto DF
 Else
 ⌊P1(3)+100→⌊P1(3)
@@ -691,7 +651,6 @@ Output(8,1,"Potion non utilisée
 Output(9,1,"Potions restantes :
 Output(9,21,⌊PTC(5)
 Pause 
-EffÉcran
 Goto DF
 Else
 Output(5,1,"Chn2
@@ -699,9 +658,9 @@ Output(6,1,"a gagné 100 DEF !
 Output(8,1,"Potions restantes :
 Output(8,21,⌊PTC(5)
 Pause 
-EffÉcran
 Goto DF
 Lbl EP
+EffÉcran
 If ⌊PSA(1)≥12
 Then
 Menu("Equipements","Emplacement n°1",E1,"Emplacement n°2",E2,"Retour",LB
@@ -710,7 +669,6 @@ Output(6,1,"----------------
 Output(7,1,"Se débloque au niveau 12
 Output(8,1,"Revenez plus tard...
 Pause 
-EffÉcran
 Goto LB
 Lbl E1
 Goto 1
@@ -722,13 +680,12 @@ Output(6,1,"----------------
 Output(7,1,"Se débloque au niveau 14
 Output(8,1,"Revenez plus tard...
 Pause 
-EffÉcran
 Goto LB
 Lbl SO
+EffÉcran
 Menu("Soigner pokémons","Utiliser potions de soin",UP,"Patienter pour reposer",θ3,"Retour",LB
 Lbl θ3
 0→A:0→B:0→C
-Goto AD
 Lbl AD
 AxesNAff:EffDess:EffÉcran:MATHPRINT:Normal:Flottant:Radian:Fonc:Épais:Séquentielle:Réel:PleinÉcr:nd:AUTO:CorrelAff:ASSISTSTATS AFF:CGRect:CoordAff:QuadNAff:ÉtiqNAff:ExprAff:ArrPlanNAff:DétectAsymAct
 CouleurTexte(12)
@@ -856,18 +813,21 @@ End
 End
 End
 Lbl UP
-Menu("Choix de potion","+25 points de santé",1A,"+50 points de santé",1B,"+100 points de santé",1C,"+250 points de santé",1D,"+500 points de santé",1E,"Boost max",1F,"Retour",ZZ
-If ⌊P1(1)≤0
+EffÉcran
+Output(6,1,"----------------
+Menu("Choix de potion","+25 points de santé",1A,"+50 points de santé",1B,"+100 points de santé",1C,"+250 points de santé",1D,"+500 points de santé",1E,"Boost max",1F,"Retour",SO
+If ⌊P1(1)≤0 ou ⌊P2(1)≤0
+Then
+0→⌊P1(1)
+If ⌊P2(1)≤0
 Then
 0→⌊P1(1)
 Lbl 1A
 If ⌊PTA(1)≤0
 Then
-Output(6,1,"----------------
 Output(7,1,"Pas de potions +25 PV
 Output(8,1,"dans l'inventaire !
 Pause 
-EffÉcran
 Goto UP
 Else
 ⌊P1(1)+25→⌊P1(1)
@@ -876,34 +836,28 @@ If ⌊P1(1)≥⌊P1(2)
 Then
 ⌊P1(1)-25→⌊P1(1)
 ⌊PTA(1)+1→⌊PTA(1)
-EffÉcran
 Output(4,1,"----------------
 Output(5,1,"Limite de points de santé
-Output(6,1,"atteinte !
+Output(6,1,"atteinte !         
 Output(8,1,"Potion non utilisée
 Output(9,1,"Potions restantes :
 Output(9,21,⌊PTA(1)
 Pause 
-EffÉcran
 Goto UP
 Else
-EffÉcran
 Output(4,1,"----------------
 Output(5,1,Chn2
 Output(6,1,"a gagné 25 PV !
 Output(8,1,"Potions restantes :
 Output(8,21,⌊PTA(1)
 Pause 
-EffÉcran
 Goto UP
 Lbl 1B
 If ⌊PTA(2)≤0
 Then
-Output(6,1,"----------------
-Output(6,1,"Pas de potions +50 PV
+Output(7,1,"Pas de potions +50 PV
 Output(8,1,"dans l'inventaire !
 Pause 
-EffÉcran
 Goto UP
 Else
 ⌊P1(1)+50→⌊P1(1)
@@ -915,31 +869,26 @@ Then
 EffÉcran
 Output(4,1,"----------------
 Output(5,1,"Limite de points de santé
-Output(6,1,"atteinte !
+Output(6,1,"atteinte !         
 Output(8,1,"Potion non utilisée
 Output(9,1,"Potions restantes :
 Output(9,21,⌊PTA(2)
 Pause 
-EffÉcran
 Goto UP
 Else
-EffÉcran
 Output(4,1,"----------------
 Output(5,1,Chn2
 Output(6,1,"a gagné 50 PV !
 Output(8,1,"Potions restantes :
 Output(8,21,⌊PTA(2)
 Pause 
-EffÉcran
 Goto UP
 Lbl 1C
 If ⌊PTA(3)≤0
 Then
-Output(6,1,"----------------
 Output(7,1,"Pas de potions +100 PV
 Output(8,1,"dans l'inventaire !
 Pause 
-EffÉcran
 Goto UP
 Else
 ⌊P1(1)+100→⌊P1(1)
@@ -948,34 +897,28 @@ If ⌊P1(1)≥⌊P1(2
 Then
 ⌊P1(1)-100→⌊P1(1
 ⌊PTA(3)+1→⌊PTA(3)
-EffÉcran
 Output(4,1,"----------------
 Output(5,1,"Limite de points de santé
-Output(6,1,"atteinte !
+Output(6,1,"atteinte !         
 Output(8,1,"Potion non utilisée
 Output(9,1,"Potions restantes :
 Output(9,21,⌊PTA(3)
 Pause 
-EffÉcran
 Goto UP
 Else
-EffÉcran
 Output(4,1,"----------------
 Output(5,1,Chn2
 Output(6,1,"a gagné 100 PV !
 Output(8,1,"Potions restantes :
 Output(8,21,⌊PTA(3)
 Pause 
-EffÉcran
 Goto UP
 Lbl 1D
 If ⌊PTA(4)≤0
 Then
-Output(6,1,"----------------
 Output(7,1,"Pas de potions +250 PV
 Output(8,1,"dans l'inventaire !
 Pause 
-EffÉcran
 Goto UP
 Else
 ⌊P1(1)+250→⌊P1(1
@@ -984,34 +927,28 @@ If ⌊P1(1)≥⌊P1(2
 Then
 ⌊P1(1)-250→⌊P1(1
 ⌊PTA(4)+1→⌊PTA(4)
-EffÉcran
 Output(4,1,"----------------
 Output(5,1,"Limite de points de santé
-Output(6,1,"atteinte !
+Output(6,1,"atteinte !         
 Output(8,1,"Potion non utilisée
 Output(9,1,"Potions restantes :
 Output(9,21,⌊PTA(4)
 Pause 
-EffÉcran
 Goto UP
 Else
-EffÉcran
 Output(4,1,"----------------
 Output(5,1,Chn2
 Output(6,1,"a gagné 250 PV !
 Output(8,1,"Potions restantes :
 Output(8,21,⌊PTA(4)
 Pause 
-EffÉcran
 Goto UP
 Lbl 1E
 If ⌊PTA(5)≤0
 Then
-Output(6,1,"----------------
 Output(7,1,"Pas de potions +500 PV
 Output(8,1,"dans l'inventaire !
 Pause 
-EffÉcran
 Goto UP
 Else
 ⌊P1(1)+500→⌊P1(1
@@ -1020,53 +957,44 @@ If ⌊P1(1)≥⌊P1(2
 Then
 ⌊P1(1)-500→⌊P1(1
 ⌊PTA(5)+1→⌊PTA(5)
-EffÉcran
 Output(4,1,"----------------
 Output(5,1,"Limite de points de santé
-Output(6,1,"atteinte !
+Output(6,1,"atteinte !         
 Output(8,1,"Potion non utilisée
 Output(9,1,"Potions restantes :
 Output(9,21,⌊PTA(5)
 Pause 
-EffÉcran
 Goto UP
 Else
-EffÉcran
 Output(4,1,"----------------
 Output(5,1,Chn2
 Output(6,1,"a gagné 500 PV !
 Output(8,1,"Potions restantes :
 Output(8,21,⌊PTA(5)
 Pause 
-EffÉcran
 Goto UP
 Lbl 1F
 If ⌊PTA(6)≤0
 Then
-Output(6,1,"----------------
 Output(7,1,"Pas de potions 'Boost max'
 Output(8,1,"dans l'inventaire !
 Pause 
-EffÉcran
 Goto UP
 Else
 ⌊PTA(6)-1→⌊PTA(6)
 If ⌊P1(1)=⌊P1(2)
 Then
 ⌊PTA(6)+1→⌊PTA(6)
-EffÉcran
 Output(4,1,"----------------
 Output(5,1,"Limite de points de santé
-Output(6,1,"atteinte !
+Output(6,1,"atteinte !         
 Output(8,1,"Potion non utilisée
 Output(9,1,"Potions restantes :
 Output(9,21,⌊PTA(6)
 Pause 
-EffÉcran
 Goto UP
 Else
 ⌊P1(2)→⌊P1(1
-EffÉcran
 Output(4,1,"----------------
 Output(5,1,Chn2
 Output(6,1,"a regagné tous
@@ -1074,36 +1002,31 @@ Output(7,1,"ses PV !
 Output(9,1,"Potions restantes :
 Output(9,21,⌊PTA(6)
 Pause 
-EffÉcran
 Goto UP
-Lbl ZZ
-EffÉcran
-Goto SO
 Lbl CO
+EffÉcran
 If ⌊PSA(1)<13
 Then
 Output(6,1,"----------------
 Output(7,1,"Se débloque au niveau 13
 Output(8,1,"Revenez plus tard...
 Pause 
-EffÉcran
 Goto 1
 Else
-Menu("Donjon Secret","Ermite Willy",41,"Louis-Ferdinand Stinx",70,"Gareth Owen",62,"Bryan Thirimanna",VI,"Retour",Z
+Menu("Donjon Secret","Ermite Willy",41,"Louis-Ferdinand Stinx",70,"Gareth Owen",62,"Bryan Thirimanna",VI,"Retour",1
 Lbl 62
-DelVar X
 1→W
 1→θ
 "Lougaroc"→Chn5
 {245,245,49,49,0,0,0,0,0,0,0,1}→⌊P3
 Lbl BO
+EffÉcran
 If ⌊PSA(1)<6
 Then
 Output(6,1,"----------------
 Output(7,1,"Se débloque au niveau 6
 Output(8,1,"Revenez plus tard...
 Pause 
-EffÉcran
 Goto 1
 Else
 Menu("Boutique","Inventaire",IN,"Achat potions soin",PS,"Achat potions attaque",PA,"Achat pokéball",AP,"Achat équipements",AG,"Retour",OF
@@ -1135,8 +1058,15 @@ DelVar X
 {964,964,83,83,150,150,0,0,0,0,0,1}→⌊P3
 Goto 31
 Lbl 90
+If ⌊PSA(1)<5
+Then
+Output(6,1,"----------------
+Output(7,1,"Se debloque au niveau 5
+Output(8,1,"Revenez plus tard...
+Pause 
+Goto 1
+Else
 DelVar WDelVar θ
-Goto OP
 Lbl OP
 If ⌊P1(1)≤0
 Then
@@ -1144,10 +1074,8 @@ Output(6,1,"----------------
 Output(7,1,"Ton pokémon est faible.
 Output(8,1,"Va le soigner !
 Pause 
-EffÉcran
 Goto 1
 Else
-EffÉcran
 0→I
 nbrAléatEnt(1,3)→X
 If X=1:Output(10,4,"Bonne année a tous !
@@ -1162,78 +1090,83 @@ Output(5,11,"  %  100%
 Output(9,10,"Astuce :
 I+1→I
 End
-EffÉcran
 Goto T3
 Lbl E5
+EffÉcran
 If ⌊P1(1)≤0
 Then
 Output(6,1,"----------------
 Output(7,1,"Ton pokémon est faible.
 Output(8,1,"Va le soigner !
 Pause 
-EffÉcran
 Goto 1
 Else
+EffÉcran
 Output(2,1,"-------------------------- 
 nbrAléatEnt(1,3)→X
-If X=1:Output(10,4,"Bonne année a tous !
-If X=2:Output(10,3,"Visitez la boutique ! 
+If X=1:Output(10,4,"Bonne année à tous !
+If X=2:Output(10,3,"Visitez la boutique.. 
 If X=3:Output(10,2,"Méfiez-vous des ténèbres !
-DelVar X
-DelVar N
+DelVar XDelVar I
 Output(5,8,"Chargement :
-nbrAléatEnt(0,10)→N
-Output(6,9,N
+nbrAléatEnt(0,10)→I
+Output(6,9,I
 Output(6,11,"  %  100%
 Wait 0.1
-nbrAléatEnt(11,20)→N
-Output(6,9,N
+nbrAléatEnt(11,20)→I
+Output(6,9,I
 Output(6,11,"  %  100%
 Wait 0.1
-nbrAléatEnt(21,30)→N
-Output(6,9,N
+nbrAléatEnt(21,30)→I
+Output(6,9,I
 Output(6,11,"  %  100%
 Wait 0.1
-nbrAléatEnt(31,40)→N
-Output(6,9,N
+nbrAléatEnt(31,40)→I
+Output(6,9,I
 Output(6,11,"  %  100%
 Wait 0.1
-nbrAléatEnt(41,50)→N
-Output(6,9,N
+nbrAléatEnt(41,50)→I
+Output(6,9,I
 Output(6,11,"  %  100%
 Wait 0.1
-nbrAléatEnt(51,60)→N
-Output(6,9,N
+nbrAléatEnt(51,60)→I
+Output(6,9,I
 Output(6,11,"  %  100%
 Wait 0.1
-nbrAléatEnt(61,70)→N
-Output(6,9,N
+nbrAléatEnt(61,70)→I
+Output(6,9,I
 Output(6,11,"  %  100%
 Wait 0.1
-nbrAléatEnt(71,80)→N
-Output(6,9,N
+nbrAléatEnt(71,80)→I
+Output(6,9,I
 Output(6,11,"  %  100%
 Wait 0.1
-nbrAléatEnt(81,90)→N
-Output(6,9,N
+nbrAléatEnt(81,90)→I
+Output(6,9,I
 Output(6,11,"  %  100%
 Wait 0.05
-nbrAléatEnt(91,100)→N
-Output(6,9,N
+nbrAléatEnt(91,100)→I
+Output(6,9,I
 Output(6,11,"  %  100%
-EffÉcran
+If A=1
+Then
+Goto PQ
+Else
 Goto T3
 Lbl T3
+EffÉcran
 Output(6,1,"----------------
 Output(7,1,"Un pokémon sauvage
 Output(8,1,"fait son apparition !
 Wait 2
-EffÉcran
-Output(6,1,"----------------
-Output(7,1,"Au combat,
-Output(7,12,Chn2
+Output(7,1,"Au combat,  
+Output(7,11,"                 
+If X=1:Output(7,12,Chn2        
+If X=1:Output(7,12,Chn6        
+
+Output(8,1,"                      
 Pause 
-EffÉcran
+End 
 Lbl 31
 If θ=1 et W>1:Goto 32
 nbrAléatEnt(1,102)→X
@@ -1339,44 +1272,32 @@ If X=99:"Palarticho"→Chn5:{135,135,248,248,176,176,0,0,0,0,1}→⌊P3
 If X=100:"Suicune"→Chn5:{187,187,180,180,235,235,0,0,0,0,1}→⌊P3
 If X=101:"Roitiflam"→Chn5:{200,200,235,235,127,127,0,0,0,0,1}→⌊P3
 If X=102:"Pachyradjah"→Chn5:{217,217,226,226,126,126,0,0,0,0,1}→⌊P3
-If ⌊P3(5)>⌊P1(3)
+If ⌊P3(5)≥⌊P1(3) ou ⌊P1(5)≥⌊P3(3)
 Then
 Goto 31
 Else
-Goto K6
 Lbl K6
 DelVar X
-EffÉcran
-Output(6,1,"----------------
-Output(7,1,"Pokémon ennemi:
-Output(8,1,Chn5
+Output(7,1,"Pokémon ennemi:              
+Output(8,1,Chn5                   
 Pause 
-EffÉcran
-Goto 8P
 Lbl 8P
-If ⌊PSA(1)<9
-Then
-Goto 2H
-Else
-If ⌊PSA(1)≥6
-Then
-Goto 3Q
-Else
-If ⌊PSA(1)≥9
-Then
-Goto 3E
+EffÉcran
+0→Z
+If ⌊PSA(1)<6:Goto 2H
+If ⌊PSA(1)≥9:Goto 3E
+If ⌊PSA(1)≥6:Goto 3Q
 Lbl 2H
-0→Z
-Menu("COMBAT!","Informations de l'ennemi",F8,Chn3,21,Chn4,22,"Capturer",JT,"Fuir",FU
+Menu("COMBAT!","Informations",F8,Chn3,21,Chn4,22,"Capturer",JT,"Fuir",FU
 Lbl 3Q
-0→Z
-Menu("COMBAT!","Informations de l'ennemi",F8,Chn3,21,Chn4,22,"Utiliser potion",46,"Capturer",JT,"Fuir",FU
+Menu("COMBAT!","Informations",F8,Chn3,21,Chn4,22,"Utiliser potion",46,"Capturer",JT,"Fuir",FU
 Lbl 3E
-0→Z
-Menu("COMBAT!","Informations de l'ennemi",F8,Chn3,21,Chn4,22,"Utiliser potion",46,"Changer de pokémon",38,"Capturer",JT,"Fuir",FU
+Menu("COMBAT!","Informations",F8,Chn3,21,Chn4,22,"Utiliser potion",46,"Changer de pokémon",38,"Capturer",JT,"Fuir",FU
 Lbl F8
 EffÉcran
-Output(1,1,"Informations du pokémon ennemi
+Menu("Informations","Mes pokémons",NP,"Adversaire",PK,"Retour",8P
+Lbl PK
+Output(1,1,"Informations de l'ennemi
 Output(2,1,"--------------------------
 Output(3,1,"Nom :
 Output(3,7,Chn5
@@ -1391,8 +1312,15 @@ Output(7,1,""
 Output(8,1,"DEF :
 Output(8,7,⌊P3(5
 Pause 
-EffÉcran
-Goto 8P
+EffÉcran 
+Goto F8
+Lbl NP
+If ⌊PSA(1)≥9:Goto AU
+If ⌊PSA(1)<9:Goto AL
+Lbl AL
+Menu("Mes pokémons",Chn2,27,"Retour",F8
+Lbl AU
+Menu("Mes pokémons",Chn2,27,Chn6,28,"Retour",F8
 Lbl 38
 Disp "Changer de Pokémon
 Output(2,1,"[1]"):Output(2,4,Chn2
@@ -1406,11 +1334,9 @@ If θ=92:Then:Goto θ1:End
 If θ=93:Then:Goto θ1:End
 End
 Lbl 46
-EffÉcran
 Disp "EN DEVELOPPEMENT...
 Pause 
-EffÉcran
-Goto 31
+Goto 8P
 Lbl FU
 Menu("Confirmer la fuite ?","Oui, fuir",OF,"Non, rester dans l'arène",8P
 Lbl OF
@@ -1418,69 +1344,74 @@ Goto 1
 Lbl JT
 Menu("Un pokémon risque d'être perdu","Continuer",XY,"Retour",8P
 Lbl XY
-Menu("Choix de pokéball","Pokéball simple",3A,"Super ball",3B,"Hyper ball",3C,"Retour",8P
-Lbl 3A
+EffÉcran
+Menu("Choix de pokéball","Pokéball simple",A3,"Super ball",B3,"Hyper ball",C3,"Retour",8P
+Lbl A3
 If ⌊PTD(1)≤0
 Then
 Output(6,1,"-----------------
 Output(7,1,"Pas de pokéball
 Output(8,1,"dans l'inventaire !
 Pause 
-EffÉcran
 Goto XY
 Else
 ⌊PTD(1)-1→⌊PTD(1)
 nbrAléatEnt(1,8)→L
+⌊PTD(1)→N
 Goto 5G
-Lbl 3B
+Lbl B3
 If ⌊PTD(2)≤0
 Then
 Output(6,1,"-----------------
 Output(7,1,"Pas de super ball
 Output(8,1,"dans l'inventaire !
 Pause 
-EffÉcran
 Goto XY
 Else
 ⌊PTD(2)-1→⌊PTD(2)
 nbrAléatEnt(1,6)→L
+⌊PTD(2)→N
 Goto 5G
-Lbl 3C
+Lbl C3
 If ⌊PTD(3)≤0
 Then
 Output(6,1,"-----------------
 Output(7,1,"Pas de hyper ball
 Output(8,1,"dans l'inventaire !
 Pause 
-EffÉcran
 Goto XY
 Else
 ⌊PTD(3)-1→⌊PTD(3)
 nbrAléatEnt(1,4)→L
-Goto 5G
+⌊PTD(3)→N
 Lbl 5G
+EffÉcran
 If L=1
 Then
-EffÉcran
 Output(6,1,"-----------------
 Output(7,1,"Tu l'as capturé !
+Output(8,1,"Nombre de pokéball
+Output(9,1,"restantes : 
+Output(9,13,N
 Pause 
 Goto 4A
 Else
-EffÉcran
 Output(6,1,"-----------------
 Output(7,1,"Il s'est libéré !
+Output(8,1,"Nombre de pokéball
+Output(9,1,"restantes : 
+Output(9,13,N
 Pause 
-EffÉcran
 Goto 50
 Lbl 4A
-If ⌊PSA(1)≥9:Then
+EffÉcran
+If ⌊PSA(1)≥9
+Then
 Menu("Choix de l'emplacement",Chn2,6A,Chn6,6B,"Abandonner la pokéball",6C
 Else
 Menu("Choix de l'emplacement",Chn2,6A,"Abandonner la pokéball",6C
 End
 Lbl 6A
-EffÉcran
 Output(4,1,"-----------------
 Output(5,1,Chn2
 Output(6,1,"a été remplacé par
@@ -1515,10 +1446,7 @@ Output(5,1,"-----------------
 Output(6,1,Chn5
 Output(6,1,"a été abandonné
 Pause
-EffÉcran
 Goto θ2
-Lbl 5L
-Goto 4A
 Lbl 21
 EffÉcran
 21→Z
@@ -1558,27 +1486,19 @@ Output(10,1,"Ennemi DEF :
 Output(10,14,⌊P3(5)
 ⌊P1(3)+X→⌊P1(3)
 DelVar IDelVar X
-Goto 7X
 Lbl 7X
 Pause 
 EffÉcran
 (⌊P3(1)+⌊P3(5))-⌊P1(3)→⌊P3(1)
-If ⌊P3(1)>⌊P3(2)
-Then
-⌊P3(2)→⌊P3(1)
-Goto 7S
-Else
-Goto 7S
-Lbl 7S
-If ⌊P3(3)≤0
-Then
-Goto θ2
-Else
+If ⌊P3(1)>⌊P3(2):⌊P3(2)→⌊P3(1)
 Output(6,1,"----------------
 Output(7,1,"C'est très efficace !
 Pause 
-EffÉcran
+EffÉcran 
+If ⌊P3(1)≤0:Goto θ2
+If ⌊P3(1)>0:Goto 50
 Lbl 50
+EffÉcran
 nbrAléatEnt(­5,5)→X
 nbrAléatEnt(0,100)→I
 If I<11
@@ -1619,19 +1539,22 @@ EffÉcran
 If ⌊P1(1)>⌊P1(2)
 Then
 ⌊P1(2)→⌊P1(1)
+Output(7,1,"Même pas mal !
 Goto W7
 Else
+Output(7,1,"Ca fait mal !
 Goto W7
 Lbl W7
 Output(6,1,"----------------
-Output(7,1,"Ca fait mal !
 Pause 
 EffÉcran
 If ⌊P1(1)≤0:Goto 26
-If ⌊P1(1)>0:Goto θ1
+If ⌊P1(1)>0:Goto 8P
 Lbl 26
 Output(6,1,"----------------
 Output(7,1,"Vous êtes mort !
+DelVar A
+0→⌊P1(1)
 ⌊P1(4)→⌊P1(3)
 ⌊P1(6)→⌊P1(5)
 nbrAléatEnt(2,7)→L
@@ -1640,7 +1563,6 @@ Disp L
 ⌊PSA(3)+L→⌊PSA(3
 Output(6,1,"----------------
 Output(7,1,"
-0→⌊P1(1)
 Pause 
 EffÉcran
 Goto 58
@@ -1721,6 +1643,7 @@ Goto 58
 If ⌊PSA(1)>14
 Then
 Lbl 58
+EffÉcran
 If ⌊PSA(3)≥⌊PSA(2):Goto 99
 Goto 9K
 Else
@@ -1759,10 +1682,12 @@ If ⌊PSA(1)=12:Output(9,1," Equipement n°1 débloqué !"):Pause :EffÉcran:Got
 If ⌊PSA(1)=13:Output(9,1," Donjon secret débloqué !"):Pause :EffÉcran:Goto 1:End
 If ⌊PSA(1)=14:Output(9,1," Equipement n°2 débloqué !"):Pause :EffÉcran:Goto 1:End
 Lbl 9K
-Menu("Rejouer ?","Oui",E5,"Non",3Y
-Lbl 3Y
-Goto 1
+EffÉcran
+If ⌊P1(1)≤0:Goto 1
+Lbl L7
+Menu("Rejouer ?","Oui",E5,"Non",1
 Lbl 71
+EffÉcran
 Menu("Choix du pokémon n°2","Evoli",8A,"Héricendre",8B,"Larméléon",8C,"Germignon",8D,"Laisser emplacement vide",8E
 Lbl 8A
 "Evoli"→Chn6
@@ -1798,50 +1723,3 @@ Lbl DP
 Goto 1
 Lbl LP
 Goto 71
-If Chn2="Brindibou" et ⌊PSA(1)≥25 et J=0:Goto 99
-Goto 1
-Lbl 99
-EffÉcran
-Output(6,1,"----------------
-1→J
-EffÉcran
-Output(6,1,"----------------
-Output(7,1,"Brindibou a évolué !
-Pause 
-EffÉcran
-Output(5,1,"Animation en développement
-"Archeduc"→Chn2
-"Tir multiple !"→Chn3
-"Tranche nuit !"→Chn4
-Pause 
-EffÉcran
-Output(6,1,"Il s'est évolué en
-Output(7,1,"Archeduc !?"
-Pause 
-EffÉcran
-If Chn2="Pikachu" et ⌊PSA(1)≥19 et J=0:Goto 98
-Goto 1
-Lbl 98
-Output(7,1,"Pikachu a évolué
-Output(8,1,"Whaou !
-Pause 
-EffÉcran
-"Raichu"→Chn2
-"Foudre fatale !"→Chn3
-"Attaque vive !"→Chn4
-1→J
-For(I,1,10
-60!:End
-Output(6,1,"==>
-For(I,1,10
-60!:End
-Output(6,4,"==>
-For(I,1,10
-Output(6,7,"==>
-Pause 
-EffÉcran
-Output(6,1,"----------------
-Output(7,1,"Pikachu s'est
-Output(8,1,"transformé en Raichu !
-Pause 
-Goto 1
