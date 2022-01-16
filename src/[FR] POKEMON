@@ -21,6 +21,7 @@ N+1→N
 End
 Output(8,12,"     
 DelVar X
+DelVar Chn0
 nbrAléatEnt(3,6)→X
 Wait X
 0→θ
