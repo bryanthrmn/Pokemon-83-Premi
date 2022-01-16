@@ -44,41 +44,41 @@ Lbl 88
 EffÉcran
 Menu("  .*POKEMON 83 PREMIUM*.      ","NOUVELLE PARTIE",0,"CONTINUER PARTIE",1,"CREDITS",C,"AMELIORATIONS DU JEU",K,"QUITTER",Q
 Lbl K
-Disp "VERSION: 1.7 [BÊTA 3]"
-Disp "10 Janvier 2022"
-Disp ""
-Disp "- 115 pokémons disponibles"
-Disp "- Ajout de nouveaux membres"
-Disp "  au conseil"
-Disp "- Compatibilité CEsium"
-Disp "- Ajout de fonctionalitées" 
-Disp "  lors d'un combat"
+Disp "VERSION: 1.7 [BÊTA 3]
+Disp "16 Janvier 2022
+Disp "
+Disp "- 115 pokémons disponibles
+Disp "- Ajout de nouveaux membres
+Disp "  au conseil
+Disp "- Compatibilité CEsium
+Disp "- Ajout de fonctionalitées"
+Disp "  lors d'un combat
 Pause 
 EffÉcran
-Disp "VERSION: 1.7 [BÊTA 3]"
-Disp "10 Janvier 2022"
-Disp ""
-Disp "- Nouveau système de"
-Disp "  niveaux d'expérience"
-Disp "- Ajout d'une boutique"
-Disp "- Correcions de langue"
-Disp "- Corrections de bugs"
+Disp "VERSION: 1.7 [BÊTA 3]
+Disp "16 Janvier 2022
+Disp "
+Disp "- Nouveau système de
+Disp "  niveaux d'expérience
+Disp "- Ajout d'une boutique
+Disp "- Correcions de langue
+Disp "- Corrections de bugs
 Pause 
 EffÉcran
-Disp "Plus d'informations sur :"
-Disp "https://square-programming"
+Disp "Plus d'informations sur :
+Disp "https://square-programming
 Disp ".github.io/Pokemon-83
-Disp "-Premium/"
+Disp "-Premium/
 Pause 
 Goto 88
 Lbl Q
 EffÉcran:Stop
 Lbl C
-Disp "POKEMON 83 PREMIUM","","       Producteur : ","   Kenshi Corporation","","      Réalisateurs :","       Capysquid","         Shadow"
+Disp "POKEMON 83 PREMIUM","","       Producteur : ","   Kenshi Corporation","","      Réalisateurs :","       Capysquid","         Shadow
 Output(10,1,"License CC BY-SA 2.0
 Pause 
 EffÉcran
-Disp "      Réalisateurs :","      Lil Nas X3009","       TIny-Hacker",""," Traducteurs [version EN]","         Shadow","       TIny-Hacker"
+Disp "      Réalisateurs :","      Lil Nas X3009","       TIny-Hacker",""," Traducteurs [version EN]","         Shadow","       TIny-Hacker
 Output(10,1,"License CC BY-SA 2.0
 Pause 
 Goto 88
@@ -417,7 +417,6 @@ Output(8,1,"Potions restantes :
 Output(8,21,⌊PTB(3)
 Pause 
 Goto AK
-
 Lbl 2D
 If ⌊PTB(4)≤0
 Output(6,1,"----------------
@@ -514,7 +513,6 @@ Output(8,1,"Potions restantes :
 Output(8,21,⌊PTC(1)
 Pause 
 Goto DF
-
 Lbl 3B
 If ⌊PTC(2)≤0
 Output(6,1,"----------------
@@ -544,7 +542,6 @@ Output(8,1,"Potions restantes :
 Output(8,21,⌊PTC(2)
 Pause 
 Goto DF
-
 Lbl 3C
 If ⌊PTC(3)≤0
 Output(6,1,"----------------
@@ -574,7 +571,6 @@ Output(8,1,"Potions restantes :
 Output(8,21,⌊PTC(3)
 Pause 
 Goto DF
-
 Lbl 3D
 If ⌊PTC(4)≤0
 Output(6,1,"----------------
