@@ -249,20 +249,20 @@ Lbl J6
 nbrAléatEnt(1,15→X
 1→A
 If X=1:Chn2→Chn5
-If X=2:"Magicarpe"→Chn5:{78,78,29,29,85,85,0,0,0,0,1}→⌊P3
-If X=3:"Barpau"→Chn5:{78,78,29,29,85,85,0,0,0,0,1}→⌊P3
-If X=4:"Larvadar"→Chn5:{84,84,46,46,67,67,0,0,0,0,1}→⌊P3
-If X=5:"Azurill"→Chn5:{118,118,36,36,71,71,0,0,0,0,1}→⌊P3
-If X=6:"Ptiravi"→Chn5:{187,187,25,25,77,77,0,0,0,0,1}→⌊P3
-If X=7:"Tournegrin"→Chn5:{91,91,55,55,55,55,0,0,0,0,1}→⌊P3
-If X=8:"Crikzik"→Chn5:{100,100,45,45,74,74,0,0,0,0,1}→⌊P3
-If X=9:"Caratroc"→Chn5:{78,78,17,17,396,396,0,0,0,0,1}→⌊P3
-If X=10:"Coconfort"→Chn5:{111,111,46,46,75,75,0,0,0,0,1}→⌊P3
-If X=11:"Chenipan"→Chn5:{111,111,55,55,55,55,0,0,0,0,1}→⌊P3
-If X=12:"Chrysacier"→Chn5:{118,118,45,45,80,80,0,0,0,0,1}→⌊P3
-If X=13:"Aspicot"→Chn5:{105,105,63,63,50,50,0,0,0,0,1}→⌊P3
-If X=14:"Marill"→Chn5:{146,146,37,37,93,93,0,0,0,0,1}→⌊P3
-If X=15:"Pichu"→Chn5:{78,78,77,77,53,53,0,0,0,0,1}→⌊P3
+If X=2:"Magicarpe"→Chn5:"Pistolet A.O !"→Chn9:"Trempette"→Chn0:{78,78,29,29,85,85,0,0,0,0,1}→⌊P3
+If X=3:"Barpau"→Chn5:"Trempette"→Chn9:"Fléau"→Chn0:{78,78,29,29,85,85,0,0,0,0,1}→⌊P3
+If X=4:"Larvadar"→Chn5:"Ruée"→Chn9:"Survinsecte"→Chn0:{84,84,46,46,67,67,0,0,0,0,1}→⌊P3
+If X=5:"Azurill"→Chn5:"Mimi-queue"→Chn9:"Tourniquet"→Chn0:{118,118,36,36,71,71,0,0,0,0,1}→⌊P3
+If X=6:"Ptiravi"→Chn5:"Ecras'face"→Chn9:"Charme"→Chn0:{187,187,25,25,77,77,0,0,0,0,1}→⌊P3
+If X=7:"Tournegrin"→Chn5:"Croissance"→Chn9:"Vol-vie"→Chn0:{91,91,55,55,55,55,0,0,0,0,1}→⌊P3
+If X=8:"Crikzik"→Chn5:"Rugissement"→Chn9:"Patience"→Chn0:{100,100,45,45,74,74,0,0,0,0,1}→⌊P3
+If X=9:"Caratroc"→Chn5:"Constriction"→Chn9:"Ligotage"→Chn0:{78,78,17,17,396,396,0,0,0,0,1}→⌊P3
+If X=10:"Coconfort"→Chn5:"Mur de fer"→Chn9:"Piqûre"→Chn0:{111,111,46,46,75,75,0,0,0,0,1}→⌊P3
+If X=11:"Chenipan"→Chn5:"Sécrétion"→Chn9:"Piqûre"→Chn0:{111,111,55,55,55,55,0,0,0,0,1}→⌊P3
+If X=12:"Chrysacier"→Chn5:"Sécrétion"→Chn9:"Ronflement"→Chn0:{118,118,45,45,80,80,0,0,0,0,1}→⌊P3
+If X=13:"Aspicot"→Chn5:"Dard venin"→Chn9:"Piqûre"→Chn0:{105,105,63,63,50,50,0,0,0,0,1}→⌊P3
+If X=14:"Marill"→Chn5:"Ecume"→Chn9:"Roulade"→Chn0:{146,146,37,37,93,93,0,0,0,0,1}→⌊P3
+If X=15:"Pichu"→Chn5:"Eclair"→Chn9:"Camaraderie"→Chn0:{78,78,77,77,53,53,0,0,0,0,1}→⌊P3
 If ⌊P3(5)≥⌊P1(3)
 Then
 Goto J6
@@ -1126,14 +1126,15 @@ Goto T3
 Lbl T3
 EffÉcran
 Output(6,1,"----------------
-Output(7,1,"Un pokémon sauvage
-Output(8,1,"fait son apparition !
+Output(7,1,"Bienvenue dans l'arène.
+Output(8,1,"Placez-vous face à votre
+Output(9,1,"adversaire ! 
 Wait 2
-Output(7,1,"Au combat,  
-Output(7,11,"                 
-If X=1:Output(7,12,Chn2        
-If X=1:Output(7,12,Chn6        
-
+Output(7,1,"C'est parti,                 
+Output(8,11,"                           
+If ⌊PSA(1)<9:0→X
+If X=0:Output(7,14,Chn2        
+If X=1:Output(7,14,Chn6        
 Output(8,1,"                      
 Pause 
 End 
@@ -1248,7 +1249,7 @@ Goto 31
 Else
 Lbl K6
 DelVar X
-Output(7,1,"Pokémon ennemi:              
+Output(7,1,"Adversaire:              
 Output(8,1,Chn5                   
 Pause 
 Lbl 8P
@@ -1441,8 +1442,8 @@ If I<11
 Then
 DelVar X
 nbrAléatEnt(7,15)→X
-Output(7,22,(⌊P1(3)+X)
 ⌊P1(3)+X→⌊P1(3)
+Output(7,22,⌊P1(3)
 Output(9,1,"Coup critique : +
 Output(9,18,X
 Output(9,21,"ATQ !
@@ -1451,7 +1452,7 @@ Output(10,14,⌊P3(5)
 DelVar IDelVar X
 Goto 7X
 Else
-Output(7,23,(⌊P1(3)+X)
+Output(7,23,⌊P1(3)
 Output(10,1,"Ennemi DEF :
 Output(10,14,⌊P3(5)
 ⌊P1(3)+X→⌊P1(3)
@@ -1460,6 +1461,7 @@ Lbl 7X
 Pause 
 EffÉcran
 (⌊P3(1)+⌊P3(5))-⌊P1(3)→⌊P3(1)
+⌊P1(4)→⌊P1(3)
 If ⌊P3(1)>⌊P3(2):⌊P3(2)→⌊P3(1)
 Output(6,1,"----------------
 Output(7,1,"C'est très efficace !
@@ -1475,8 +1477,8 @@ If I<11
 Then
 DelVar X
 nbrAléatEnt(7,15)→X
-Output(7,23,(⌊P3(3)+X)
 ⌊P3(3)+X→⌊P3(3)
+Output(7,23,⌊P3(3)
 Output(9,1,"Coup critique : +
 Output(9,18,X 
 Output(9,21,"ATQ !
@@ -1498,8 +1500,10 @@ Output(3,13,⌊P3(1)
 Output(6,1,"----------------
 Output(7,1,"Attaque de
 Output(7,12,Chn5
-Output(8,1,"dégâts:
-Output(8,10,⌊P3(3)
+nbrAléatEnt(1,2)→X
+If X=1:Output(8,1,"Chn9
+If X=2:Output(8,1,"Chn0
+DelVar X
 Output(10,1,"Votre DEF :
 Output(10,13,⌊P1(5)
 Pause 
