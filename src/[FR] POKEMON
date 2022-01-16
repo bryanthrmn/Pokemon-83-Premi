@@ -8,45 +8,18 @@ Output(3,8,"V:1.7 BÊTA 3
 Output(5,3,"De KENSHI CORPORATION
 Output(7,3,"Par SQUARE PROGRAMMING 
 Output(10,1,"--------------------------
-nbrAléatEnt(10,20)→X
-For(N,1,X:
-For(I,1,10
-40!:End
-Output(8,12,".   
-For(I,1,10
-40!:End
-Wait 0.05
-Output(8,12,"..
+nbrAléatEnt(10,20→X
+For(N,1,X
+"  ...  →Chn0
+For(A,4,­3,­1
 For(I,1,10
 40!:End
 Wait 0.05
-Output(8,12,"...
-For(I,1,10
-40!:End
-Wait 0.05
-Output(8,12," ..   
-For(I,1,10
-40!:End
-Wait 0.05
-Output(8,12,"  .
-For(I,1,10
-40!:End
-Wait 0.05
-Output(8,12," ..   
-For(I,1,10
-40!:End
-Wait 0.05
-Output(8,12,"...
-For(I,1,10
-40!:End
-Wait 0.05
-Output(8,12,"..   
-For(I,1,10
-40!:End
-Wait 0.05
+Output(8,12,sousch(Chn0,1+abs(A),3
+End
 N+1→N
 End
-Output(8,12,"     "
+Output(8,12,"     
 DelVar X
 nbrAléatEnt(3,6)→X
 Wait X
