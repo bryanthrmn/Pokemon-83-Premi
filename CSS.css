@@ -157,3 +157,4 @@
             border-left:1px solid #b6cdef;
             border-right:1px solid #6098FF;
             }
+            @media print {#ghostery-tracker-tally {display:none !important}}
