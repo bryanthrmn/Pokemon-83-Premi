@@ -65,6 +65,9 @@
               content:" ▼";
               font-size: 12px;
           }
+          .deroulantt > a::after{
+              font-size: 12px;
+          }
 
           .conteneur{
             margin: 50px 20px;
