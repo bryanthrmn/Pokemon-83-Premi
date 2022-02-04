@@ -5,8 +5,6 @@
         <link rel="stylesheet" href="CSS.css"> 
     </head>
       <body>
-
-
             <div class="wrapper">
                 <a href="https://square-programming.github.io/Pokemon-83-Premium/" class="TitreB">Pokemon 83 Ti</a>
             </div>
@@ -39,7 +37,8 @@
         </nav>
 
         <div class="conteneur">
-        <p>Il n'y a rien a voir ici !</p>
+        <h1>News</h1>
+        <p>Mmmm il n'y a rien ici...</p>
         </div>
         </div>
         
