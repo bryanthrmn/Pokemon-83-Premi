@@ -26,13 +26,12 @@
                 <li><a href="https://github.com/Square-Programming">équipe</a></li>
               </ul>
             </li>
-            <li class="deroulant"><a href="#">Jeux</a>
+            <li class="deroulant"><a href="#">Jeu</a>
               <ul class="sous">
                 <li><a href="https://square-programming.github.io/Pokemon-83-Premium/infoplus">Plus d'information</a></li>
                 <li><a href="https://square-programming.github.io/Pokemon-83-Premium/Error">News</a></li>
               </ul>
             </li>
-            <li class="deroulantt"><a href="https://square-programming.github.io/Pokemon-83-Premium/EN">In english</a></li>
           </ul>
         </nav>
 
