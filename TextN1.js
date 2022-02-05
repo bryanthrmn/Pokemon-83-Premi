@@ -1,10 +1,10 @@
 $(document).ready(function(){
-    $("div").click(function(){
-        $("p").toggleClass("afficher cacher");
+    $("Texn").click(function(){
+        $("n").toggleClass("afficher cacher");
         $(".afficher").show();
         $(".cacher").hide();
     });
-    $("div").dblclick(function(){
+    $("Texn").dblclick(function(){
         $(this).css("background-color", "lightBlue");
     });
 });
