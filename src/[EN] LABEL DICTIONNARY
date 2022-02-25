@@ -1,20 +1,6 @@
 # This document will serve as a dictionary for the next updates of the game
 
-## Old label dictionnary (version 1.7)
-#Strings
-Str1: Player's name
-Str2: Pokemon #1 name
-Str3: Name of Pokémon #1's attack #1
-Str4: Name of Pokemon #1's attack #2
-Str5: Enemy Pokemon's name 
-Str6: /
-Str7: /
-Str8: /
-Str9: /
-Str0: /
-
-
-## New label dictionnary (> version 1.8)
+## New label dictionnary (> version 1.7 Alpha)
 #Strings
 Str1 : Player 1 name
 Str2 : Pokemon #1
@@ -28,38 +14,119 @@ Str9: Name of the enemy Pokémon's attack #1; random function required
 Str0: Name of enemy Pokémon's attack #2; random function required
 
 #Labels
-  0; Home menu
-1; Home Menu >> New game
-2; Home menu >> Continue game (Main menu)
-3; Home Menu >> Credits (need to add TIny_Hacker on "Developers" and "Translators")
-4; Home menu >> Game improvements
-5; Home menu >> Quit
-
-  6; Main menu
-7; Main menu >> Special events; version 1.8
-8; Main menu >> Enter the forest; program this part in graphics
-9; Main menu >> Battle Arena; make available at level 13 (version 1.8)
-10; Main menu >> My Pokémon; show a detailed status for each pokémon
-11; Main menu >> Laboratory ; 
-12; Main menu >> Shop ; add a currency + add "my inventory
-13; Main menu >> My profile ; display the discovered pokémon (by battle)
-14; Main menu >> Back (Home menu)
-15;
-16;
-17;
-18;
-19;
-1A;
-1B;
-1C;
-1D;
+00; Exit game
+0A; Enter password page
+0B; Home menu
+0C; Getkey of home menu
+0D; Warning page (new game)
+0E; Main menu (continue game)
+0F; Credits
+0G; Settings
+0H; Set password page
+0I; Getkey of warning page
+0J; Introduction (new game confirmed)
+0K; getkey of pokemon starter choice
+0L; Magikarp page
+0M; Pikachu page
+0N; Rowlet page
+0O; Metang page
+0P; Discover forest
+0Q; Fighting arena
+0R; Secret Dungeon
+0S; My Pokémons
+0T; My bag
+0U; My profile
 
 
 
-#Data
-A; Attack of pokemon #1
-B; Health of pokemon #1
-C; Defense of pokemon #1
-D; Attack of pokemon #2
-E; Health of pokemon #2
-F; Defense of pokemon #2
+#List
+  ⌊PKSAV
+1; player level
+2; player XP
+3; max XP of a level
+4; number of victories
+5; win-rate
+6; play again condition
+7; pokemon in-game
+8; game mode
+9; game font
+10; define username text color
+11; define username text color (background)
+12; password
+13; pokémon 1 health
+14; pokémon 1 health (backup)
+15; pokémon 1 attack
+16; pokémon 1 attack (backup)
+17; pokémon 1 defense
+18; pokémon 1 defense (backup)
+19; pokémon 1 gear 1
+20; pokémon 1 gear 2
+21; pokémon 1 level
+22; pokémon 1 type
+23; pokémon 1 rarity
+24; pokémon 1 XP
+25; pokémon 1 XP max
+26; pokémon 2 health
+27; pokémon 2 health (backup)
+28; pokémon 2 attack
+29; pokémon 2 attack (backup)
+30; pokémon 2 defense
+31; pokémon 2 defense (backup)
+32; pokémon 2 gear 1
+33; pokémon 2 gear 2
+34; pokémon 2 level
+35; pokémon 2 type
+36; pokémon 2 rarity
+37; pokémon 2 XP
+38; pokémon 2 XP max
+39; +25 HP potion
+40; +50 HP potion
+41, +100 HP potion
+42; +250 HP potion
+43; +500 HP potion
+44; max HP potion
+45; +5 ATK potion
+46; +10 ATK potion
+47; +25 ATK potion
+48; +50 ATK potion
+49; +100 ATK potion
+50; +5 DEF potion
+51; +10 DEF potion
+52; +25 DEF potion
+53; +50 DEF potion
+54; +100 DEF potion
+55; pokéball
+56; big pokéball
+57; mega pokéball
+58; double XP potion
+59; double pokégold potion
+60; unknown potion
+61; unknown potion
+62; unknown potion
+63; unknown potion
+64; unknown potion
+65; unknown
+66; unknown
+67; unknown
+68; unknown
+69; unknown
+70; unknown
+
+  ⌊PKTMP
+1; Enemy's health
+2; Enemy's health
+3; Enemy's attack
+4; Enemy's attack
+5; Enemy's defense
+6; Enemy's defense
+7; Enemy's 1st equipment
+8; Enemy's 2nd equipment
+9; Enemy's rarity
+10; Enemy's type
+11; Enemy's level (or maybe super  attack)
+
+ #Data
+A; random 1/getkey 1
+B; random 2/getkey 2
+C; random 3/getkey 3
+D; random 4/getkey 4
