@@ -35,8 +35,44 @@ Str0: Name of enemy Pokémon's attack #2; random function required
 0R; Secret Dungeon
 0S; My Pokémons
 0T; My bag
-0U; My profile
-
+0U; Shop
+0V; My profile
+0W; Loading page + Introducing fight
+0X; Discover forest
+0Y; fight tutorial
+0Z; Choose pokémon n°1/2 page
+0θ; choosing random enemy
+01; showing enemy
+02; Battle menu
+03; Information
+04; ATK 1
+05; ATK 2
+06; Capture enemy
+07; Quit battle
+08; Use potion
+09; Change pokémon
+10; My pokémon
+1A; Enemy pokémon info
+1B; Pokémon 1 info
+1C; Pokémon 2 info
+1D; Battle page (player's turn)
+1E; Battle page (enemy's turn)
+1F; Change pokémon (when one is dead)
+1G; Win page
+1H; getkey (when a pokémon die ; cf lbl 1F)
+1I; Lose page
+1J; level up condition
+1K; use pokéball
+1L; use big pokéball
+1M; use méga pokéball
+1N; pokémon capture success
+1O; Menu (pokémon capture success)
+1P; Pokémon 1 has been replaced by enemy
+1Q; Pokémon 2 has been replaced by enemy
+1R; Confirm of throwing enemy away
+1S; Throw enemy away
+1T; Lose page when runing away from the battle
+1U; level up page; setting ⌊PKSAV(2)
 
 
 #List
@@ -110,7 +146,27 @@ Str0: Name of enemy Pokémon's attack #2; random function required
 67; unknown
 68; unknown
 69; unknown
-70; unknown
+70; Number of 1v1 fights
+71; PV in-game
+72; PV in-game (backup)
+73; ATK in-game
+74; ATK in game (backup)
+75; DEF in-game
+76; DEF in-game (backup)
+77; Pokémon type
+78; Pokémon gear 1
+79; Pokémon gear 2
+80; Pokémon rarity
+81; Favorite pokémon 1
+82; Favorite pokémon 2
+83; unknown
+84; unknown
+85; unknown
+86; unknown
+87; unknown
+88; unknown
+89; unknown
+90; unknown
 
   ⌊PKTMP
 1; Enemy's health
@@ -123,7 +179,7 @@ Str0: Name of enemy Pokémon's attack #2; random function required
 8; Enemy's 2nd equipment
 9; Enemy's rarity
 10; Enemy's type
-11; Enemy's level (or maybe super  attack)
+11; Enemy's level (or maybe super attack)
 
  #Data
 A; random 1/getkey 1
