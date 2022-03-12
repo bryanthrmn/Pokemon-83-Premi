@@ -147,18 +147,18 @@ Str0: Name of enemy Pokémon's attack #2; random function required
 68; unknown
 69; unknown
 70; Number of 1v1 fights
-71; PV in-game
-72; PV in-game (backup)
-73; ATK in-game
-74; ATK in game (backup)
-75; DEF in-game
-76; DEF in-game (backup)
-77; Pokémon type
-78; Pokémon gear 1
-79; Pokémon gear 2
-80; Pokémon rarity
-81; Favorite pokémon 1
-82; Favorite pokémon 2
+71; unknown
+72; unknown
+73; unknown
+74; unknown
+75; unknown
+76; unknown
+77; unknown
+78; unknown
+79; unknown
+80; unknown
+81; unknown
+82; unknown
 83; unknown
 84; unknown
 85; unknown
@@ -180,6 +180,20 @@ Str0: Name of enemy Pokémon's attack #2; random function required
 9; Enemy's rarity
 10; Enemy's type
 11; Enemy's level (or maybe super attack)
+
+  ⌊PKDAT
+1; PV in-game
+2; PV in-game (backup)
+3; ATK in-game
+4; ATK in game (backup)
+5; DEF in-game
+6; DEF in-game (backup)
+7; Pokémon type
+8; Pokémon gear 1
+9; Pokémon gear 2
+10; Pokémon rarity
+
+⌊PKLVA or ⌊PKLVB ; for level checking
 
  #Data
 A; random 1/getkey 1
