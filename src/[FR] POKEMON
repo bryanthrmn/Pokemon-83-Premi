@@ -7,7 +7,7 @@ Output(1,1,"--------------------------
 Output(2,2,"·.*POKEMON 83 PREMIUM*.·
 {3:prgmTEXTLIB
 Output(3,8,"V:1.7
-If ⌊PKSAV(71)=1:Then:Output(3,14,"BETA 3":Else:Output(3,14,"ALPHA":End
+Output(3,14,"ALPHA
 Output(5,3,"De KENSHI CORPORATION
 Output(7,3,"Par SQUARE PROGRAMMING
 Output(10,1,"--------------------------
@@ -24,9 +24,7 @@ B+1→B
 End
 Output(8,12,"     
 nbrAléatEnt(3,6)→A:Wait A
-While 1
-getKey→A
-While A≠105 ou A≠45
+Repeat A=105 ou A=45
 getKey→A
 Output(9,3,"                    
 If A=45:Then:Goto 00:End
@@ -34,7 +32,7 @@ If A=105:Then:Goto 0A:End
 Wait .5
 Output(9,3,"APPUYER SUR [ENTRER]
 Wait .5
-End:End
+End
 Lbl 0A
 If ⌊PKSAV(12)≠0:Then:EffÉcran:Disp "":Disp "":Input "Entrer le code PIN : ",A:If A=⌊PKSAV(12):Then:1→A:Goto 1U:Else:Disp "PIN erroné":Pause :Goto 00:End:End
 1→A:Goto 1U
@@ -1144,7 +1142,7 @@ End
 Output(8,1,"Nombre de victoires :
 Output(8,23,⌊PKSAV(4
 ⌊PKSAV(1)→B
-DS<(B,2):(⌊PKSAV(4)/⌊PKSAV(70))*100→A:Output(9,1,"Win-rate :":If A≤100:Then:Output(9,12,ent(A)):Output(9,16,"%":Else:Output(9,12,"-":End
+If ⌊PKSAV(1)≥3:Then:(⌊PKSAV(4)/⌊PKSAV(70))*100→A:Output(9,1,"Win-rate :":If A≤100:Then:Output(9,12,ent(A)):Output(9,16,"%":Else:Output(9,12,"-":End:End
 If ⌊PKSAV(1)≥9:Then:Output(10,1,"Pokémon préféré :":If ⌊PKSAV(81)>⌊PKSAV(82):Then:Output(10,19,Chn2:End:If ⌊PKSAV(81)<⌊PKSAV(82):Then:Output(10,19,Chn5:End:If ⌊PKSAV(81)=⌊PKSAV(82):Then:Output(10,19,"-":End:End
 DelVar B:Pause :EffÉcran:Goto 0E
 Lbl 0F
@@ -1187,7 +1185,6 @@ Pause
 Goto 0B
 Lbl 1C
 EffÉcran
-If ⌊PKSAV(71)≠1:Then
 {13:prgmTEXTLIB
 Output(1,1,"Profil bêta requis
 {3:prgmTEXTLIB
@@ -1196,81 +1193,6 @@ Output(4,1,"bêta pour avoir accès à
 Output(5,1,"cette fonctionnalité.
 Output(10,1,"Version : 1.7 Alpha
 Pause :EffÉcran:Goto 0B
-Else:Goto 1Z:End
-Lbl 1Z
-{13:prgmTEXTLIB
-Output(1,2,"Hacking developper tools
-{3:prgmTEXTLIB
-Output(3,1,"Execute command
-If B≠1
-Then
-Disp ""
-Disp ""
-Disp ""
-Else
-Disp ""
-End
-DelVar Chn0:DelVar Chn9
-Input "-",Chn0
-If Chn0="LVLGEN":Then:Goto 1θ:End
-If Chn0="CNMAKR":Then:Disp "Actual value":Disp ⌊SAV(5):"Input "Select amount :",C:C→⌊PKSAV(10):Goto GK:End
-If Chn0="BTLSWP":Then:Goto 11:End
-If Chn0="RENAME":Then:Goto 12:End
-If Chn0="TMPDEL":Then:DelVar D:DelVar X:DelVar I:DelVar C:DelVar N:DelVar A:DelVar B:1→B:Disp "Temp var del successful":Goto 1Z:End
-If Chn0="DEFRAG":Then:RamasseMiettes:Disp "Calculator is optimised":End
-If Chn0="GLBDAT":Then:Goto 13:End
-If Chn0="0" ou Chn0="Q":Then:EffÉcran:DelVar Chn0:DelVar B:Goto 0B:End
-Disp "Error: unknown
-1→B:Goto 1Z:End
-
-Lbl X1
-1→B
-Disp "{",⌊SAV(1),⌊SAV(2),⌊SAV(3),⌊SAV(4),"}"
-Input "Choose level data :",C
-If C>4:Then:Goto GQ:End
-If C≤0:Then:Goto 1Z:End
-If C≤4:Then:Input "Change value into :",D
-If D>14 et C=1:Then:14→D:End
-If D>80000 et C=2:Then:80000→D:End
-If D>203850 et C=3:Then:203850→D:End
-If D>99999 et C=4:Then:99999→D:End
-D→⌊SAV(C):Goto GK
-Lbl X3
-1→B
-Input "Select info list :",C
-If C=1:Then:Disp "{",⌊SAV(13),⌊SAV(15),⌊SAV(17),"}":Goto Y1:End
-If C=2:Then:Disp "{",⌊SAV(26),⌊SAV(28),⌊SAV(30),"}":Goto Y2
-Disp "Error: unknown
-Pause 
-Goto U6
-Lbl Y1
-Input "Select value :",D
-If D=1:Then:13→E:End
-If D=2:Then:15→E:End
-If D=3:Then:17→E:End
-If D>3 et D<1:Then:Goto U6:End
-Input "Change value into :",F
-F→⌊SAV(E)
-Goto GK
-Lbl Y2
-Input "Select value :",D
-If D=1:Then:26→E:End
-If D=2:Then:28→E:End
-If D=3:Then:30→E:End
-If D>3 et D<1:Then:Goto U6:End
-Input "Change value into :",F
-F→⌊SAV(E)
-Goto GK
-Lbl X4
-1→B
-Disp "Name checking":Input "Enter player name",Chn1:Input "Enter pokemon name :",Chn2:Input "Attack 1 name",Chn3:Input "Attack 2 name",Chn4:Goto Lθ
-Lbl X7
-Disp ⌊SAV
-Input "Select list data :",B
-If B>55:Then:Goto GQ:End
-Input "Change value into :",C
-C→⌊SAV(B)
-Goto GK
 Lbl 0G
 {3:prgmTEXTLIB:EffÉcran
 Lbl 0T
