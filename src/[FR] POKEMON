@@ -670,7 +670,6 @@ If E=1:Then:Output(3,7,Chn2:Output(6,1,Chn3:Output(7,1,Chn4
 Else:Output(3,7,Chn5:Output(6,1,Chn6:Output(7,1,Chn7:End
 If ⌊PKSAV(1)<9:Then:Pause :Goto 03:End
 Lbl 1B
-0:prgmONBLOCK
 getKey→A
 If A=45 ou A=105 ou A=21:Then:Goto 03:End
 If A=24 et E=2 ou A=26 et E=2:Then:1→E:Goto 10:End
@@ -706,7 +705,6 @@ If ⌊PKSAV(7)=1:Then:Output(1,1,Chn2:Else:Output(1,1,Chn5:End
 If ⌊PKDAT(1)≥⌊PKDAT(2)-(⌊PKDAT(2)*25100):Then:{14,16,VERT,17,BLANC:prgmTEXTLIB:End
 If ⌊PKDAT(1)≥⌊PKDAT(2)-(⌊PKDAT(2)*74100) et ⌊PKDAT(1)≤⌊PKDAT(2)-(⌊PKDAT(2)*26100):Then:{14,16,ORANGE,17,BLANC:prgmTEXTLIB:End
 If ⌊PKDAT(1)≤⌊PKDAT(2)-(⌊PKDAT(2)*75100):Then:{14,16,ROUGE,17,BLANC:prgmTEXTLIB:End
-0:prgmONBLOCK
 Output(1,13,⌊PKDAT(1
 {4:prgmTEXTLIB
 Output(2,7,"VS
@@ -795,7 +793,7 @@ If A=1:Then:Goto 0B:End
 Output(1,1,"--------------------------
 {14,16,BLEU CLR,17,BLANC:prgmTEXTLIB
 Output(3,4,"Niveau supérieur: 
-Output(3,22,"⌊PKSAV(1)
+Output(3,22,⌊PKSAV(1)
 {4:prgmTEXTLIB
 Output(5,1,"Récompenses :
 Output(6,2,"+3 points d'attaque
