@@ -1,9 +1,9 @@
 :"Pokemon 83 Premium
 :"888888888888888888883333333388888883222222223888883222222222238883222222222222388322222222222238832222222222223883222233332222388F33333DD33333F883BBBB3333BBBB3883BBBBBBBBBBBB3883BBBBBBBBBBBB3883BBBBBBBBBBBB38883BBBBBBBBBB38888833333333338888888888888888888
-EffÉcran:ÉditeurConfig ⌊PKSAV:90→dim(⌊PKSAV
+EffÉcran:ÉditeurConfig ⌊PKSAV:105→dim(⌊PKSAV):⌊PKSAV(104)+1→⌊PKSAV(104)
 Output(1,1,"--------------------------
 {1:Asm(prgmTEXTLIB:{13:Asm(prgmTEXTLIB
-Output(2,2,"·.*POKEMON 83 PREMIUM*.·
+Output(2,3,".*POKEMON 83 PREMIUM*.
 {3:Asm(prgmTEXTLIB
 Output(3,8,"V:1.7 ALPHA
 Output(5,3,"De KENSHI CORPORATION
@@ -24,18 +24,17 @@ Output(8,12,"
 nbrAléatEnt(3,6)→A:Wait A
 Repeat getKey=105
 Output(9,3,"                    
-Wait .5
-Output(9,3,"APPUYER SUR [ENTRER]
+Wait .5:Output(9,3,"APPUYER SUR [ENTRER]
 Wait .5
 End
 Lbl 0A
-If ⌊PKSAV(12)≠0:Then:EffÉcran:Disp "":Disp "":Input "Entrer le code PIN : ",A:If A=⌊PKSAV(12):Then:1→A:Goto 1U:Else:Disp "PIN erroné":Pause :Goto 00:End:End
+If ⌊PKSAV(12)≠0:Then:EffÉcran:Disp "","":Input "Entrer le code PIN : ",A:If A=⌊PKSAV(12):Then:1→A:Goto 1U:Else:Disp "PIN erroné":Pause :Goto 00:End:End
 1→A:Goto 1U
 Lbl 0B
 EffÉcran
 "POKEMON 83 PREMIUM→Chn0
 "--→Chn9
-For(A,1,longueur(Chn0),1
+For(A,1,18,1
 13-ent(A10/17→B
 Chn9+"-→Chn9
 Output(1,B,"▫"+Chn9+"▫
@@ -44,13 +43,9 @@ Output(3,B,"▫"+Chn9+"▫
 Wait .01
 End
 Output(5,5,"[1] NOUVELLE PARTIE
-Wait .01
 Output(6,5,"[2] CONTINUER PARTIE
-Wait .01
 Output(7,5,"[3] CREDITS
-Wait .01
 Output(8,5,"[4] PARAMETRES
-Wait .01
 Output(9,5,"[5] QUITTER
 Lbl 0C
 getKey→A
@@ -61,6 +56,7 @@ If A=82:Then:{13:Asm(prgmTEXTLIB:Output(8,5,"[4] PARAMETRES":Goto 0G:End
 If A=83 ou A=45:Then:{13:Asm(prgmTEXTLIB:Output(9,5,"[5] QUITTER":Goto 00:End
 If A=55:Then:Goto 0H:End
 If A=11:Then:Goto 1C:End
+If A=15:Then:Goto 1H:End
 Goto 0C
 Lbl 0D
 {3:Asm(prgmTEXTLIB:EffÉcran
@@ -90,7 +86,7 @@ If A=45:Then:Goto 0B:End
 Goto 0I
 Lbl 0J
 {3:Asm(prgmTEXTLIB:EffÉcran
-DelVar Chn1DelVar Chn2DelVar Chn3DelVar Chn4DelVar Chn5DelVar Chn6DelVar Chn7DelVar Chn8DelVar Chn9DelVar Chn0DelVar ⌊PKSAV
+DelVar Chn5DelVar Chn6DelVar Chn7DelVar ⌊PKSAV
 90→dim(⌊PKSAV):1→⌊PKSAV(21):1→⌊PKSAV(7):20→⌊PKSAV(3
 "Temporaire"→Chn1
 Repeat longueur(Chn1)≤8
@@ -116,7 +112,7 @@ Output(9,1,"Pokémon ?
 Wait 5:EffÉcran
 Output(5,1,"----------------
 Output(6,1,"Les pokémons se trouvent
-Output(7,1,"partout de notre planète.
+Output(7,1,"partout sur notre planète.
 Wait 5:EffÉcran
 Output(5,1,"----------------
 Output(6,1,"Certains vivent dans
@@ -244,11 +240,11 @@ Output(9,1,"difficile à vaincre.
 Pause 
 If ⌊PKSAV(1)=9:Then
 "Evoli"→Chn5:"Relais"→Chn6:"Dernier recours"→Chn7
-104→⌊PKSAV(26):104→⌊PKSAV(27):125→⌊PKSAV(28):125→⌊PKSAV(29):114→⌊PKSAV(30):114→⌊PKSAV(31)
-Goto 0E
+104→⌊PKSAV(26):125→⌊PKSAV(28):114→⌊PKSAV(30)
+1→⌊PKSAV(100):Goto 0E
 Else
 "Magicarpe"→Chn2:"Pistolet A.O !"→Chn3:"Trempette !"→Chn4
-69→⌊PKSAV(13):69→⌊PKSAV(14):78→⌊PKSAV(15):78→⌊PKSAV(16):45→⌊PKSAV(17):45→⌊PKSAV(18)
+69→⌊PKSAV(13):78→⌊PKSAV(15):45→⌊PKSAV(17
 Goto 0Y
 End
 Lbl 0M
@@ -256,11 +252,11 @@ Output(7,1,"Tu as fait un bon choix.
 Pause 
 If ⌊PKSAV(1)=9:Then
 "Héricendre"→Chn5:"Roue de feu"→Chn6:"Nitrocharge"→Chn7
-116→⌊PKSAV(26):116→⌊PKSAV(27):103→⌊PKSAV(28):103→⌊PKSAV(29):93→⌊PKSAV(30):93→⌊PKSAV(31)
-Goto 0E
+116→⌊PKSAV(26):103→⌊PKSAV(28):93→⌊PKSAV(30
+1→⌊PKSAV(100):Goto 0E
 Else
 "Pikachu"→Chn2:"Queue éclair !"→Chn3:"Charge"→Chn4
-162→⌊PKSAV(13):162→⌊PKSAV(14):98→⌊PKSAV(15):98→⌊PKSAV(16):46→⌊PKSAV(17):46→⌊PKSAV(18)
+162→⌊PKSAV(13):98→⌊PKSAV(15):46→⌊PKSAV(17
 Goto 0Y
 End
 Lbl 0N
@@ -270,11 +266,11 @@ Output(9,1,"ennemis seront puissants.
 Pause 
 If ⌊PKSAV(1)=9:Then
 "Larméléon"→Chn5:"Torent"→Chn6:"Sniper"→Chn7
-132→⌊PKSAV(26):132→⌊PKSAV(27):118→⌊PKSAV(28):118→⌊PKSAV(29):79→⌊PKSAV(30):79→⌊PKSAV(31
-Goto 0E
+132→⌊PKSAV(26)118→⌊PKSAV(28):79→⌊PKSAV(30
+1→⌊PKSAV(100):Goto 0E
 Else
 "Brindibou"→Chn2:"Pic-pic !"→Chn3:"Fouet liannes !"→Chn4
-98→⌊PKSAV(13):98→⌊PKSAV(14):65→⌊PKSAV(15):65→⌊PKSAV(16):30→⌊PKSAV(17):30→⌊PKSAV(18)
+98→⌊PKSAV(13):65→⌊PKSAV(15):30→⌊PKSAV(17
 Goto 0Y
 End
 Lbl 0O
@@ -282,13 +278,14 @@ Output(7,1,"Très bon choix !
 Pause 
 If ⌊PKSAV(1)=9:Then
 "Germignon"→Chn5:"Engrais"→Chn6:"Feuille garde"→Chn7
-92→⌊PKSAV(26):92→⌊PKSAV(27):111→⌊PKSAV(28):111→⌊PKSAV(29):122→⌊PKSAV(30):122→⌊PKSAV(31)
-Goto 0E
+92→⌊PKSAV(26)111→⌊PKSAV(28):122→⌊PKSAV(30
+1→⌊PKSAV(100):Goto 0E
 Else
 "Métang"→Chn2:"Ultralaser"→Chn3:"Bélier"→Chn4
-268→⌊PKSAV(13):268→⌊PKSAV(14):102→⌊PKSAV(15):102→⌊PKSAV(16):46→⌊PKSAV(17):46→⌊PKSAV(18)
+268→⌊PKSAV(13):102→⌊PKSAV(15):46→⌊PKSAV(17
 End
 Lbl 0Y
+⌊PKSAV(13)→⌊PKSAV(14):⌊PKSAV(15)→⌊PKSAV(16):⌊PKSAV(17)→⌊PKSAV(18)
 EffÉcran
 Output(5,1,"----------------
 Output(6,1,"A présent, nous allons
@@ -299,20 +296,22 @@ Output(6,1,"C'est parti !
 Output(7,1,Chn2
 Pause :EffÉcran:2→⌊PKSAV(8):1+⌊PKSAV(70)→⌊PKSAV(70)
 {200,200,0,0,5,5,0,0,0,0,1→⌊PKTMP
-⌊PKSAV(17)+7→⌊PKTMP(3):⌊PKSAV(17)+7→⌊PKTMP(4)
+⌊PKSAV(17)+7→⌊PKTMP(3):⌊PKTMP(3)→⌊PKTMP(4)
 "Bot 1"→Chn8:"Frappe de l'entraîneur"→Chn9:Chn9→Chn0
 Goto 01
 Lbl 0E
 {3:Asm(prgmTEXTLIB:EffÉcran
-If ⌊PKSAV(1)≤0 ou ⌊PKSAV(3)<20 ou ⌊PKSAV(14)≤0 ou ⌊PKSAV(16)≤0 ou ⌊PKSAV(18)≤0
+If ⌊PKSAV(1)≤0 ou ⌊PKSAV(3)<20 ou ⌊PKSAV(14)≤0 ou ⌊PKSAV(16)≤0
 Then
 Output(5,1,"----------------
-Output(6,1,"Pas de sauvegarde
+Output(6,1,"Aucune sauvegarde
 Output(7,1,"retrouvée !
 Pause :Goto 0B
 Else
 Désarchiver Chn1:Désarchiver Chn2:Désarchiver Chn3:Désarchiver Chn4
-If ⌊PKSAV(1)≥9 et ⌊PKSAV(27)≠0 et ⌊PKSAV(29)≠0 et ⌊PKSAV(31)≠0:Then:Désarchiver Chn5:Désarchiver Chn6:Désarchiver Chn7:End
+While ⌊PKSAV(1)≥9
+If ⌊PKSAV(100)=1:Then:0→⌊PKSAV(100):⌊PKSAV(26)→⌊PKSAV(27):⌊PKSAV(28)→⌊PKSAV(29):⌊PKSAV(30)→⌊PKSAV(31):End
+If ⌊PKSAV(27)≠0 et ⌊PKSAV(29)≠0:Then:Désarchiver Chn5:Désarchiver Chn6:Désarchiver Chn7:End
 0→⌊PKSAV(6):0→⌊PKSAV(8)
 Menu("Menu principal","Découvrir la forêt",0X,"Arène de combat",0Q,"Donjon secret",0R,"Mes Pokémons",0S,"Inventaire",0T,"Boutique",0U,"Mon profil",0V,"Retour",0B
 End
@@ -381,9 +380,10 @@ EffÉcran
 If ⌊PKSAV(7)=1:Then:1+⌊PKSAV(81)→⌊PKSAV(81):Else:1+⌊PKSAV(82)→⌊PKSAV(82):End
 1+⌊PKSAV(70)→⌊PKSAV(70)
 nbrAléatEnt(1,3)→A
-If A=1:Then:Output(10,4,"Bonne année à tous !":End
+If A=1:Then:Output(10,1,"Les équipements sont accessibles au niveau 11":End
 If A=2:Then:Output(10,3,"Visitez la boutique":End
 If A=3:Then:Output(10,1,"Méfiez-vous des ténèbres !":End
+If A=4:Then:Output(10,1,"Vérifiez les MAJ du jeu":End
 Output(2,1,"--------------------------
 Output(4,8,"Chargement :
 0→A:Output(9,10,"Astuce :
@@ -549,10 +549,14 @@ If A=100:Then:"Suicune"→Chn8:{187,187,180,180,235,235→⌊PKTMP:End
 If A=101:Then:"Roitiflam"→Chn8:{200,200,235,235,127,127→⌊PKTMP:End 
 If A=102:Then:"Pachyradjah"→Chn8:{217,217,226,226,126,126→⌊PKTMP:End
 End
-If ⌊PKTMP(1)=0 ou ⌊PKTMP(3)=0 ou ⌊PKTMP(5)=0:Then:Goto 0θ:End
-If ⌊PKSAV(1)<3:Then:If ⌊PKTMP(5)≥⌊PKSAV(15):Then:Goto 0θ:End:End
-If ⌊PKSAV(1)>5:Then:If ⌊PKTMP(3)≤⌊PKSAV(18):Then:Goto 0θ:End:End
 Lbl 01
+10→dim(⌊PKDAT
+If ⌊PKSAV(7)=1:Then:13→B:Else:26→B:End:1→C
+For(A,1,6
+⌊PKSAV(B)→⌊PKDAT(C)
+B+1→B:C+1→C:End
+If ⌊PKTMP(1)=0 ou ⌊PKTMP(3)=0 ou ⌊PKTMP(5)=0:Then:Goto 0θ:End
+If ⌊PKSAV(1)≠0:Then:While ⌊PKTMP(4)≤⌊PKDAT(6):Goto 0θ:End:End
 EffÉcran
 Output(5,1,"----------------
 If ⌊PKSAV(8)=1:Then:Output(6,1,"Pokémon ennemi :":Else:Output(6,1,"Adversaire :":End
@@ -560,8 +564,6 @@ Output(7,1,Chn8
 Pause 
 Lbl 02
 EffÉcran
-10→dim(⌊PKDAT
-If ⌊PKSAV(7)=1:Then:⌊PKSAV(13)→⌊PKDAT(1):⌊PKSAV(14)→⌊PKDAT(2):⌊PKSAV(15)→⌊PKDAT(3):⌊PKSAV(16)→⌊PKDAT(4):⌊PKSAV(17)→⌊PKDAT(5):⌊PKSAV(18)→⌊PKDAT(6):⌊PKSAV(19)→⌊PKDAT(7):⌊PKSAV(20)→⌊PKDAT(8):⌊PKSAV(22)→⌊PKDAT(9):⌊PKSAV(23)→⌊PKDAT(10):Else:⌊PKSAV(26)→⌊PKDAT(1):⌊PKSAV(27)→⌊PKDAT(2):⌊PKSAV(28)→⌊PKDAT(3):⌊PKSAV(29)→⌊PKDAT(4):⌊PKSAV(30)→⌊PKDAT(5):⌊PKSAV(31)→⌊PKDAT(6):⌊PKSAV(31)→⌊PKDAT(7):⌊PKSAV(32)→⌊PKDAT(8):⌊PKSAV(33)→⌊PKDAT(9):⌊PKSAV(34)→⌊PKDAT(10):End
 If ⌊PKDAT(1)≤0:Then:Goto 1F:End
 While ⌊PKSAV(1)<6
 If ⌊PKSAV(7)=1:Then:Menu("COMBAT!","Informations",03,Chn3,04,Chn4,05,"Capturer",06,"Fuir",07:Else:Menu("COMBAT!","Informations",03,Chn6,04,Chn7,05,"Capturer",06,"Fuir",07:End:End
@@ -687,22 +689,22 @@ Lbl 1J
 ⌊PKSAV(1)→C
 ⌊PKSAV(16)→⌊PKSAV(15):⌊PKSAV(18)→⌊PKSAV(17)
 ⌊PKSAV(29)→⌊PKSAV(28):⌊PKSAV(31)→⌊PKSAV(30)
-If ⌊PKSAV(1)=0:Then:1→⌊PKSAV(1):9→B:End
-If ⌊PKSAV(1)≤13:Then:Disp "EXP: +":nbrAléatEnt([B](1,⌊PKSAV(1)),[B](2,⌊PKSAV(1)))→A:Disp A:⌊PKSAV(2)+A→⌊PKSAV(2):Else:Output(1,1,"Niveau maximum !":End
+If C=0:Then:1→⌊PKSAV(1):9→B:End
+If C≤13:Then:Disp "EXP: +":nbrAléatEnt([B](1,C),[B](2,C))→A:Disp A:⌊PKSAV(2)+A→⌊PKSAV(2):Else:Output(1,1,"Niveau maximum !":End
 DelVar ⌊PKTMP:DelVar Chn9:DelVar Chn0:DelVar ⌊PKDAT:DelVar Chn8:DelVar [B]
 If ⌊PKSAV(2)<0:Then:0→⌊PKSAV(2):End
 Pause :EffÉcran
-If ⌊PKSAV(2)≥⌊PKSAV(3) et ⌊PKSAV(1)≤13
+If ⌊PKSAV(2)≥⌊PKSAV(3) et C≤13
 Then
 C+1→C:C→⌊PKSAV(1
-⌊PKSAV(13)+3→⌊PKSAV(13):⌊PKSAV(14)+3→⌊PKSAV(14
-⌊PKSAV(15)+4→⌊PKSAV(15):⌊PKSAV(16)+4→⌊PKSAV(16
-⌊PKSAV(17)+1→⌊PKSAV(17):⌊PKSAV(18)+1→⌊PKSAV(18
-If ⌊PKSAV(1)≥9:Then:
-⌊PKSAV(26)+3→⌊PKSAV(26):⌊PKSAV(27)+3→⌊PKSAV(27
-⌊PKSAV(28)+4→⌊PKSAV(28):⌊PKSAV(29)+4→⌊PKSAV(29
-⌊PKSAV(30)+1→⌊PKSAV(30):⌊PKSAV(31)+1→⌊PKSAV(31
-End
+14→B:27→D:0→A
+nbrAléatEnt(1,4)→E
+For(A,1,3
+⌊PKSAV(B)+E→⌊PKSAV(B):⌊PKSAV(B)→⌊PKSAV(B-1)
+B+2→B
+If ⌊PKSAV(1)≥9:Then:⌊PKSAV(D)+E→⌊PKSAV(D):⌊PKSAV(D)→⌊PKSAV(D-1):D+2→D:End
+A+1→A
+End:End
 ⌊PKSAV(2)-⌊PKSAV(3)→⌊PKSAV(2
 Lbl 1U
 If ⌊PKSAV(1)<14 et ⌊PKSAV(1)>0:Then
@@ -724,7 +726,7 @@ If C=13:Then:Output(9,2,"Donjon secret débloqué !":End
 If C=14:Then:Output(9,2,"Equipement n°2 débloqué !"End
 End
 Pause :EffÉcran
-If C>9 et ⌊PKSAV(27)≤0 et ⌊PKSAV(29)≤0 et ⌊PKSAV(31)≤0:Then:Goto 0Z:End
+If C>9 et ⌊PKSAV(27)≤0 et ⌊PKSAV(29)≤0:Then:Goto 0Z:End
 End
 1→⌊PKSAV(6)
 While C>2
@@ -858,8 +860,7 @@ Repeat A=105 ou A=45 ou A=21
 While A=24 ou A=26
 If ⌊PKSAV(7)=1:Then:2→⌊PKSAV(7):Goto 09:End
 If ⌊PKSAV(7)=2:Then:1→⌊PKSAV(7):Goto 09:End
-End
-End
+End:End
 Goto 02
 Lbl 0R
 If ⌊PKSAV(1)<13:Then
@@ -1089,9 +1090,7 @@ Lbl 0G
 {3:Asm(prgmTEXTLIB:EffÉcran
 Lbl 0T
 0→B:EffDess:AxesNAff:FoncNAff 
-0→Xmin:264→Xmax
-0→Ymin:164→Ymax
-0→B
+0→Xmin:264→Xmax:0→Ymin:164→Ymax:0→B
 Ligne(1,264,1,164,12
 CouleurTexte(12
 Texte(25,130,"Sélectionnez une
@@ -1241,12 +1240,12 @@ EffÉcran
 {13:Asm(prgmTEXTLIB
 Disp "VERSION: 1.7 ALPHA
 {3:Asm(prgmTEXTLIB
-Disp "03 Mars 2022","","- 115 pokémons disponibles","- Ajout de 3 nouveaux","membres au conseil","- Compatibilité CEsium","- Ajout de fonctionalitées","lors d'un combat
+Disp "04 Avril 2022","","- 115 pokémons disponibles","- Ajout de 3 nouveaux","membres au conseil","- Compatibilité CEsium","- Ajout de fonctionalitées","lors d'un combat
 Pause :EffÉcran
 {13:Asm(prgmTEXTLIB
 Disp "VERSION: 1.7 ALPHA
 {3:Asm(prgmTEXTLIB
-Disp "03 Mars 2022","","- Nouveau système de","niveaux d'expérience","- Ajout d'une boutique","- Ajout de couleurs","- Corrections de langue","- Corrections de bugs
+Disp "04 Avril 2022","","- Nouveau système de","niveaux d'expérience","- Ajout d'une boutique","- Ajout de couleurs","- Corrections de langue","- Corrections de bugs
 Pause :EffÉcran
 {13:Asm(prgmTEXTLIB
 Disp "Plus d'informations sur :
@@ -1256,7 +1255,7 @@ Pause :EffÉcran
 End
 Goto CK
 Lbl 00
-{3:Asm(prgmTEXTLIB:EffÉcran:EffDess:Flottant:Fonc:Épais:PleinÉcr:nd::CGRect:CoordAff:QuadNAff:AxesAff :ÉtiqNAff:ExprAff:ArrPlanNAff:DétectAsymAct
+{3:Asm(prgmTEXTLIB:EffÉcran:EffDess:PleinÉcr:CGRect:CoordAff::AxesAff :ÉtiqNAff:ExprAff:ArrPlanNAff
 If ⌊PKSAV(1)>0:Then:Archiver Chn1:Archiver Chn2:Archiver Chn3:Archiver Chn4:End
 If ⌊PKSAV(1)≥9:Then:Archiver Chn5:Archiver Chn6:Archiver Chn7:End
 Archiver ⌊PKSAV
