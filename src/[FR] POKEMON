@@ -162,12 +162,12 @@ If ⌊PKSAV(1)=9:Then
 Output(9,13,"Relais        
 Output(10,13,"Dernier recour
 Output(5,20,"Combat
-104→C:125→D:114→E
+175→C:116→D:43→E
 Else
 Output(9,13,"Pistolet A.O ! 
 Output(10,13,"Trempette !  
 Output(5,20,"Eau   
-69→C:78→D:45→E
+101→C:81→D:28→E
 End:End
 If B=2:Then:{13:Asm(prgmTEXTLIB:End
 If ⌊PKSAV(1)=9:Then:Output(6,1,"Héricendre":Else:Output(6,1,"Pikachu":End
@@ -176,12 +176,12 @@ If ⌊PKSAV(1)=9:Then
 Output(9,13,"Roue de feu   
 Output(10,13,"Nitrocharge   
 Output(5,20,"Feu   
-116→C:103→D:93→E
+183→C:103→D:46→E
 Else
 Output(9,13,"Queue éclair !
 Output(10,13,"Charge        
 Output(5,20,"Foudre
-162→C:98→D:46→E
+172→C:98→D:32→E
 End:End
 If B=3:Then:{13:Asm(prgmTEXTLIB:End
 If ⌊PKSAV(1)=9:Then:Output(7,1,"Larméléon":Else:Output(7,1,"Brindibou":End
@@ -190,12 +190,12 @@ If ⌊PKSAV(1)=9:Then:
 Output(9,13,"Torent       
 Output(10,13,"Sniper       
 Output(5,20,"Eau   
-132→C:118→D:79→E
+162→C:108→D:49→E
 Else
 Output(9,13,"Pic-pic !       
 Output(10,13,"Fouet liannes
 Output(5,20,"Nature
-98→C:65→D:30→E
+113→C:77→D:24→E
 End:End
 If B=4:Then:{13:Asm(prgmTEXTLIB:End
 If ⌊PKSAV(1)=9:Then:Output(8,1,"Germignon":Else:Output(8,1,"Métang":End
@@ -204,12 +204,12 @@ If ⌊PKSAV(1)=9:Then:
 Output(9,13,"Engrais      
 Output(10,13,"Feuille garde         
 Output(5,20,"Nature
-92→C:111→D:122→E
+194→C:100→D:32→E
 Else
 Output(9,13,"Ultralaser    
 Output(10,13,"Bélier        
 Output(5,20,"Acier 
-268→C:102→D:46→E
+203→C:96→D:43→E
 End:End
 Output(6,13,"PV : "+eval(C)+"  
 Output(7,13,"ATQ : "+eval(D)+"  
@@ -226,66 +226,53 @@ If B=0:Then:4→B:End
 Goto 0K
 End
 While A=105 ou A=21
+If ⌊PKSAV(1)<9:Then:13→A:Else:26→A;End
+For(F,1,2
+C→⌊PKSAV(A):D→⌊PKSAV(A+2):E→⌊PKSAV(A+4)
+A+1→A:End
 EffÉcran:Output(6,1,"----------------
-If B=1:Then:Goto 0L:End
-If B=2:Then:Goto 0M:End
-If B=3:Then:Goto 0N:End
-If B=4:Then:Goto 0O:End
-End
-Goto 0K
-Lbl 0L
+If B=1:Then
 Output(7,1,"Dommage pour toi :
 Output(8,1,"tes ennemis seront
 Output(9,1,"difficile à vaincre.
 Pause 
 If ⌊PKSAV(1)=9:Then
 "Evoli"→Chn5:"Relais"→Chn6:"Dernier recours"→Chn7
-104→⌊PKSAV(26):125→⌊PKSAV(28):114→⌊PKSAV(30)
 1→⌊PKSAV(100):Goto 0E
 Else
 "Magicarpe"→Chn2:"Pistolet A.O !"→Chn3:"Trempette !"→Chn4
-69→⌊PKSAV(13):78→⌊PKSAV(15):45→⌊PKSAV(17
-Goto 0Y
-End
-Lbl 0M
+Goto 0Y:End:End
+If B=2:Then
 Output(7,1,"Tu as fait un bon choix.
 Pause 
 If ⌊PKSAV(1)=9:Then
 "Héricendre"→Chn5:"Roue de feu"→Chn6:"Nitrocharge"→Chn7
-116→⌊PKSAV(26):103→⌊PKSAV(28):93→⌊PKSAV(30
-1→⌊PKSAV(100):Goto 0E
+Goto 0E
 Else
 "Pikachu"→Chn2:"Queue éclair !"→Chn3:"Charge"→Chn4
-162→⌊PKSAV(13):98→⌊PKSAV(15):46→⌊PKSAV(17
-Goto 0Y
-End
-Lbl 0N
+Goto 0Y:End:End
+If B=3:Then
 Output(7,1,"Un choix correct...
 Output(8,1,"N'oublie pas que tes
 Output(9,1,"ennemis seront puissants.
 Pause 
 If ⌊PKSAV(1)=9:Then
 "Larméléon"→Chn5:"Torent"→Chn6:"Sniper"→Chn7
-132→⌊PKSAV(26)118→⌊PKSAV(28):79→⌊PKSAV(30
-1→⌊PKSAV(100):Goto 0E
+Goto 0E
 Else
 "Brindibou"→Chn2:"Pic-pic !"→Chn3:"Fouet liannes !"→Chn4
-98→⌊PKSAV(13):65→⌊PKSAV(15):30→⌊PKSAV(17
-Goto 0Y
-End
-Lbl 0O
+Goto 0Y:End:End
+If B=4:Then
 Output(7,1,"Très bon choix !
 Pause 
 If ⌊PKSAV(1)=9:Then
 "Germignon"→Chn5:"Engrais"→Chn6:"Feuille garde"→Chn7
-92→⌊PKSAV(26)111→⌊PKSAV(28):122→⌊PKSAV(30
-1→⌊PKSAV(100):Goto 0E
+Goto 0E
 Else
 "Métang"→Chn2:"Ultralaser"→Chn3:"Bélier"→Chn4
-268→⌊PKSAV(13):102→⌊PKSAV(15):46→⌊PKSAV(17
-End
+Goto 0Y:End:End
+End:Goto 0K:End
 Lbl 0Y
-⌊PKSAV(13)→⌊PKSAV(14):⌊PKSAV(15)→⌊PKSAV(16):⌊PKSAV(17)→⌊PKSAV(18)
 EffÉcran
 Output(5,1,"----------------
 Output(6,1,"A présent, nous allons
@@ -309,9 +296,7 @@ Output(7,1,"retrouvée !
 Pause :Goto 0B
 Else
 Désarchiver Chn1:Désarchiver Chn2:Désarchiver Chn3:Désarchiver Chn4
-While ⌊PKSAV(1)≥9
-If ⌊PKSAV(100)=1:Then:0→⌊PKSAV(100):⌊PKSAV(26)→⌊PKSAV(27):⌊PKSAV(28)→⌊PKSAV(29):⌊PKSAV(30)→⌊PKSAV(31):End
-If ⌊PKSAV(27)≠0 et ⌊PKSAV(29)≠0:Then:Désarchiver Chn5:Désarchiver Chn6:Désarchiver Chn7:End
+If ⌊PKSAV(27)≠0 et ⌊PKSAV(29)≠0 et ⌊PKSAV(1)>8:Then:Désarchiver Chn5:Désarchiver Chn6:Désarchiver Chn7:End
 0→⌊PKSAV(6):0→⌊PKSAV(8)
 Menu("Menu principal","Découvrir la forêt",0X,"Arène de combat",0Q,"Donjon secret",0R,"Mes Pokémons",0S,"Inventaire",0T,"Boutique",0U,"Mon profil",0V,"Retour",0B
 End
@@ -584,7 +569,8 @@ Output(4,1,"PV :
 Output(4,11,"/
 Output(5,1,"ATQ :
 Output(8,1,"DEF :
-If E=1:Then:⌊PKSAV(13)→A:⌊PKSAV(14)→B:⌊PKSAV(16)→C:⌊PKSAV(18)→D:Else:⌊PKSAV(26)→A:⌊PKSAV(27)→B:⌊PKSAV(29)→C:⌊PKSAV(31)→D:End
+If E=1:Then:13→F:Else:26→F:End
+⌊PKSAV(F)→A:⌊PKSAV(F+1)→B:⌊PKSAV(F+3)→C:⌊PKSAV(F+5)→D
 If A≤0:Then:0→A:End
 If A≥B-(25B100):Then:{14,16,VERT,17,BLANC:Asm(prgmTEXTLIB:End
 If A≥B-(74B100) et A≤B-(26B100):Then:{14,16,ORANGE,17,BLANC:Asm(prgmTEXTLIB:End
@@ -623,9 +609,10 @@ If ⌊PKSAV(7)=1:Then:Output(7,1,Chn3:Else:Output(7,1,Chn6:End
 Lbl 1D
 If B=1:Then:EffÉcran:End
 If ⌊PKSAV(7)=1:Then:Output(1,1,Chn2:Else:Output(1,1,Chn5:End
-If ⌊PKDAT(1)≥⌊PKDAT(2)-(⌊PKDAT(2)*25100):Then:{14,16,VERT,17,BLANC:Asm(prgmTEXTLIB:End
-If ⌊PKDAT(1)≥⌊PKDAT(2)-(⌊PKDAT(2)*74100) et ⌊PKDAT(1)≤⌊PKDAT(2)-(⌊PKDAT(2)*26100):Then:{14,16,ORANGE,17,BLANC:Asm(prgmTEXTLIB:End
-If ⌊PKDAT(1)≤⌊PKDAT(2)-(⌊PKDAT(2)*75100):Then:{14,16,ROUGE,17,BLANC:Asm(prgmTEXTLIB:End
+⌊PKDAT(1)→F:⌊PKDAT(2)→G
+If F≥G-(25G100):Then:{14,16,VERT,17,BLANC:Asm(prgmTEXTLIB:End
+If F≥G-(74G100) et F≤G-(26G100):Then:{14,16,ORANGE,17,BLANC:Asm(prgmTEXTLIB:End
+If F≤G-(75G100):Then:{14,16,ROUGE,17,BLANC:Asm(prgmTEXTLIB:End
 Output(1,13,⌊PKDAT(1
 {4:Asm(prgmTEXTLIB
 Output(2,7,"VS
@@ -687,8 +674,6 @@ Output(7,1,"Vous avez perdu !"
 [[2,5,8,12,19,28,40,55,73,94,118,145,175][7,10,16,25,37,52,70,91,115,142,172,205,241]]→[B]
 Lbl 1J
 ⌊PKSAV(1)→C
-⌊PKSAV(16)→⌊PKSAV(15):⌊PKSAV(18)→⌊PKSAV(17)
-⌊PKSAV(29)→⌊PKSAV(28):⌊PKSAV(31)→⌊PKSAV(30)
 If C=0:Then:1→⌊PKSAV(1):9→B:End
 If C≤13:Then:Disp "EXP: +":nbrAléatEnt([B](1,C),[B](2,C))→A:Disp A:⌊PKSAV(2)+A→⌊PKSAV(2):Else:Output(1,1,"Niveau maximum !":End
 DelVar ⌊PKTMP:DelVar Chn9:DelVar Chn0:DelVar ⌊PKDAT:DelVar Chn8:DelVar [B]
@@ -812,10 +797,10 @@ Output(6,1,Chn8
 0→⌊PKSAV(82
 Pause 
 Chn8→Chn5:Chn9→Chn6:Chn0→Chn7
-⌊PKTMP(2)-ent(⌊PKTMP(2)*.23)→⌊PKSAV(26)
-⌊PKTMP(4)-ent(⌊PKTMP(4)*.47)→⌊PKSAV(28)
-⌊PKTMP(6)-ent(⌊PKTMP(6)*.5)→⌊PKSAV(30)
-⌊PKSAV(26)→⌊PKSAV(25):⌊PKSAV(28)→⌊PKSAV(27):⌊PKSAV(30)→⌊PKSAV(29)
+⌊PKTMP(2)-ent(⌊PKTMP(2)*.23)→⌊PKSAV(26
+⌊PKTMP(4)-ent(⌊PKTMP(4)*.47)→⌊PKSAV(28
+⌊PKTMP(6)-ent(⌊PKTMP(6)*.5)→⌊PKSAV(30
+⌊PKSAV(26)→⌊PKSAV(25):⌊PKSAV(28)→⌊PKSAV(27):⌊PKSAV(30)→⌊PKSAV(29
 Goto 1G
 Lbl 1R
 Menu("Confirmer ?","Oui",1S,"Non",1O
