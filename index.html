@@ -34,9 +34,91 @@
 <main class="main">
 
     <div class="container">
-        <h1>Version 1.7 Bêta 2</h1>
-        <p>Nouveautés :<br>Ajout d'outils de développement<br><br>Compatibilité avec CEsium<br><br>Ajout de couleurs<br><br>Les données sont désormais archivées en quittant le jeu<br><br>Ajout de paramètres<br><br>Corrections de bugs<br><br></p>
-              <form action="https://github.com/Square-Programming/Pokemon-83-Premium/raw/main/%5BFR%5D%20POKEMON.8xp">
+        <h1>Version 1.7 Bêta 3 [06/04/2022]</h1>
+<p><span><strong>Nouveaut&eacute;s :</strong></span></p>
+<ul>
+<li>Nouveau menu d'accueil ; nous comptons en effet de cr&eacute;er nos propres menus (utiliser la commande getKey).</li>
+<li>Nouveau tutoriel pour les nouveaux joueurs; lors d'une nouvelle partie, vous devrez suivre les conseils du professeur Oephorbe et choisir un des 4 pok&eacute;mons (tout comme au niveau 9).</li>
+<li>Vous d&eacute;bloquez d&eacute;sormais un deuxi&egrave;me pok&eacute;mon au niveau 9 ; vous &ecirc;tes donc libre de les utiliser contre l'ennemi (lorsqu'il sera votre tour pour jouer).</li>
+<li>Les potions ont temporairement &eacute;t&eacute; enlev&eacute;es du jeu. Elles reviendront bien s&ucirc;r, nous essayons de finir les derni&egrave;res touches avant de vous les exposer &agrave; nouveau. Entre-temps, vos pok&eacute;mons peuvent seulement se soigner lorsque vous cliquez l'onglet "Inventaire". Vous devrez patienter un certain instant pour que votre pok&eacute;mon reprenne ses forces.</li>
+<li>Nous avons ajout&eacute; des param&egrave;tres ; nous souhaitons offrir des commandes libres &agrave; l'utilisateur telles que le changement de th&egrave;me (clair/sombre) ; ainsi que d'autres fonctionnalit&eacute;s pour changer l'exp&eacute;rience de jeu.</li>
+</ul>
+<p><span><strong>Corrections et Am&eacute;liorations :</strong></span></p>
+<ul>
+<li>Nous avons temporairement supprim&eacute; les outils de d&eacute;veloppement suite &agrave; une r&eacute;vision du code.</li>
+<li>Nous avons ajout&eacute; un logo et une description CEsium.</li>
+<li>Pok&eacute;mon 83 Premium demande d&eacute;sormais TEXTLIB pour que le jeu s'affiche bien en couleurs.</li>
+<li>Pok&eacute;mon 83 Premium n'&eacute;tait pas compatible avec CEmu ainsi que les versions CE inf&eacute;rieures &agrave; 5.5.1. Nous avons donc ajout&eacute; la commande "Asm(" avant chaque utilisation de TEXTLIB.</li>
+<li>Les donn&eacute;es sont maintenant archiv&eacute;es lorsque le joueur quitte le jeu.<br /><br /></li>
+</ul>
+<p><span><strong>Mise &agrave; jour d'&eacute;quilibrage :</strong></span></p>
+<p><span>Buffs et Nerfs :</span></p>
+<table border="1" height="210">
+<tbody>
+<tr>
+<td>Nom du pok&eacute;mon</td>
+<td>Sant&eacute;</td>
+<td>D&eacute;fense</td>
+<td>Attaque</td>
+</tr>
+<tr>
+<td>Brindibou</td>
+<td>+ 15 PV</td>
+<td>- 6 DEF</td>
+<td>+ 12 ATQ</td>
+</tr>
+<tr>
+<td>Evoli</td>
+<td>+ 71 PV</td>
+<td>- 71 DEF</td>
+<td>- 9 ATQ</td>
+</tr>
+<tr>
+<td>Germignon</td>
+<td>+ 102 PV</td>
+<td>- 90 DEF</td>
+<td>- 11 ATQ</td>
+</tr>
+<tr>
+<td>H&eacute;ricendre</td>
+<td>+ 67 PV</td>
+<td>- 49 DEF</td>
+<td>N/A</td>
+</tr>
+<tr>
+<td>Larm&eacute;l&eacute;on</td>
+<td>N/A</td>
+<td>- 10 DEF</td>
+<td>- 10 ATQ</td>
+</tr>
+<tr>
+<td>Magicarpe</td>
+<td>+ 28 PV</td>
+<td>- 17 DEF</td>
+<td>+ 3 ATQ</td>
+</tr>
+<tr>
+<td>M&eacute;tang</td>
+<td>- 65 PV</td>
+<td>- 3 DEF</td>
+<td>- 6 ATQ</td>
+</tr>
+<tr>
+<td>Pikachu</td>
+<td>+ 10 PV</td>
+<td>- 14 DEF</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<p>N/A = aucun changements</p>
+<p>A propos de la capture d'un ennemi : si la capture est r&eacute;ussie, vous recevrez votre nouveau pok&eacute;mon, mais avec quelques changements. Effectivement :</p>
+<ul>
+<li>La sant&eacute; du nouveau pok&eacute;mon est augment&eacute;e de 50%.</li>
+<li>L'attaque du nouveau pok&eacute;mon est r&eacute;duite de 23%.</li>
+<li>La d&eacute;fense du nouveau pok&eacute;mon est r&eacute;duite de 37%.</li>
+</ul>
+<p>Comme vous avez pu le remarquer, la d&eacute;fense de chaque pok&eacute;mon a &eacute;t&eacute; r&eacute;duite. En effet, nous voulons rendre les joueurs "normaux", et &eacute;viter que leur pok&eacute;mons soient invincibles.</p>              <form action="https://github.com/Square-Programming/Pokemon-83-Premium/raw/main/%5BFR%5D%20POKEMON.8xp">
                 <button type="submit" type="bt" class="bt">
                     <span>Télécharger !</span>
                 </button>
