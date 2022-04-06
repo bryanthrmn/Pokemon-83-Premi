@@ -196,7 +196,7 @@ Chn0 : Nom de l'attaque du Pokémon ennemi n°2 ; fonction aléatoire requise
 ⌊PKLVA ou ⌊PKLVB ; pour vérifier le niveau du joueur.
 
  #Données
-A ; aléatoire 1/getkey 1
+A ; random 1/getkey 1
 B ; random 2/getkey 2
 C ; random 3/getkey 3
 D ; random 4/getkey 4
