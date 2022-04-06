@@ -1,57 +1,206 @@
-# Ce document nous servira de dictionnaire pour les prochaines MAJ du jeu
+# Ce document nous servira de dictionnaire pour les prochaines mises à jour du jeu
 
-#Dictionnaire des labels (version 1.7)
-0; Menu principal
-1;
-
-
-
-## Dictionnaire des labels (version 1.8 et supérieur)
+## Nouveau dictionnaire des étiquettes (> version 1.7 Alpha)
 #Chaînes
-Chn1 : Nom du joueur
-Chn2 : Nom du Pokémon n°1
-Chn3 : Nom de l'attaque n°1 du Pokémon n°1
-Chn4 : Nom de l'attaque n°2 du Pokémon n°1
+Chn1 : Nom du joueur 1
+Chn2 : Pokémon n°1
+Chn3 : Nom de l'attaque du Pokémon n°1
+Chn4 : Nom de l'attaque du Pokémon n°1 n°2
 Chn5 : Nom du Pokémon n°2
 Chn6 : Nom de l'attaque n°1 du Pokémon n°2
 Chn7 : Nom de l'attaque n°2 du Pokémon n°2
 Chn8 : Nom du Pokémon ennemi
-Chn9 : Nom de l'attaque n°1 du Pokémon ennemi ; fonction aléatoire nécessaire
-Chn0 : Nom de l'attaque n°2 du Pokémon ennemi ; fonction aléatoire nécessaire
+Chn9 : Nom de l'attaque n°1 du Pokémon ennemi ; fonction aléatoire requise
+Chn0 : Nom de l'attaque du Pokémon ennemi n°2 ; fonction aléatoire requise
 
-#Labels
-  0; Menu d'accueil
-1; Menu d'accueil >> Nouvelle partie
-2; Menu d'accueil >> Continuer partie (Menu principal)
-3; Menu d'accueil >> Crédits
-4; Menu d'accueil >> Améliorations du jeu
-5; Menu d'accueil >> Quitter
+#Étiquettes
+00 ; Quitter le jeu
+0A ; Page d'entrée du mot de passe
+0B ; Menu d'accueil
+0C ; Obtenir la clé du menu d'accueil
+0D ; Page d'avertissement (nouvelle partie)
+0E ; Menu principal (continuer le jeu)
+0F ; Crédits
+0G ; Paramètres
+0H ; Page de définition du mot de passe
+0I ; Obtenir la clé de la page d'avertissement
+0J ; Introduction (nouveau jeu confirmé)
+0K ; getkey de choix de Pokémon starter
+0L ; Choix de Pokémon avec niveau=0
+0M ; 
+0N ; 
+0O ; 
+0P ; Découvrir la forêt
+0Q ; Arène de combat
+0R ; Donjon secret
+0S ; Mes Pokémons
+0T ; Mon sac
+0U ; Boutique
+0V ; Mon profil
+0W ; Page de chargement + Combat d'introduction
+0X ; Découvrir la forêt
+0Y ; Arène de combat
+0Z ; Choix Pokémon n°1/2 page
+0θ ; Aléatoire => Pokémon adverse
+01 ; Affiche le nom de l'ennemi
+02 ; Menu de combat
+03 ; Informations
+04 ; ATQ 1
+05 ; ATQ 2
+06 ; Capturer l'ennemi
+07 ; Quitter le combat
+08 ; Utiliser une potion
+09 ; Changer de Pokémon
+10 ; Mes Pokémons
+1A ; Informations du Pokémon ennemi
+1B ; Informations du Pokémon 1
+1C ; Informations du Pokémon 2
+1D ; Page de combat (tour du joueur)
+1E ; Page de combat (tour de l'ennemi)
+1F ; Changement de Pokémon (quand l'un des 2 est mort)
+1G ; Page des victoires
+1H ; Temps d'écran
+1I ; Page de défaite
+1J ; Condition pour monter de niveau
+1K ; utiliser la Pokéball
+1L ; utiliser une Superball
+1M ; utilisation de la Hyperball
+1N ; succès de capture de Pokémon
+1O ; Menu (succès de capture de Pokémon)
+1P ; le Pokémon 1 a été remplacé par un ennemi
+1Q ; Pokémon 2 a été remplacé par un ennemi
+1R ; Confirmation du rejet de l'ennemi
+1S ; Lancer l'ennemi capturé
+1T ; Page d'une fuite d'une bataille
+1U ; Page de niveau supérieur
 
-  6; Menu principal
-7; Menu principal >> Evènements spéciaux ; version 1.8
-8; Menu principal >> Découvrir la forêt ; programmer cette partie en graphique
-9; Menu principal >> Arène de combat ; rendre disponible au niveau 13 (version 1.8)
-10; Menu principal >> Mes Pokémons ; afficher un statut détaillé pour chaque pokémon
-11; Menu principal >> Laboratoire ; 
-12; Menu principal >> Boutique ; ajouter une monnaie + ajouter "mon inventaire"
-13; Menu principal >> Mon profil ; afficher les pokémon découverts (par combat)
-14; Menu principal >> Retour (Menu d'accueil)
-15;
-16;
-17;
-18;
-19;
-1A;
-1B;
-1C;
-1D;
 
+#List
+  ⌊PKSAV
+1 ; niveau du joueur
+2 ; EXP du joueur
+3 ; EXP maximum d'un niveau
+4 ; nombre de victoires
+5 ; taux de victoire
+6 ; condition de rejouer
+7 ; Pokémon dans le jeu
+8 ; mode de jeu
+9 ; police de jeu
+10 ; définir la couleur du texte du nom d'utilisateur
+11 ; définir la couleur du texte du nom d'utilisateur (arrière-plan)
+12 ; mot de passe
+13 ; santé de Pokémon 1
+14 ; Pokémon 1 santé (sauvegarde)
+15 ; Pokémon 1 attaque
+16 ; Pokémon 1 attaque (sauvegarde)
+17 ; Pokémon 1 défense
+18 ; Pokémon 1 défense (sauvegarde)
+19 ; Pokémon 1 équipement 1
+20 ; Pokémon 1 équipement 2
+21 ; Pokémon 1 niveau
+22 ; Pokémon 1 type
+23 ; Pokémon 1 rareté
+24 ; Pokémon 1 EXP
+25 ; Pokémon 1 EXP max
+26 ; Pokémon 2 santé
+27 ; Pokémon 2 santé (sauvegarde)
+28 ; Pokémon 2 attaque
+29 ; Pokémon 2 attaque (sauvegarde)
+30 ; Pokémon 2 défense
+31 ; Pokémon 2 défense (sauvegarde)
+32 ; Pokémon 2 équipement 1
+33 ; Pokémon 2 équipement 2
+34 ; Pokémon 2 niveau
+35 ; Pokémon 2 type
+36 ; Pokémon 2 rareté
+37 ; Pokémon 2 EXP
+38 ; Pokémon 2 EXP max
+39 ; +25 PV potion
+40 ; +50 PV potion
+41 ; +100 PV potion
+42 ; +250 PV potion
+43 ; +500 PV potion
+44 ; Potion Boost max PV
+45 ; +5 potion ATQ
+46 ; +10 potion ATQ
+47 ; +25 ATQ potion
+48 ; +50 ATQ potion
+49 ; +100 ATQ potion
+50 ; +5 DEF potion
+51 ; +10 DEF potion
+52 ; +25 DEF potion
+53 ; +50 DEF potion
+54 ; +100 DEF potion
+55 ; Pokéball
+56 ; Superball
+57 ; Hyperball
+58 ; double potion EXP
+59 ; double potion de pokégold
+60 ; potion inconnue
+61 ; potion inconnue
+62 ; potion inconnue
+63 ; potion inconnue
+64 ; potion inconnue
+65 ; Pokegold
+66 ; inconnu
+67 ; inconnu
+68 ; inconnu
+69 ; inconnu
+70 ; Nombre de combats 1v1
+71 ; inconnu
+72 ; Inconnu
+73 ; Inconnu
+74 ; Inconnu
+75 ; Inconnu
+76 ; inconnu
+77 ; inconnu
+78 ; inconnu
+79 ; inconnu
+80 ; nombre de combats avec des Pokémon 1
+81 ; nombre de combats avec Pokémon 2
+82 ; inconnu
+83 ; inconnu
+84 ; inconnu
+85 ; inconnu
+86 ; inconnu
+87 ; inconnu
+88 ; inconnu
+89 ; inconnu
+90 ; inconnu
 
+  ⌊PKTMP
+1 ; Santé de l'ennemi
+2 ; Santé de l'ennemi
+3 ; Attaque de l'ennemi
+4 ; Attaque de l'ennemi
+5 ; Défense de l'ennemi
+6 ; Défense de l'ennemi
+7 ; 1er équipement de l'ennemi
+8 ; 2ème équipement de l'ennemi
+9 ; Rareté de l'ennemi
+10 ; Type de l'ennemi
+11 ; Niveau de l'ennemi (ou super attaque ennemie)
 
-#Données
-A; Attaque du pokémon n°1
-B; Santé du pokémon n°1
-C; Défense du pokémon n°1
-D; Attaque du pokémon n°2
-E; Santé du pokémon n°2
-F; Défense du pokémon n°2
+  ⌊PKDAT
+1 ; PV dans le jeu
+2 ; PV dans le jeu (sauvegarde)
+3 ; ATQ dans le jeu
+4 ; ATQ en jeu (sauvegarde)
+5 ; DEF en jeu
+6 ; DEF en jeu (sauvegarde)
+7 ; Type de Pokémon
+8 ; Equipement Pokémon 1
+9 ; Equipement Pokémon 2
+10 ; Rareté du Pokémon
+
+⌊PKLVA ou ⌊PKLVB ; pour vérifier le niveau du joueur.
+
+ #Données
+A ; aléatoire 1/getkey 1
+B ; random 2/getkey 2
+C ; random 3/getkey 3
+D ; random 4/getkey 4
+E ; random 5/getkey 5
+F ; random 6/getkey 6
+G ; random 7/getkey 7
+H ; random 8/getkey 8
