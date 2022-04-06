@@ -26,10 +26,10 @@ Str0: Name of enemy Pokémon's attack #2; random function required
 0I; Getkey of warning page
 0J; Introduction (new game confirmed)
 0K; getkey of pokemon starter choice
-0L; Magikarp page
-0M; Pikachu page
-0N; Rowlet page
-0O; Metang page
+0L; Pokemon choice with level=0
+0M; 
+0N; 
+0O; 
 0P; Discover forest
 0Q; Fighting arena
 0R; Secret Dungeon
@@ -59,7 +59,7 @@ Str0: Name of enemy Pokémon's attack #2; random function required
 1E; Battle page (enemy's turn)
 1F; Change pokémon (when one is dead)
 1G; Win page
-1H; getkey (when a pokémon die ; cf lbl 1F)
+1H; screen time
 1I; Lose page
 1J; level up condition
 1K; use pokéball
@@ -141,7 +141,7 @@ Str0: Name of enemy Pokémon's attack #2; random function required
 62; unknown potion
 63; unknown potion
 64; unknown potion
-65; unknown
+65; Pokegold
 66; unknown
 67; unknown
 68; unknown
@@ -156,8 +156,8 @@ Str0: Name of enemy Pokémon's attack #2; random function required
 77; unknown
 78; unknown
 79; unknown
-80; unknown
-81; unknown
+80; number of fights with Pokemon 1
+81; number of fights with Pokemon 2
 82; unknown
 83; unknown
 84; unknown
