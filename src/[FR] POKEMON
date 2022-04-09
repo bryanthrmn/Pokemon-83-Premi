@@ -160,14 +160,14 @@ If ⌊PKSAV(1)=9:Then:Output(5,1,"Evoli":Else:Output(5,1,"Magicarpe":End
 If B=1:Then:{3:Asm(prgmTEXTLIB
 If ⌊PKSAV(1)=9:Then
 Output(9,13,"Relais        
-Output(10,13,"Dernier recour
+Output(10,13,"Dernier recours
 Output(5,20,"Combat
 175→C:116→D:43→E
 Else
 Output(9,13,"Pistolet A.O ! 
 Output(10,13,"Trempette !  
 Output(5,20,"Eau   
-101→C:81→D:28→E
+98→C:81→D:28→E
 End:End
 If B=2:Then:{13:Asm(prgmTEXTLIB:End
 If ⌊PKSAV(1)=9:Then:Output(6,1,"Héricendre":Else:Output(6,1,"Pikachu":End
@@ -214,22 +214,18 @@ End:End
 Output(6,13,"PV : "+eval(C)+"  
 Output(7,13,"ATQ : "+eval(D)+"  
 Output(8,13,"DEF : "+eval(E)+"  
+Output(10,13,"DEF : "+eval(E)+"  
 getKey→A
-While A=34
-B+1→B
+While A=34:B+1→B
 If B=5:Then:1→B:End
-Goto 0K
-End
-While A=25
-B-1→B
+Goto 0K:End
+While A=25:B-1→B
 If B=0:Then:4→B:End
-Goto 0K
-End
+Goto 0K:End
 While A=105 ou A=21
-If ⌊PKSAV(1)<9:Then:13→A:Else:26→A;End
+If ⌊PKSAV(1)<9:Then:13→A:20→⌊PKSAV(3):Else:26→A:End
 For(F,1,2
-C→⌊PKSAV(A):D→⌊PKSAV(A+2):E→⌊PKSAV(A+4)
-A+1→A:End
+C→⌊PKSAV(A):D→⌊PKSAV(A+2):E→⌊PKSAV(A+4):A+1→A:End
 EffÉcran:Output(6,1,"----------------
 If B=1:Then
 Output(7,1,"Dommage pour toi :
@@ -238,7 +234,7 @@ Output(9,1,"difficile à vaincre.
 Pause 
 If ⌊PKSAV(1)=9:Then
 "Evoli"→Chn5:"Relais"→Chn6:"Dernier recours"→Chn7
-1→⌊PKSAV(100):Goto 0E
+Goto 0E
 Else
 "Magicarpe"→Chn2:"Pistolet A.O !"→Chn3:"Trempette !"→Chn4
 Goto 0Y:End:End
@@ -270,8 +266,7 @@ If ⌊PKSAV(1)=9:Then
 Goto 0E
 Else
 "Métang"→Chn2:"Ultralaser"→Chn3:"Bélier"→Chn4
-Goto 0Y:End:End
-End:Goto 0K:End
+Goto 0Y:End:End:End:Goto 0K
 Lbl 0Y
 EffÉcran
 Output(5,1,"----------------
@@ -297,7 +292,7 @@ Pause :Goto 0B
 Else
 Désarchiver Chn1:Désarchiver Chn2:Désarchiver Chn3:Désarchiver Chn4
 If ⌊PKSAV(27)≠0 et ⌊PKSAV(29)≠0 et ⌊PKSAV(1)>8:Then:Désarchiver Chn5:Désarchiver Chn6:Désarchiver Chn7:End
-0→⌊PKSAV(6):0→⌊PKSAV(8)
+0→⌊PKSAV(6):0→⌊PKSAV(8):0→H
 Menu("Menu principal","Découvrir la forêt",0X,"Arène de combat",0Q,"Donjon secret",0R,"Mes Pokémons",0S,"Inventaire",0T,"Boutique",0U,"Mon profil",0V,"Retour",0B
 End
 Lbl 0Q
@@ -540,6 +535,7 @@ If ⌊PKSAV(7)=1:Then:13→B:Else:26→B:End:1→C
 For(A,1,6
 ⌊PKSAV(B)→⌊PKDAT(C)
 B+1→B:C+1→C:End
+If H=1:Then:0→H:Goto 02:End
 If ⌊PKTMP(1)=0 ou ⌊PKTMP(3)=0 ou ⌊PKTMP(5)=0:Then:Goto 0θ:End
 If ⌊PKSAV(1)≠0:Then:While ⌊PKTMP(4)≤⌊PKDAT(6):Goto 0θ:End:End
 EffÉcran
@@ -613,7 +609,7 @@ If ⌊PKSAV(7)=1:Then:Output(1,1,Chn2:Else:Output(1,1,Chn5:End
 If F≥G-(25G100):Then:{14,16,VERT,17,BLANC:Asm(prgmTEXTLIB:End
 If F≥G-(74G100) et F≤G-(26G100):Then:{14,16,ORANGE,17,BLANC:Asm(prgmTEXTLIB:End
 If F≤G-(75G100):Then:{14,16,ROUGE,17,BLANC:Asm(prgmTEXTLIB:End
-Output(1,13,⌊PKDAT(1
+Output(1,13,F
 {4:Asm(prgmTEXTLIB
 Output(2,7,"VS
 Output(3,1,Chn8
@@ -633,6 +629,7 @@ EffÉcran
 Output(6,1,"----------------
 ⌊PKTMP(5)-⌊PKDAT(3)→⌊PKDAT(3)
 If ⌊PKDAT(3)<0:Then:⌊PKTMP(1)+⌊PKDAT(3)→⌊PKTMP(1):Output(7,1,"C'est très efficace !":Else:Output(7,1,"C'est inefficace !":End
+⌊PKDAT(4)→⌊PKDAT(3)
 Pause 
 If ⌊PKTMP(1)≤0:Then:Goto 1G:Else:1→B:Goto 1D:End
 Lbl 1E
@@ -646,7 +643,8 @@ Output(6,1,"----------------
 ⌊PKDAT(5)-⌊PKTMP(3)→⌊PKTMP(3)
 If ⌊PKTMP(3)<0:Then:⌊PKDAT(1)+⌊PKTMP(3)→⌊PKDAT(1):Output(7,1,"Ca fait mal !":Else:Output(7,1,"Même pas mal !":End
 ⌊PKTMP(4)→⌊PKTMP(3)
-If ⌊PKSAV(7)=1:Then:⌊PKDAT(1)→⌊PKSAV(13):Else:⌊PKDAT(1)→⌊PKSAV(26):End
+If ⌊PKSAV(7)=1:Then:13→A:Else:26→A:End
+⌊PKDAT(1)→⌊PKSAV(A
 Pause 
 If ⌊PKDAT(1)≤0:Then:Goto 1F:Else:0→B:Goto 02:End
 Lbl 1F
@@ -666,19 +664,18 @@ Repeat A=92 ou A=93
 getKey→A
 If A=92:Then:EffÉcran:Goto 09:End
 If A=93:Then:EffÉcran:Goto 1T:End
-End
-End
+End:End
 Lbl 1I
 Output(6,1,"----------------
 Output(7,1,"Vous avez perdu !"
-[[2,5,8,12,19,28,40,55,73,94,118,145,175][7,10,16,25,37,52,70,91,115,142,172,205,241]]→[B]
 Lbl 1J
+[[2,5,8,12,19,28,40,55,73,94,118,145,175][7,10,16,25,37,52,70,91,115,142,172,205,241]]→[B]
 ⌊PKSAV(1)→C
-If C=0:Then:1→⌊PKSAV(1):9→B:End
-If C≤13:Then:Disp "EXP: +":nbrAléatEnt([B](1,C),[B](2,C))→A:Disp A:⌊PKSAV(2)+A→⌊PKSAV(2):Else:Output(1,1,"Niveau maximum !":End
+If C=0:Then:1→C:9→B:End
+If C≤13:Then:Disp "EXP: +":nbrAléatEnt([B](1,C),[B](2,C))→A:Disp A:⌊PKSAV(2)+A→⌊PKSAV(2):Else:Disp "Niveau maximum !":End:End
 DelVar ⌊PKTMP:DelVar Chn9:DelVar Chn0:DelVar ⌊PKDAT:DelVar Chn8:DelVar [B]
-If ⌊PKSAV(2)<0:Then:0→⌊PKSAV(2):End
 Pause :EffÉcran
+If B=9:Then:Goto 0L:End
 If ⌊PKSAV(2)≥⌊PKSAV(3) et C≤13
 Then
 C+1→C:C→⌊PKSAV(1
@@ -689,12 +686,15 @@ For(A,1,3
 B+2→B
 If ⌊PKSAV(1)≥9:Then:⌊PKSAV(D)+E→⌊PKSAV(D):⌊PKSAV(D)→⌊PKSAV(D-1):D+2→D:End
 A+1→A
-End:End
+End
 ⌊PKSAV(2)-⌊PKSAV(3)→⌊PKSAV(2
+Goto 1U
+Else:Goto 0E:End
 Lbl 1U
 If ⌊PKSAV(1)<14 et ⌊PKSAV(1)>0:Then
 [[20,50,100,200,500,1000,2000,5000,10000,20000,35000,50000,80000]]→[B]
 [B](1,⌊PKSAV(1))→⌊PKSAV(3):DelVar [B]:End
+If ⌊PKSAV(2)<0:Then:0→⌊PKSAV(2):End
 If A=1:Then:Goto 0B:End
 Output(1,1,"--------------------------
 {14,16,BLEU CLR,17,BLANC:Asm(prgmTEXTLIB
@@ -716,16 +716,13 @@ End
 1→⌊PKSAV(6)
 While C>2
 If ⌊PKSAV(13)>0 ou ⌊PKSAV(26)>0:Then:Menu("Rejouer ?","Oui",0W,"Non",0E:End:End
-If B=9
-Then
-DelVar B
+Lbl 0L
+C→⌊PKSAV(1
 Output(5,1,"----------------
 Output(6,1,"Bien joué, "+Chn1
 Output(7,1,"Tu es désormais prêt
 Output(8,1,"à commencer l'aventure.
-Pause 
-End
-Goto 0E
+Pause :End:Goto 0E
 Lbl 1G
 EffÉcran
 Output(6,1,"----------------
@@ -810,7 +807,12 @@ Output(6,1,Chn8+" a été abandonné
 Pause 
 Goto 1G
 Lbl 07
-Menu("Confirmer la fuite ?","Oui, fuir",1T,"Non, rester dans l'arène",02
+If ⌊PKSAV(1)≤0:Then:EffÉcran
+Output(6,1,"-----------------
+Output(7,1,"Vous ne pouvez pas quitter
+Output(8,1,"un entrainement...
+Pause :EffÉcran:Goto 02:Else
+Menu("Confirmer la fuite ?","Oui, fuir",1T,"Non, rester dans l'arène",02:End
 Lbl 1T
 EffÉcran
 Output(6,1,"-----------------
@@ -841,12 +843,11 @@ Output(7,1,"les touches [<] et [>]
 Output(9,1,"Choisissez le pokémon avec
 Output(10,1,"la touche [ENTRER]
 Repeat A=105 ou A=45 ou A=21
-0→B:getKey→A
+0→B:getKey→A:1→H
 While A=24 ou A=26
 If ⌊PKSAV(7)=1:Then:2→⌊PKSAV(7):Goto 09:End
 If ⌊PKSAV(7)=2:Then:1→⌊PKSAV(7):Goto 09:End
-End:End
-Goto 02
+End:End:Goto 01
 Lbl 0R
 If ⌊PKSAV(1)<13:Then
 Output(5,1,"----------------
@@ -860,7 +861,7 @@ Lbl 0S
 1→E:Goto 10
 Lbl 0T
 0→A:0→B:0→C
-AxesNAff:EffDess:EffÉcran:PleinÉcr:QuadNAff:ÉtiqNAff:ArrPlanNAff:FoncNAff :ZStandard
+AxesNAff:EffDess:EffÉcran:PleinÉcr:QuadNAff:ÉtiqNAff:ArrPlanNAff:FoncNAff 
 CouleurTexte(12)
 Texte(­1,0,0,"Reposer votre pokémon
 Ligne(­10,­6,­8,­6):Ligne(­8,­6,­8,­10):Ligne(­10,­10,­10,­6):Ligne(­10,­9.9,2,­9.9)
