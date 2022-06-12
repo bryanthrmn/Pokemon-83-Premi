@@ -14,5 +14,8 @@ https://user-images.githubusercontent.com/85101130/161426156-ab7f5b02-9fe6-4a69-
 
 https://user-images.githubusercontent.com/85101130/161426167-e8b96167-d7d1-4621-9b38-83c6dab108f5.mp4
 
+## Version 1.8
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/85101130/173245080-1652092b-30f9-4f1d-9345-0d93999c6e58.gif)
+
 Don't forget to contact us if you find any bugs ;)
 Bryankaveen14@gmail.com
