@@ -1,4 +1,4 @@
-EffÉcran
+ClrHome
 DelVar θDelVar W
 Output(1,1,"--------------------------
 Output(2,2,"·.*POKEMON 83 PREMIUM*.·
@@ -30,7 +30,7 @@ Output(9,1,"…………….
 Output(9,1,"-PRESS [ENTRER]-
 Pause 
 Lbl M
-EffÉcran
+ClrHome
 Lbl 88
 Menu(" ·.*POKEMON 83 PREMIUM*.·     ","NEW GAME",0,"CONTINUE GAME",1,"CREDITS",C,"ABOUT",K,"QUIT",Q
 Lbl K
@@ -44,10 +44,10 @@ Disp "COUNCIL
 Disp "ABLE TO CAPTURE","ENNEMIES"
 Disp "BUG FIXES
 Pause 
-EffÉcran
+ClrHome
 Goto 1
 Lbl Q
-EffÉcran:Stop
+ClrHome:Stop
 Lbl C
 Disp "CODING:","CAPYSQUID & SHADOW","DESIGN:","KENSHI","IDEA:","KENSHI","BY:","CAPYSQUID
 Output(9,1,"COPYRIGHT 2014
@@ -58,27 +58,27 @@ Lbl 0
 Menu("ARE YOU SURE?","YES",89,"NO",88
 Lbl 89
 Pause 
-EffÉcran
-DelVar Chn1
-DelVar Chn2
-DelVar Chn3
-DelVar Chn4
-DelVar Chn5
+ClrHome
+DelVar Str1
+DelVar Str2
+DelVar Str3
+DelVar Str4
+DelVar Str5
 DelVar FDelVar J
 100→G
-Input "NAME:",Chn1
-EffÉcran
+Input "NAME: ",Str1
+ClrHome
 Output(6,1,"----------------
 Output(7,1,"HELLO,
-Output(7,10,Chn1
+Output(7,10,Str1
 Output(7,15,"!
 Pause 
-EffÉcran
+ClrHome
 Output(6,1,"----------------
 Output(7,1,"I AM PROFFESSOR
 Output(8,1,"OEPHORBE !
 Pause 
-EffÉcran
+ClrHome
 Output(6,1,"----------------
 Output(7,1,"CHOOSE YOUR
 Output(8,1,"POKEMON, QUICK!
@@ -87,51 +87,51 @@ Menu("CHOOSE STARTER","MAGIKARP",11,"PIKACHU",12,"ROWLET",48,"METANG",ZR
 Lbl ZR
 Output(7,1,"YOU HAVE DONE A GOOD CHOICE
 Output(6,1,"----------------
-"METANG"→Chn2
-"HYPER BEAM"→Chn3
-"TAKE DOWN"→Chn4
+"METANG"→Str2
+"HYPER BEAM"→Str3
+"TAKE DOWN"→Str4
 42→A
 29→P
 P→R
 Pause 
-EffÉcran
+ClrHome
 Goto 1
 Lbl 48
-EffÉcran
+ClrHome
 Output(7,1,"NOT BAD...
 Output(6,1,"----------------
-"ROWLET"→Chn2
-"PECK"→Chn3
-"VINE WHIP!"→Chn4
+"ROWLET"→Str2
+"PECK"→Str3
+"VINE WHIP!"→Str4
 29→A
 78→P
 P→R
 Pause 
-EffÉcran
+ClrHome
 Goto 1
 Lbl 11
-EffÉcran
+ClrHome
 Output(6,1,"----------------
 Output(7,1,"EXCELLENT CHOICE !
 Pause 
-"MAGIKARP"→Chn2
-"WATER GUN!"→Chn3
-"SPLASH !"→Chn4
+"MAGIKARP"→Str2
+"WATER GUN!"→Str3
+"SPLASH !"→Str4
 12→A
 1→N
 59→P
 P→R
 Goto 1
 Lbl 12
-EffÉcran
+ClrHome
 Output(6,1,"----------------
 Output(7,1,"SORRY TO SAY, BUT
 Output(8,1,"IT'LL BE HARD FOR
 Output(9,1,"YOU TO WIN...
 Pause 
-"PIKACHU"→Chn2
-"IRON TAIL!"→Chn3
-"CHARGE"→Chn4
+"PIKACHU"→Str2
+"IRON TAIL!"→Str3
+"CHARGE"→Str4
 30→A
 60→P
 P→R
@@ -139,8 +139,8 @@ P→R
 Lbl 1
 Menu("MAIN MENU","ARENA",90,"SECRET DUNGEON",CO,"POKEMONS",PO,"HEAL",SO,"QUIT",Q
 Lbl PO
-EffÉcran
-Disp "POKEMON 1:",Chn2
+ClrHome
+Disp "POKEMON 1:",Str2
 Pause 
 Goto 1
 Lbl SO
@@ -152,14 +152,14 @@ Lbl 62
 DelVar X
 1→W
 1→θ
-"LYNCANROC"→Chn5
+"LYNCANROC"→Str5
 245→E
 49→B
 Lbl 70
 DelVar X
 1→W
 1→θ
-"GARCHOMP"→Chn5
+"GARCHOMP"→Str5
 320→E
 70→B
 Goto 31
@@ -167,110 +167,110 @@ Lbl 41
 DelVar X
 1→W
 1→θ
-"LUCARIO"→Chn5
+"LUCARIO"→Str5
 150→E
 66→B
 Goto 31
 Lbl VI
 DelVar X
-"????????"→Chn5
+"????????"→Str5
 211→E
 123→B
 Goto 31
 Lbl 90
 DelVar WDelVar θ
-EffÉcran
+ClrHome
 Output(6,1,"----------------
 Output(7,1,"A WILD POKEMON
 Output(8,1,"JUST APPEARED!
 Pause 
-EffÉcran
+ClrHome
 Output(6,1,"----------------
-Output(7,1,"GO, "+Chn2
+Output(7,1,"GO, "+Str2
 Pause 
-EffÉcran
-If θ=1 et W>1:Goto 32
-nbrAléatEnt(1,32)→X
-If X=1:Chn2→Chn5
-If X=2:"GROUDON"→Chn5
-If X=3:"KYOGRE"→Chn5
-If X=4:"ARCEUS"→Chn5
-If X=5:"METAGROSS"→Chn5
-If X=6:"UNOWN"→Chn5
-If X=7:"RAICHU"→Chn5
-If X=8:"PIDGEY"→Chn5
-If X=9:"BUNEARY"→Chn5
-If X=10:"MUDKIP"→Chn5
+ClrHome
+If θ=1 and W>1:Goto 32
+randInt(1,32)→X
+If X=1:Str2→Str5
+If X=2:"GROUDON"→Str5
+If X=3:"KYOGRE"→Str5
+If X=4:"ARCEUS"→Str5
+If X=5:"METAGROSS"→Str5
+If X=6:"UNOWN"→Str5
+If X=7:"RAICHU"→Str5
+If X=8:"PIDGEY"→Str5
+If X=9:"BUNEARY"→Str5
+If X=10:"MUDKIP"→Str5
 If X≥10:80→E
 If X≥10:50→B
-If X=11:"LYNCANROC"→Chn5
-If X=12:"DITTO"→Chn5
-If X=13:"METAPOD"→Chn5
-If X=14:"VOLTORB"→Chn5
-If X=15:"PIDGEOT"→Chn5
-If X=16:"CHARIZARD"→Chn5
-If X=17:"TORCHIC"→Chn5
-If X=18:"CHARMANDER"→Chn5
-If X=19:"PIDGEY"→Chn5
-If X=20:"RATTATA"→Chn5
-If X=21:"ROCRUFF"→Chn5
-If X=22:"BOUNSWEET"→Chn5
-If X=23:"SEEL"→Chn5
-If X=24:"BULBASAUR"→Chn5
-If X=25:"IVYSAUR"→Chn5
-If X=26:"MAROWAK"→Chn5
-If X=27:"TURTONATOR"→Chn5
-If X=28:"VULPIX"→Chn5
-If X=29:"DURANT"→Chn5
-If X=30:"MEOWSTIC"→Chn5
-If X=31:"MR.MIME"→Chn5
-If X=32:"KYOGRE"→Chn5
-If X≥17 et X≤23:45→E
-If X≥17 et X≤23:25→B
+If X=11:"LYNCANROC"→Str5
+If X=12:"DITTO"→Str5
+If X=13:"METAPOD"→Str5
+If X=14:"VOLTORB"→Str5
+If X=15:"PIDGEOT"→Str5
+If X=16:"CHARIZARD"→Str5
+If X=17:"TORCHIC"→Str5
+If X=18:"CHARMANDER"→Str5
+If X=19:"PIDGEY"→Str5
+If X=20:"RATTATA"→Str5
+If X=21:"ROCRUFF"→Str5
+If X=22:"BOUNSWEET"→Str5
+If X=23:"SEEL"→Str5
+If X=24:"BULBASAUR"→Str5
+If X=25:"IVYSAUR"→Str5
+If X=26:"MAROWAK"→Str5
+If X=27:"TURTONATOR"→Str5
+If X=28:"VULPIX"→Str5
+If X=29:"DURANT"→Str5
+If X=30:"MEOWSTIC"→Str5
+If X=31:"MR.MIME"→Str5
+If X=32:"KYOGRE"→Str5
+If X≥17 and X≤23:45→E
+If X≥17 and X≤23:25→B
 If X≥22:104→E
 If X≥22:45→B
 Lbl 31
-If X≥2 et X≤4:300→E
-If X≥2 et X≤4:100→B
-If X=1 ou X=6 ou X=8:40→E
-If X=1 ou X=6 ou X=8:10→B
-If X=5 ou X=7:60→E
-If X=5 ou X=7:20→B
+If X≥2 and X≤4:300→E
+If X≥2 and X≤4:100→B
+If X=1 or X=6 or X=8:40→E
+If X=1 or X=6 or X=8:10→B
+If X=5 or X=7:60→E
+If X=5 or X=7:20→B
 If X≥9:20→B
 If X≥9:70→E
 Lbl 31
-EffÉcran
+ClrHome
 Output(6,1,"----------------
 Output(7,1,"ENEMY POKEMON:
-Output(8,1,Chn5
+Output(8,1,Str5
 Pause 
-EffÉcran
+ClrHome
 Lbl 29
-Menu("FIGHT!",Chn3,21,Chn4,22,"CAPTURE",JT
+Menu("FIGHT!",Str3,21,Str4,22,"CAPTURE",JT
 Lbl JT
 If θ=0
 Then
 Menu("YOU'LL LOSE YOUR POKEMON!","CONTINUE",XY,"RETURN",29
 Else
 Lbl XY
-nbrAléatEnt(1,9)→L
+randInt(1,9)→L
 If L=5
 Then
-EffÉcran
+ClrHome
 Output(6,1,"-----------------
 Output(7,1,"YOU CAUGHT IT!
-Chn5→Chn2
+Str5→Str2
 B→A
 E→P
-nbrAléatEnt(1,8)→L
+randInt(1,8)→L
 L→N
 Else
 If L≠5
-EffÉcran
+ClrHome
 Output(6,1,"-----------------
 Output(7,1,"IT ESCAPED!
 Pause 
-EffÉcran
+ClrHome
 Goto 50
 Lbl 21
 21→Z
@@ -279,39 +279,39 @@ Lbl 22
 22→Z
 Goto 27
 Lbl 27
-Output(1,1,Chn2
+Output(1,1,Str2
 Output(1,13,P
 Output(2,7,"VS
-Output(3,1,Chn5
+Output(3,1,Str5
 Output(3,13,E
 Output(6,1,"----------------
-If Z=21:Output(7,1,Chn3
-If Z=22:Output(7,1,Chn4
+If Z=21:Output(7,1,Str3
+If Z=22:Output(7,1,Str4
 Pause 
-EffÉcran
+ClrHome
 E-A→E
 If E≤0:Goto 28
 Output(6,1,"----------------
 Output(7,1,"THAT'S USEFUL!
 Pause 
-EffÉcran
+ClrHome
 Lbl 50
-Output(1,1,Chn2
+Output(1,1,Str2
 Output(1,13,P
 Output(2,7,"VS
-Output(3,1,Chn5
+Output(3,1,Str5
 Output(3,13,E
 Output(6,1,"----------------
-Output(7,1,Chn5+"'S ATTACK
+Output(7,1,Str5+"'S ATTACK
 Output(8,1,"DAMAGE:
 Output(8,9,B
 Pause 
-EffÉcran
+ClrHome
 P-B→P
 Output(6,1,"----------------
 Output(7,1,"THAT'S PAINFUL!
 Pause 
-EffÉcran
+ClrHome
 If P≤0:Goto 26
 If P>0:Goto 29
 Lbl 26
@@ -321,19 +321,19 @@ Goto 1
 Lbl 28
 Output(6,1,"----------------
 Output(7,1,"YOU WIN!
-nbrAléatEnt(26,100)→L
+randInt(26,100)→L
 Disp "XP: +
 Disp L
 F+L→F
 Pause 
-EffÉcran
+ClrHome
 Output(6,1,"----------------
 Output(7,1,"
 If F≥G:Goto 99
 Goto 1
 End
 Lbl 99
-EffÉcran
+ClrHome
 G+200→G
 N+1→N
 A+10→A
@@ -342,37 +342,37 @@ Output(6,1,"----------------
 Output(7,1,"LEVEL UP:
 Output(7,13,N
 Pause 
-If Chn2="ROWLET" et N≥25 et J=0:Goto 99
+If Str2="ROWLET" and N≥25 and J=0:Goto 99
 Goto 1
 Lbl 99
-EffÉcran
+ClrHome
 Output(6,1,"----------------
 1→J
-EffÉcran
+ClrHome
 Output(6,1,"----------------
 Output(7,1,"ROWLET HAS EVOLVED!
 Pause 
-EffÉcran
+ClrHome
 Output(5,1,"ANIMATION IN DEVELOPPMENT"
-"ARCHEDUC"→Chn2
-"TRIPLE HIT!"→Chn3
-"NIGHT HIT!"→Chn4
+"ARCHEDUC"→Str2
+"TRIPLE HIT!"→Str3
+"NIGHT HIT!"→Str4
 Pause 
-EffÉcran
+ClrHome
 Output(6,1,"DID IT EVOLVED INTO
 Output(7,1,"DECIDUEYE!?"
 Pause 
-EffÉcran
-If Chn2="PIKACHU" et N≥19 et J=0:Goto 98
+ClrHome
+If Str2="PIKACHU" and N≥19 and J=0:Goto 98
 Goto 1
 Lbl 98
 Output(7,1,"DID PIKACHU
 Output(8,1,"JUST EVOLVED!?
 Pause 
-EffÉcran
-"RAICHU"→Chn2
-"THUNDERBOLT!"→Chn3
-"STRIKE!"→Chn4
+ClrHome
+"RAICHU"→Str2
+"THUNDERBOLT!"→Str3
+"STRIKE!"→Str4
 1→J
 For(I,1,10
 60!:End
@@ -383,9 +383,9 @@ Output(6,4,"==>
 For(I,1,10
 Output(6,7,"==>
 Pause 
-EffÉcran
+ClrHome
 Output(6,1,"----------------
-Output(7,1,"PIKACHU BECAME
-Output(8,1,"RAICHU!
+Output(7,1,"PIKACHU EVOLVED
+Output(8,1,"INTO RAICHU!
 Pause 
 Goto 1
