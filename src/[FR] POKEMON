@@ -1,13 +1,10 @@
-:"Pokemon 83 Premium
-:"888888888888888888883333333388888883222222223888883222222222238883222222222222388322222222222238832222222222223883222233332222388F33333DD33333F883BBBB3333BBBB3883BBBBBBBBBBBB3883BBBBBBBBBBBB3883BBBBBBBBBBBB38883BBBBBBBBBB38888833333333338888888888888888888"
 EffÉcran
 DelVar θDelVar W
 Output(1,1,"--------------------------
 Output(2,2,"·.*POKEMON 83 PREMIUM*.·
-
-Output(3,9,"V:1.7 BÊTA 2
-Output(5,8,"De KENSHI
-Output(7,4,"Reprit par CAPYSQUID
+Output(3,9,"V:1.6 ALPHA
+Output(5,8,"DE KENSHI
+Output(7,4,"REPRIT PAR CAPYSQUID
 Output(10,1,"--------------------------
 For(I,1,10
 40!:End
@@ -35,41 +32,36 @@ Pause
 Lbl M
 EffÉcran
 Lbl 88
-Menu(" ·.*POKEMON 83 PREMIUM*.·     ","NOUVELLE PARTIE",0,"CONTINUER PARTIE",1,"CREDITS",C,"AMELIORATIONS DU JEU",K,"QUITTER",Q
-
+Menu(" ·.*POKEMON 83 PREMIUM*.·     ","NOUVEAU",0,"CONTINUER",1,"CREDITS",C,"AMELIORATIONS",K,"QUITTER",Q
 Lbl K
-Disp "VERSION: 1.7 [BÊTA 2]"
-Disp "02 Janvier 2022"
-Disp ""
-Disp "- 100 pokémons disponibles"
-Disp "- Changement du 4e membre"
-Disp "  du conseil"
-Disp "- Ajout d'un logo CEsium"
-Disp "- Ajout d'une description" 
-Disp "  CEsium"
+Disp "+ 20 POKEMON !
+Disp "EXP GERE ALEATOIREMENT !"
+Disp "NOUVEL ECRAN DE DEBUT !"
+Disp "+ UN STARTER BRINDIBOU !
+Disp "RENFORCEMENT DE MAGICARPE!
+Disp "+ 2 MEMBRES DU CONSEIL 3 !
+Disp "CORRECTION D'UN BUG
+Disp "+ CAPTURE D'UN POKEMON !
+Disp "CHANGE D'ATTAQUE EN MUTANT
 Pause 
 EffÉcran
-Disp "VERSION: 1.7 [BÊTA 2]"
-Disp "02 Janvier 2022"
-Disp ""
-Disp "- Disponibilité de fuir"
-Disp "  les combats"
-Disp "- Ajout d'une boutique"
-Disp "- Correcions de langue"
-Disp "- Corrections de bugs"
+Output(1,1,"+ 1 NOUVEAU STARTER !
+Output(3,1,"+ 5 NOUVEAU POKEMON !
+Output(5,1,"+ 1 NOUVEAU MEMBRE DU 
+Output(6,1,"CONSEIL !
 Pause 
 EffÉcran
-Goto 88
+Goto 1
 Lbl Q
 EffÉcran:Stop
 Lbl C
-Disp "POKEMON 83 PREMIUM","","       Producteur : ","    Kenshi Corporation","","      Réalisateurs :","       Capysquid","         Shadow"
-Output(10,1,"Copyright 2014 - 2022
+Disp "CODAGE:","KENSHI ET CAPYSQUID","DESIGN:","KENSHI","IDEE:","KENSHI","REPRIT PAR:","CAPYSQUID
+Output(9,1,"COPYRIGHT 2014
+Output(10,1,"REPRIT EN 2021
 Pause 
-EffÉcran
-Goto 88
+Goto M
 Lbl 0
-Menu("Confirmer ?","Oui",89,"Non",88
+Menu("ETES-VOUS SUR?","OUI",89,"NON",88
 Lbl 89
 Pause 
 EffÉcran
@@ -78,820 +70,210 @@ DelVar Chn2
 DelVar Chn3
 DelVar Chn4
 DelVar Chn5
-DelVar Chn6
-DelVar Chn7
-DelVar Chn8
-DelVar Chn9
-DelVar Chn0
-DelVar T
 DelVar FDelVar J
-Input "Entrer votre nom :",Chn1
+100→G
+Input "NOM:",Chn1
 EffÉcran
 Output(6,1,"----------------
-Output(7,1,"Bonjour
-Output(7,9,Chn1
+Output(7,1,"BONJOUR,
+Output(7,10,Chn1
 Output(7,15,"!
 Pause 
 EffÉcran
 Output(6,1,"----------------
-Output(7,1,"Je suis le professeur
-Output(8,1,"Oephorbe !
+Output(7,1,"JE SUIS LE PROF. 
+Output(8,1,"OEPHORBE !
 Pause 
-EffÉcran
 Output(6,1,"----------------
-Output(7,1,"Choisis ton          
-Output(8,1,"Pokémon, vite!
+Output(7,1,"CHOISIS TON          
+Output(8,1,"POKEMON, VITE!
 Pause 
-EffÉcran
-Menu("CHOIX DU POKEMON","MAGICARPE",11,"PIKACHU",12,"BRINDIBOU",48,"MÉTANG",ZR
+Menu("CHOIX DU STARTER","MAGICARPE",11,"PIKACHU",12,"BRINDIBOU",48,"METANG",ZR
 Lbl ZR
-Output(7,1,"Tu as fait un bon choix.
+Output(7,1,"TU AS FAIT LE BON CHOIX
 Output(6,1,"----------------
-"Métang"→Chn2
-"Ultralaser"→Chn3
-"Bélier"→Chn4
-132→A
-138→P
+"METANG"→Chn2
+"ULTRALASER"→Chn3
+"BELIER"→Chn4
+42→A
+29→P
 P→R
-1→N
-20→G
 Pause 
 EffÉcran
 Goto 1
 Lbl 48
 EffÉcran
-Output(7,1,"Un choix correct...
-Output(8,1,"N'oublie pas que tes 
-Output(9,1,"ennemis seront puissants.
+Output(7,1,"PAS MAL CHOISIS...
 Output(6,1,"----------------
-"Brindibou"→Chn2
-"Pic-pic !"→Chn3
-"Fouet liannes !"→Chn4
-55→A
-68→P
+"BRINDIBOU"→Chn2
+"PIC-PIC !"→Chn3
+"FOUET LIANES !"→Chn4
+29→A
+78→P
 P→R
-1→N
-20→G
 Pause 
 EffÉcran
 Goto 1
 Lbl 11
 EffÉcran
 Output(6,1,"----------------
-Output(7,1,"Très bon choix !
+Output(7,1,"TRES BON CHOIX !
 Pause 
-EffÉcran
-"Magicarpe"→Chn2
-"Pistolet A.O !"→Chn3
-"Trempette !"→Chn4
-78→A
+"MAGICARPE"→Chn2
+"PISTOLET A O !"→Chn3
+"TREMPETTE !"→Chn4
+12→A
 1→N
-29→P
+59→P
 P→R
-20→G
 Goto 1
 Lbl 12
 EffÉcran
 Output(6,1,"----------------
-Output(7,1,"Dommage pour toi :
-Output(8,1,"tes ennemis seront 
-Output(9,1,"difficile à vaincre.
+Output(7,1,"DOMMAGE POUR TOI
+Output(8,1,"CA VA ETRE DUR !
 Pause 
-"Pikachu"→Chn2
-"Queue éclair !"→Chn3
-"Charge"→Chn4
-98→A
-112→P
+"PIKACHU"→Chn2
+"QUEUE ECLAIR !"→Chn3
+"CHARGE"→Chn4
+30→A
+60→P
 P→R
 1→N
-20→G
 Lbl 1
-If N≤0 ou N>14 ou G≤0 ou G>888870 ou T<0
-Then
-Output(5,1,"----------------
-Output(6,1,"Pas de sauvegarde  
-Output(7,1,"retrouvée !
-Pause 
-EffÉcran
-Goto 88
-Else
-Menu("Menu principal","Découvrir la fôret",DE,"Arène de combat",90,"Donjon secret",CO,"Mes Pokémons",PO,"Laboratoire",SO,"Boutique",BO,"Mon profil",PR,"Retour",Z
-Lbl PR
-EffÉcran
-Output(1,7,"Vue de profil
-If N=1:20→G
-If N=2:70→G
-If N=3:170→G
-If N=4:370→G
-If N=5:870→G
-If N=6:1870→G
-If N=7:3870→G
-If N=8:8870→G
-If N=9:18870→G
-If N=10:38870→G
-If N=11:88870→G
-If N=12:188870→G
-If N=13:388870→G
-If N=14:888870→G
-Output(3,9,Chn1
-Output(4,1,"--------------------------
-Output(5,1,"Niveau"
-Output(5,8,N 
-Output(6,1,"EXP:
-Output(6,6,F
-Output(6,11,""
-Output(6,12,G
-Output(8,1,"Nombre de victoires :
-Output(8,23,T
-Pause 
-EffÉcran
-Goto 1
-If N>14
-Output(3,9,Chn1
-Output(4,1,"--------------------------
-Output(5,1,"Niveau 15
-Output(6,1,"EXP: 888870 (max)
-Pause 
-EffÉcran
-Goto 1
-Lbl DE
-EffÉcran
-Output(6,1,"----------------
-Output(7,1,"Découvrir la fôret
-Output(8,1,"A venir dans la 
-Output(9,1,"version 1.9 du jeu...
-Pause 
-EffÉcran
-Goto 1
-Lbl Z
-EffÉcran
-Goto 88
+Menu("MENU PRINCIPAL","ARENE",90,"CONSEIL 4",CO,"POKEMONS",PO,"SOIGNER",SO,"QUITTER",Q
 Lbl PO
 EffÉcran
-Disp "Pokémon 1:",Chn2
-Pause 
-EffÉcran
-Goto 1
-If N>9
-Then
-Disp "Pokémon 1:",Chn2
-Disp "Pokémon 2:",Chn6
+Disp "POKEMON 1:",Chn2
 Pause 
 Goto 1
 Lbl SO
-Menu("Soigner pokémons","Utiliser potions de soin",UP,"Patienter pour réanimer",RA,"Retour",OF
-Lbl UP
-Menu("Choix de potion","+25 points de santé",1A,"+50 points de santé",1B,"+100 points de santé",1C,"+250 points de santé",1D,"Boost max",1E,"Retour",ZZ
-If P≤0
-Then
-0→P
-Lbl 1A
-P+25→P
-If P>R
-Then
-P-25→P
-EffÉcran
-Output(4,1,"----------------
-Output(5,1,"Limite de points de santé
-Output(6,1,"atteinte !
-Output(8,1,"Potion non utilisée
-Output(9,1,"Potions restantes :
-Pause 
-EffÉcran
-Goto UP
-Else
-EffÉcran
-Output(4,1,"----------------
-Output(5,1,Chn2
-Output(6,1,"a gagné 25 PV !
-Output(8,1,"Potions restantes :
-Pause 
-EffÉcran
-Goto UP
-Lbl 1B
-P+50→P
-If P>R
-Then
-P-50→P
-EffÉcran
-Output(4,1,"----------------
-Output(5,1,"Limite de points de santé
-Output(6,1,"atteinte !
-Output(8,1,"Potion non utilisée
-Output(9,1,"Potions restantes :
-Pause 
-EffÉcran
-Goto UP
-Else
-EffÉcran
-Output(4,1,"----------------
-Output(5,1,Chn2
-Output(6,1,"a gagné 50 PV !
-Output(8,1,"Potions restantes :
-Pause 
-EffÉcran
-Goto UP
-Lbl 1C
-P+100→P
-If P>R
-Then
-P-100→P
-EffÉcran
-Output(4,1,"----------------
-Output(5,1,"Limite de points de santé
-Output(6,1,"atteinte !
-Output(8,1,"Potion non utilisée
-Output(9,1,"Potions restantes :
-Pause 
-EffÉcran
-Goto UP
-Else
-EffÉcran
-Output(4,1,"----------------
-Output(5,1,Chn2
-Output(6,1,"a gagné 100 PV !
-Output(8,1,"Potions restantes :
-Pause 
-EffÉcran
-Goto UP
-Lbl 1D
-P+250→P
-If P>R
-Then
-P-250→P
-EffÉcran
-Output(4,1,"----------------
-Output(5,1,"Limite de points de santé
-Output(6,1,"atteinte !
-Output(8,1,"Potion non utilisée
-Output(9,1,"Potions restantes :
-Pause 
-EffÉcran
-Goto UP
-Else
-EffÉcran
-Output(4,1,"----------------
-Output(5,1,Chn2
-Output(6,1,"a gagné 250 PV !
-Output(8,1,"Potions restantes :
-Pause 
-EffÉcran
-Goto UP
-Lbl 1E
-If P=R
-Then
-EffÉcran
-Output(4,1,"----------------
-Output(5,1,"Limite de points de santé
-Output(6,1,"atteinte !
-Output(8,1,"Potion non utilisée
-Output(9,1,"Potions restantes :
-Pause 
-EffÉcran
-Goto UP
-Else
 R→P
-EffÉcran
-Output(4,1,"----------------
-Output(5,1,Chn2
-Output(6,1,"a regagné tous
-Output(7,1,"ses PV !
-Output(9,1,"Potions restantes :
-Pause 
-EffÉcran
-Goto UP
-Lbl ZZ
-EffÉcran
-Goto SO
-Lbl PR
-EffÉcran
-HorlAct
-actMintr
-Pause 
-EffÉcran
-Goto SO
-Lbl CO
-If N<13
-Then
-Output(6,1,"----------------
-Output(7,1,"Se débloque au niveau 13
-Output(8,1,"Revenez plus tard...
-Pause 
-EffÉcran
 Goto 1
-Else
-Menu("Donjon Secret","Ermite Willy",41,"Louis-Ferdinand Stinx",70,"Gareth Owen",62,"Bryan Thirimanna",VI,"Retour",Z
+Lbl CO
+Menu("CONSEIL 4","ERMITE WILLY",41,"LOUIS-FERDINAND STINX",70,"LEWIS MINDA",62,"CAPYSQUID",VI
 Lbl 62
 DelVar X
 1→W
 1→θ
-"Lougaroc"→Chn5
+"LOUGAROC"→Chn5
 245→E
 49→B
-Lbl BO
-If N<6
-Then
-Output(6,1,"----------------
-Output(7,1,"Se débloque au niveau 6
-Output(8,1,"Revenez plus tard...
-Pause 
-EffÉcran
-Goto 1
-Else
-Menu("Boutique","Inventaire",IN,"Achat potions soin",PS,"Achat potions attaque",PA,"Achat pokémon",AP,"Achat équipements",AG,"Retour",OF
-Lbl PS
-Goto 1
-Lbl PA
-Goto 1
-Lbl AP
-Goto 1
-Lbl AG
-Goto 1
 Lbl 70
 DelVar X
 1→W
 1→θ
-"Carchacrock"→Chn5
-402→E
-115→B
+"CARCHACROCK"→Chn5
+320→E
+70→B
 Goto 31
 Lbl 41
 DelVar X
 1→W
 1→θ
-"Lucario"→Chn5
+"LUCARIO"→Chn5
 150→E
 66→B
 Goto 31
 Lbl VI
 DelVar X
-"Shadow"→Chn5
-4096→E
-83→B
+"????????"→Chn5
+211→E
+123→B
 Goto 31
 Lbl 90
 DelVar WDelVar θ
-
-If P≤0
-Then
-Output(6,1,"----------------
-Output(7,1,"Ton pokémon est faible.
-Output(8,1,"Va le soigner!
-Pause 
 EffÉcran
-Goto 1
-Else
 Output(6,1,"----------------
-Output(7,1,"Un pokémon sauvage
-Output(8,1,"fait son apparition !
+Output(7,1,"UN POKEMON SAU-
+Output(8,1,"-VAGE APPARAIT !
 Pause 
 EffÉcran
 Output(6,1,"----------------
-Output(7,1,"Au combat,
-Output(7,12,Chn2
+Output(7,1,"GO,
+Output(7,5,Chn2
 Pause 
 EffÉcran
 If θ=1 et W>1:Goto 32
-nbrAléatEnt(1,102)→X
+nbrAléatEnt(1,32)→X
 If X=1:Chn2→Chn5
-If X=2:"Monaflèmit"→Chn5
-If X=3:"Ethernatos"→Chn5
-If X=4:"Mewtwo"→Chn5
-If X=5:"Groudon"→Chn5
-If X=6:"Kyogre"→Chn5
-If X=7:"Zekrom"→Chn5
-If X=8:"Reshiram"→Chn5
-If X=9:"Dialga"→Chn5
-If X=10:"Meloetta"→Chn5
-If X=11:"Carchacrok"→Chn5
-If X=12:"Blizzeval"→Chn5
-If X=13:"Ho-Oh"→Chn5
-If X=14:"Rayquaza"→Chn5
-If X=15:"Tyranocif"→Chn5
-If X=16:"Zarude"→Chn5
-If X=17:"Zamazenta"→Chn5
-If X=18:"Zacian"→Chn5
-If X=19:"Latios"→Chn5
-If X=20:"Dracolosse"→Chn5
-If X=21:"Métalosse"→Chn5
-If X=22:"Drattak"→Chn5
-If X=23:"Rhinastoc"→Chn5
-If X=24:"Lugia"→Chn5
-If X=25:"Keldeo"→Chn5
-If X=26:"Terrakium"→Chn5
-If X=27:"Pyrax"→Chn5
-If X=28:"Volcanion"→Chn5
-If X=29:"Trioxhydre"→Chn5
-If X=30:"Shifours"→Chn5
-If X=31:"Melmetal"→Chn5
-If X=32:"Tranchodon"→Chn5
-If X=33:"Démétéros"→Chn5
-If X=34:"Kyurem"→Chn5
-If X=35:"Lanssorien"→Chn5
-If X=36:"Electhor"→Chn5
-If X=37:"Latias"→Chn5
-If X=38:"Entei"→Chn5
-If X=39:"Sulfura"→Chn5
-If X=40:"Raikou"→Chn5
-If X=41:"Léviator"→Chn5
-If X=42:"Spectreval"→Chn5
-If X=43:"Giratina"→Chn5
-If X=44:"Hoopa"→Chn5
-If X=45:"Genesect"→Chn5
-If X=46:"Fulguris"→Chn5
-If X=47:"Boréas"→Chn5
-If X=48:"Bétochef"→Chn5
-If X=49:"Togekiss"→Chn5
-If X=50:"Aéroptéryx"→Chn5
-If X=51:"Mammochon"→Chn5
-If X=52:"Gorythmic"→Chn5
-If X=53:"Charkos"→Chn5
-If X=54:"Lugulabre"→Chn5
-If X=55:"Porygon-Z"→Chn5
-If X=56:"Victini"→Chn5
-If X=57:"Celebi"→Chn5
-If X=58:"Mew"→Chn5
-If X=59:"Minotaupe"→Chn5
-If X=60:"Gigalithe"→Chn5
-If X=61:"Ronflex"→Chn5
-If X=62:"Dolman"→Chn5
-If X=63:"Magnézone"→Chn5
-If X=64:"Rhinoféros"→Chn5
-If X=65:"Mentali"→Chn5
-If X=66:"Deoxys"→Chn5
-If X=67:"Maganon"→Chn5
-If X=68:"Givrali"→Chn5
-If X=69:"Regice"→Chn5
-If X=70:"Aquali"→Chn5
-If X=71:"Darumacho"→Chn5
-If X=72:"Scarhino"→Chn5
-If X=73:"Gallame"→Chn5
-If X=74:"Gardevoir"→Chn5
-If X=75:"Gueriaigle"→Chn5
-If X=76:"Hippodocus"→Chn5
-If X=77:"Elekable"→Chn5
-If X=78:"Duralugon"→Chn5
-If X=79:"Corayôme"→Chn5
-If X=80:"Polthégeist"→Chn5
-If X=81:"Alakazam"→Chn5
-If X=82:"Mackogneur"→Chn5
-If X=83:"Artikodin"→Chn5
-If X=84:"Crocorible"→Chn5
-If X=85:"Polagriffe"→Chn5
-If X=86:"Bouldeneu"→Chn5
-If X=87:"Pyroli"→Chn5
-If X=88:"Arcanin"→Chn5
-If X=89:"Viridium"→Chn5
-If X=90:"Cobaltium"→Chn5
-If X=91:"Pyrobut"→Chn5
-If X=92:"Noadkoko"→Chn5
-If X=93:"Donphan"→Chn5
-If X=94:"Dimoret"→Chn5
-If X=95:"Milobellus"→Chn5
-If X=96:"Cizayox"→Chn5
-If X=97:"Galeking"→Chn5
-If X=98:"Scolocendre"→Chn5
-If X=99:"Palarticho"→Chn5
-If X=100:"Suicune"→Chn5
-If X=101:"Roitiflam"→Chn5
-If X=102:"Pachyradjah"→Chn5
+If X=2:"GROUDON"→Chn5
+If X=3:"KYOGRE"→Chn5
+If X=4:"ARCEUS"→Chn5
+If X=5:"METALOSSE"→Chn5
+If X=6:"ZARBI"→Chn5
+If X=7:"RAICHU"→Chn5
+If X=8:"ROUCOOL"→Chn5
+If X=9:"LAPOREILLE"→Chn5
+If X=10:"GOBOU"→Chn5
+If X≥10:80→E
+If X≥10:50→B
+If X=11:"LOUGAROC"→Chn5
+If X=12:"METAMORPH"→Chn5
+If X=13:"CHRYSACIER"→Chn5
+If X=14:"VOLTORB"→Chn5
+If X=15:"ROUCARNAGE"→Chn5
+If X=16:"DRACAUFEU"→Chn5
+If X=17:"POUSSIFEU"→Chn5
+If X=18:"SALAMECHE"→Chn5
+If X=19:"ROUCOOL"→Chn5
+If X=20:"RATTATAC"→Chn5
+If X=21:"ROCABOT"→Chn5
+If X=22:"CROQUINE"→Chn5
+If X=23:"OTARIA"→Chn5
+If X=24:"BULBIZARRE"→Chn5
+If X=25:"HERBIZARRE"→Chn5
+If X=26:"OSSATUEUR"→Chn5
+If X=27:"BOUMATA"→Chn5
+If X=28:"GOUPIX"→Chn5
+If X=29:"ERMITE"→Chn5
+If X=30:"MISTIGRI"→Chn5
+If X=31:"M.MIME"→Chn5
+If X=32:"KYOGRE"→Chn5
+If X≥17 et X≤23:45→E
+If X≥17 et X≤23:25→B
+If X≥22:104→E
+If X≥22:45→B
 Lbl 31
-If X=2:233→E
-If X=2:290→B
-
-If X=3:221→E
-If X=3:278→B
-
-If X=4:179→E
-If X=4:300→B
-
-If X=5:171→E
-If X=5:270→B
-
-If X=6:171→E
-If X=6:270→B
-
-If X=7:171→E
-If X=7:275→B
-
-If X=8:171→E
-If X=8:275→B
-
-If X=9:171→E
-If X=9:275→B
-
-If X=10:187→E
-If X=10:250→B
-
-If X=11:198→E
-If X=11:261→B
-
-If X=12:187→E
-If X=12:246→B
-
-If X=13:179→E
-If X=13:239→B
-
-If X=14:178→E
-If X=14:284→B
-
-If X=15:187→E
-If X=15:251→B
-
-If X=16:193→E
-If X=16:242→B
-
-If X=17:161→E
-If X=17:254→B
-
-If X=18:161→E
-If X=18:254→B
-
-If X=19:160→E
-If X=19:268→B
-
-If X=20:175→E
-If X=20:263→B
-
-If X=21:160→E
-If X=21:257→B
-
-If X=22:180→E
-If X=22:277→B
-
-If X=23:207→E
-If X=23:241→B
-
-If X=24:195→E
-If X=24:193→B
-
-If X=25:175→E
-If X=25:260→B
-
-If X=26:175→E
-If X=26:260→B
-
-If X=27:166→E
-If X=27:264→B
-
-If X=28:160→E
-If X=28:252→B
-
-If X=29:176→E
-If X=29:256→B
-
-If X=30:187→E
-If X=30:254→B
-
-If X=31:218→E
-If X=31:226→B
-
-If X=32:154→E
-If X=32:284→B
-
-If X=33:171→E
-If X=33:261→B
-
-If X=34:203→E
-If X=34:246→B
-
-If X=35:171→E
-If X=35:266→B
-
-If X=36:173→E
-If X=36:253→B
-
-If X=37:160→E
-If X=37:228→B
-
-If X=38:207→E
-If X=38:235→B
-
-If X=39:173→E
-If X=39:251→B
-
-If X=40:173→E
-If X=40:241→B
-
-If X=41:180→E
-If X=41:237→B
-
-If X=42:171→E
-If X=42:273→B
-
-If X=43:233→E
-If X=43:187→B
-
-If X=44:146→E
-If X=44:261→B
-
-If X=45:147→E
-If X=45:252→B
-
-If X=46:158→E
-If X=46:266→B
-
-If X=47:158→E
-If X=47:266→B
-
-If X=48:193→E
-If X=48:243→B
-
-If X=49:166→E
-If X=49:225→B
-
-If X=50:153→E
-If X=50:292→B
-
-If X=51:200→E
-If X=51:247→B
-
-If X=52:187→E
-If X=52:239→B
-
-If X=53:182→E
-If X=53:295→B
-
-If X=54:132→E
-If X=54:271→B
-
-If X=55:166→E
-If X=55:264→B
-
-If X=56:187→E
-If X=56:210→B
-
-If X=57:187→E
-If X=57:210→B
-
-If X=58:187→E
-If X=58:210→B
-
-If X=59:200→E
-If X=59:255→B
-
-If X=60:166→E
-If X=60:226→B
-
-If X=61:269→E
-If X=61:190→B
-
-If X=62:187→E
-If X=62:222→B
-
-If X=63:146→E
-If X=63:238→B
-
-If X=64:193→E
-If X=64:222→B
-
-If X=65:139→E
-If X=65:261→B
-
-If X=66:118→E
-If X=66:345→B
-
-If X=67:153→E
-If X=67:247→B
-
-If X=68:139→E
-If X=68:238→B
-
-If X=69:160→E
-If X=69:179→B
-
-If X=70:228→E
-If X=70:205→B
-
-If X=71:193→E
-If X=71:263→B
-
-If X=72:160→E
-If X=72:234→B
-
-If X=73:143→E
-If X=73:237→B
-
-If X=74:143→E
-If X=74:237→B
-
-If X=75:187→E
-If X=75:232→B
-
-If X=76:198→E
-If X=76:201→B
-
-If X=77:153→E
-If X=77:249→B
-
-If X=78:146→E
-If X=78:239→B
-
-If X=79:132→E
-If X=79:253→B
-
-If X=80:132→E
-If X=80:248→B
-
-If X=81:125→E
-If X=81:271→B
-
-If X=82:173→E
-If X=82:234→B
-
-If X=83:173→E
-If X=83:192→B
-
-If X=84:180→E
-If X=84:229→B
-
-If X=85:180→E
-If X=85:233→B
-
-If X=86:187→E
-If X=86:207→B
-
-If X=87:139→E
-If X=87:246→B
-
-If X=88:173→E
-If X=88:227→B
-
-If X=89:175→E
-If X=89:192→B
-
-If X=90:175→E
-If X=90:192→B
-
-If X=91:160→E
-If X=91:238→B
-
-If X=92:180→E
-If X=92:233→B
-
-If X=93:173→E
-If X=93:214→B
-
-If X=94:146→E
-If X=94:243→B
-
-If X=95:180→E
-If X=95:192→B
-
-If X=96:146→E
-If X=96:198→B
-
-If X=97:187→E
-If X=97:220→B
-
-If X=98:135→E
-If X=98:248→B
-
-If X=99:187→E
-If X=99:180→B
-
-If X=100:200→E
-If X=100:235→B
-
-If X=101:217→E
-If X=101:226→B
-
-If X=102:187→E
-If X=102:208→B
+If X≥2 et X≤4:300→E
+If X≥2 et X≤4:100→B
+If X=1 ou X=6 ou X=8:40→E
+If X=1 ou X=6 ou X=8:10→B
+If X=5 ou X=7:60→E
+If X=5 ou X=7:20→B
+If X≥9:20→B
+If X≥9:70→E
 Lbl 31
 EffÉcran
 Output(6,1,"----------------
-Output(7,1,"Pokémon ennemi:
+Output(7,1,"POKEMON ENNEMI:
 Output(8,1,Chn5
 Pause 
 EffÉcran
 Lbl 29
-Menu("COMBAT!",Chn3,21,Chn4,22,"Capturer",JT,"Fuir",FU
-Lbl FU
-Menu("Confirmer la fuite ?","Oui, fuir",OF,"Non, rester dans l'arène",ON
-Lbl OF
-Goto 1
-Lbl ON
-Goto 29
+Menu("COMBAT !",Chn3,21,Chn4,22,"CAPTURE",JT
 Lbl JT
-Menu("Tu perdras ton pokémon actuel...","Continuer",XY,"Retour",29
+If θ=0
+Then
+Menu("TU NE REVERRA JAMAIS TON STARTER !","CONTINUER",XY,"RETOUR",29
+Else
 Lbl XY
-nbrAléatEnt(1,6)→L
-If L=1
+nbrAléatEnt(1,9)→L
+If L=5
 Then
 EffÉcran
 Output(6,1,"-----------------
-Output(7,1,"Tu l'as capturé !
-Pause 
+Output(7,1,"TU L'AS CAPTURE !
 Chn5→Chn2
 B→A
 E→P
-P→R
-Goto 28
+nbrAléatEnt(1,8)→L
+L→N
 Else
+If L≠5
 EffÉcran
 Output(6,1,"-----------------
-Output(7,1,"Il s'est libéré !
+Output(7,1,"IL S'EST LIBERE !
 Pause 
 EffÉcran
 Goto 50
@@ -915,7 +297,7 @@ EffÉcran
 E-A→E
 If E≤0:Goto 28
 Output(6,1,"----------------
-Output(7,1,"C'est très efficace !
+Output(7,1,"CEST TRES EFFICACE !
 Pause 
 EffÉcran
 Lbl 50
@@ -925,237 +307,48 @@ Output(2,7,"VS
 Output(3,1,Chn5
 Output(3,13,E
 Output(6,1,"----------------
-Output(7,1,"Attaque de
+Output(7,1,"ATTAQUE DE
 Output(7,12,Chn5
-Output(8,1,"dégâts:
+Output(8,1,"DEGATS:
 Output(8,9,B
 Pause 
 EffÉcran
 P-B→P
 Output(6,1,"----------------
-Output(7,1,"Ca fait mal !
+Output(7,1,"CA FAIT MAL !
 Pause 
 EffÉcran
 If P≤0:Goto 26
 If P>0:Goto 29
 Lbl 26
 Output(6,1,"----------------
-Output(7,1,"Vous êtes mort !
-nbrAléatEnt(2,7)→L
-Disp "EXP: +
-Disp L
-F+L→F
-Output(6,1,"----------------
-Output(7,1,"
-0→P
-Pause 
-EffÉcran
-Goto 58
+Output(7,1,"VOUS ETES MORT !
+Goto 1
 Lbl 28
 Output(6,1,"----------------
-Output(7,1,"Vous avez gagné !
-T+1→T
-If N=1
-Then
-20→G
-nbrAléatEnt(5,10)→L
+Output(7,1,"VOUS AVEZ GAGNE !
+nbrAléatEnt(26,100)→L
 Disp "EXP: +
 Disp L
 F+L→F
-Output(6,1,"----------------
-Output(7,1,"
 Pause 
 EffÉcran
-Goto 58
-Else
-If N=2
-Then
-70→G
-nbrAléatEnt(10,15)→L
-Disp "EXP: +
-Disp L
-F+L→F
 Output(6,1,"----------------
 Output(7,1,"
-Pause 
-EffÉcran
-Goto 58
-Else
-If N=3
-Then
-170→G
-nbrAléatEnt(25,35)→L
-Disp "EXP: +
-Disp L
-F+L→F
-Output(6,1,"----------------
-Output(7,1,"
-Pause 
-EffÉcran
-Goto 58
-Else
-If N=4
-Then
-370→G
-nbrAléatEnt(35,55)→L
-Disp "EXP: +
-Disp L
-F+L→F
-Output(6,1,"----------------
-Output(7,1,"
-Pause 
-EffÉcran
-Goto 58
-Else
-If N=5
-Then
-770→G
-nbrAléatEnt(45,65)→L
-Disp "EXP: +
-Disp L
-F+L→F
-Output(6,1,"----------------
-Output(7,1,"
-Pause 
-EffÉcran
-Goto 58
-Else
-If N=6
-Then
-1770→G
-nbrAléatEnt(55,80)→L
-Disp "EXP: +
-Disp L
-F+L→F
-Output(6,1,"----------------
-Output(7,1,"
-Pause 
-EffÉcran
-Goto 58
-Else
-If N=7
-Then
-3770→G
-nbrAléatEnt(70,105)→L
-Disp "EXP: +
-Disp L
-F+L→F
-Output(6,1,"----------------
-Output(7,1,"
-Pause 
-EffÉcran
-Goto 58
-Else
-If N=8
-Then
-8770→G
-nbrAléatEnt(95,145)→L
-Disp "EXP: +
-Disp L
-F+L→F
-Output(6,1,"----------------
-Output(7,1,"
-Pause 
-EffÉcran
-Goto 58
-Else
-If N=9
-Then
-18700→G
-nbrAléatEnt(110,185)→L
-Disp "EXP: +
-Disp L
-F+L→F
-Output(6,1,"----------------
-Output(7,1,"
-Pause 
-EffÉcran
-Goto 58
-Else
-If N=10
-Then
-38770→G
-nbrAléatEnt(155,215)→L
-Disp "EXP: +
-Disp L
-F+L→F
-Output(6,1,"----------------
-Output(7,1,"
-Pause 
-EffÉcran
-Goto 58
-Else
-If N=11
-Then
-88770→G
-nbrAléatEnt(205,295)→L
-Disp "EXP: +
-Disp L
-F+L→F
-Output(6,1,"----------------
-Output(7,1,"
-Pause 
-EffÉcran
-Goto 58
-Else
-If N=12
-Then
-188770→G
-nbrAléatEnt(285,400)→L
-Disp "EXP: +
-Disp L
-F+L→F
-Output(6,1,"----------------
-Output(7,1,"
-Pause 
-EffÉcran
-Goto 58
-If N=13
-Then
-388770→G
-nbrAléatEnt(315,520)→L
-Disp "EXP: +
-Disp L
-F+L→F
-Output(6,1,"----------------
-Output(7,1,"
-Pause 
-EffÉcran
-Goto 58
-If N=14
-Then
-888770→G
-nbrAléatEnt(315,520)→L
-Disp "EXP: +
-Disp L
-F+L→F
-Output(6,1,"----------------
-Output(7,1,"
-Pause 
-EffÉcran
-Goto 58
-If N>14
-Then
-Output(6,1,"----------------
-Output(7,1,"Niveau maximum !
-Goto 1
-Lbl 58
 If F≥G:Goto 99
 Goto 1
-Else
-Goto 1
+End
 Lbl 99
 EffÉcran
+G+200→G
 N+1→N
-A+3→A
-P+7→P
-R+7→R
-R→P
+A+10→A
+P+5→P
 Output(6,1,"----------------
-Output(7,1,"Niveau supérieur:
-Output(7,18,N
+Output(7,1,"NOUVEAU LVL:
+Output(7,13,N
 Pause 
-If Chn2="Brindibou" et N≥25 et J=0:Goto 99
+If Chn2="BRINDIBOU" et N≥25 et J=0:Goto 99
 Goto 1
 Lbl 99
 EffÉcran
@@ -1163,30 +356,30 @@ Output(6,1,"----------------
 1→J
 EffÉcran
 Output(6,1,"----------------
-Output(7,1,"Brindibou a évolué !
+Output(7,1,"MAIS...BRINDIBOU EVOLUE!
 Pause 
 EffÉcran
-Output(5,1,"Animation en développement'
+Output(5,1,"FLEMME DE FAIRE UNE ANIM'
 "
-"Archeduc"→Chn2
-"Tir multiple !"→Chn3
-"Tranche nuit !"→Chn4
+"ARCHEDUC"→Chn2
+"TIR MULTIPLE !"→Chn3
+"TRANCHE NUIT !"→Chn4
 Pause 
 EffÉcran
-Output(6,1,"Il s'est évolué en
-Output(7,1,"Archeduc !?"
+Output(6,1,"IL A DIRECTEMENT EVOLUE EN 
+Output(7,1,"ARCHEDUC !?"
 Pause 
 EffÉcran
-If Chn2="Pikachu" et N≥19 et J=0:Goto 98
+If Chn2="PIKACHU" et N≥19 et J=0:Goto 98
 Goto 1
 Lbl 98
-Output(7,1,"Pikachu a évolué
-Output(8,1,"Whaou !
+Output(7,1,"MAIS... PIKACHU
+Output(8,1,"EVOLUE !!
 Pause 
 EffÉcran
-"Raichu"→Chn2
-"Foudre fatale !"→Chn3
-"Attaque vive !"→Chn4
+"RAICHU"→Chn2
+"FATAL-FOUDRE !"→Chn3
+"VIVE-ATTAQUE !"→Chn4
 1→J
 For(I,1,10
 60!:End
@@ -1199,7 +392,7 @@ Output(6,7,"==>
 Pause 
 EffÉcran
 Output(6,1,"----------------
-Output(7,1,"Pikachu s'est
-Output(8,1,"transformé en Raichu !
+Output(7,1,"PIKACHU EST DEV-
+Output(8,1,"NU UN RAICHU !
 Pause 
 Goto 1
