@@ -1,5 +1,5 @@
 # Security Policy
-For security reasons, Pokemon 83 Premium has been blocked on edition mode (espacially for main users, not beta users). We also don't recommend to break the program while it's turnin (do not press the [ON] button). In no case authors of the program will be responsible for problems of the calculator if any user violates the security policy.
+For security reasons, Pokemon 83 Premium has been blocked on edition mode (espacially for main users, not beta users). We also don't recommend to break the program while it's turning (do not press the [ON] button). In no case authors of the program will be responsible for problems of the calculator if any user violates the security policy.
 
 
 ## Supported Versions
