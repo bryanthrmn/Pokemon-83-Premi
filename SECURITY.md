@@ -1,5 +1,5 @@
 # Security Policy
-For security reasons, Pokemon 83 Premium has been blocked on edition mode (espacially for main users, not beta users).
+For security reasons, Pokemon 83 Premium has been blocked on edition mode (espacially for main users, not beta users). We also don't recommend to break the
 In no case authors of the program will be responsible for problems of the calculator if any user violates the security policy.
 
 
@@ -10,7 +10,7 @@ currently being supported with this project (security updates) :
 
 | Version | Supported          |
 | ------- | ------------------ |
-| < 5.3.5 | :x:                |
+| < 5.3.5 | :white_check_mark: |
 | 5.4.0   | :white_check_mark: |
 | 5.5.0   | :white_check_mark: |
 | 5.6.1   | :white_check_mark: |
@@ -39,7 +39,7 @@ The latest OS of the TI-83 Premium CE / TI-84 Plus CE is 5.7.0.
 
 
 ## Reporting a Vulnerability
-							-Pokemon 83 Premium- (v.1.7)
+							-Pokemon 83 Premium- (v.1.6)
 
 By members on https://tiplanet.org
 
