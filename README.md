@@ -5,6 +5,7 @@ Pokémon 83 is an adaptation of Pokémon 82 on CE calculators. Discover, train a
 Updates are often available. Make sure you are up to date on: http://ti-pla.net/a2788274
 
 Version 1.6 Alpha
+
 This version includes:
 - a new starter: Metang
 - over 20 pokémons
