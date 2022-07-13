@@ -1,38 +1,36 @@
 EffÉcran
-DelVar θDelVar W
-Output(1,1,"--------------------------
-Output(2,2,"·.*POKEMON 83 PREMIUM*.·
-Output(3,9,"V:1.6 ALPHA
-Output(5,8,"DE KENSHI
-Output(7,4,"REPRIT PAR CAPYSQUID
+:"Pokemon 83 Premium
+:"888888888888888888883333333388888883222222223888883222222222238883222222222222388322222222222238832222222222223883222233332222388F33333DD33333F883BBBB3333BBBB3883BBBBBBBBBBBB3883BBBBBBBBBBBB3883BBBBBBBBBBBB38883BBBBBBBBBB38888833333333338888888888888888888
+EffÉcran:ÉditeurConfig ⌊PKSAV:30→dim(⌊PKSAV
+"                          --------------------------POKEMON
+
+{1:Asm(prgmTEXTLIB:{13:Asm(prgmTEXTLIB
+Output(2,3,".*POKEMON 83 PREMIUM*.
+{3:Asm(prgmTEXTLIB
+Output(3,12,"V:1.0
+Output(5,3,"De KENSHI CORPORATION
+Output(7,3,"Par SQUARE PROGRAMMING
 Output(10,1,"--------------------------
-For(I,1,10
-40!:End
-Output(9,1,".
-For(I,1,10
-40!:End
-Output(9,1,"..
-For(I,1,10
-40!:End
-Output(9,1,"…
-For(I,1,10
-40!:End
-Output(9,1,"….
-For(I,1,10
-40!:End
-Output(9,1,"…..
-For(I,1,10
-40!:End
-Output(9,1,"……
-For(I,1,10
-40!:End
-Output(9,1,"…………….
-Output(9,1,"-PRESS [ENTRER]-
-Pause 
-Lbl M
+nbrAléatEnt(20,30)→A
+For(B,1,A
+"  ...  →Chn0
+For(C,4,­3,­1
+Wait .05
+Output(8,12,sousch(Chn0,1+abs(C),3
+End
+B+1→B
+End
+Output(8,12,"     
+nbrAléatEnt(3,6)→A:Wait A
+Repeat getKey=105
+Output(9,3,"                    
+Wait .5:Output(9,3,"APPUYER SUR [ENTRER]
+Wait .5
+End
+
+Lbl 00
 EffÉcran
-Lbl 88
-Menu(" ·.*POKEMON 83 PREMIUM*.·     ","NOUVEAU",0,"CONTINUER",1,"CREDITS",C,"AMELIORATIONS",K,"QUITTER",Q
+Menu(" ·.*POKEMON 83 PREMIUM*.·     ","NOUVEAU",01,"CONTINUER",02,"CREDITS",03,"A PROPOS",04,"QUITTER",05
 Lbl K
 Disp "+ 20 POKEMON !
 Disp "EXP GERE ALEATOIREMENT !"
