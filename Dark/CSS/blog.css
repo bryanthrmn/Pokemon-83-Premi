@@ -17,13 +17,17 @@ body, html {
     background-color: #00000000;
 }
 
-p {
-    color: rgba(0, 0, 0, 0.87);
+.special {
+    color: rgba(255, 255, 255, 0.87);
+}
+
+p, h1, h2, h3, h4, h5, h6, li, td {
+    color: rgba(255, 255, 255, 0.87);
 }
 
 .topbar {
     z-index: 3;
-    background: white;
+    background: rgb(0, 0, 0);
     position: fixed;
     top: 0%;
     left: 0%;
@@ -38,7 +42,7 @@ p {
 }
 
 .topbar nav a {
-    color: #9f9f9f;
+    color: #ffffff;
     font-weight: 500;
     padding: 0 53px;
     text-decoration: none;
@@ -46,7 +50,7 @@ p {
 }
 
 .topbar nav a:hover, .topbar nav a.active {
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .topbar .social {
@@ -72,9 +76,9 @@ p {
 
 .main {
     float: left;
-    background: rgb(255, 255, 255);
+    background: rgb(0, 0, 0);
     width: 100%;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, .05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
     z-index: 2;
     position: relative;
 }
@@ -130,17 +134,18 @@ p {
 
 .sidebar {
     float: right;
-    background: #FBFBFB;
+    background: rgb(0, 0, 0);
     width: 375px;
     padding: 40px;
     font-size: 17px;
     z-index: 1;
     position: relative;
+    color: rgb(0, 0, 0);
 }
 
 .sidebar-title {
     font-size: 15px;
-    color: black;
+    color: rgb(0, 0, 0);
     margin: 35px 0px;
 }
 
@@ -150,7 +155,7 @@ p {
 
 .sidebar a {
     text-decoration: none;
-    color: #9F9F9F;
+    color: rgb(0, 0, 0);
 }
 
 .sidebar a:hover {
@@ -179,7 +184,7 @@ p {
 .sidebar hr {
     border: none;
     height: 1px;
-    background: #C4C4C4;
+    background: rgb(0, 0, 0);
     margin: 50px 0px;
 }
 
