@@ -1,0 +1,52 @@
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+  color: #ffffff;
+  font-size: 60px;
+  text-shadow: 0 0 5px #ffffff;
+}
+
+p {
+  font-size: 16px;
+  text-align: center;
+  margin: 20px 0;
+  color: #ffffff;
+  font-size: 30px;
+  text-shadow: 0 0 5px #fdfdfd;
+}
+
+button {
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  margin: auto;
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  text-shadow: 0 0 5px #888888;
+}
+
+#acceptCookiesButton {
+  background-color: #4caf50;
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 30px #4caf50;
+}
+
+#declineCookiesButton {
+  background-color: #f44336;
+  color: white;
+  text-align: center;
+  box-shadow: 0 0 30px #f44336;
+}
+
+body {
+  background-color: #000000;
+}

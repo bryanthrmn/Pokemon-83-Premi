@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link rel="icon" href="Images/CookiesIcon.ico">
+    <link href="CSS/Cookies.css" rel="stylesheet">
+    <title>Cookies - Pokémon 83 Premium</title>
+
+    <script>
+    if (document.cookie.includes('cookiesAccept=true')) {
+      window.location.replace('index.html');
+    }  
+    </script>
+
+</head>
+
+<body>
+
+  <h1>Bienvenue sur notre site !</h1>
+
+<p>Pour utiliser notre site, vous devez accepter les cookies.</p>
+<br>
+<button id="acceptCookiesButton">J'accepte les cookies !</button>
+<br>
+<button id="declineCookiesButton">Je ne veux pas de cookies</button>
+
+<script>
+    if (!navigator.cookieEnabled) {
+    window.location.replace('NoCookies/index.html');
+    }
+
+  document.getElementById('acceptCookiesButton').addEventListener('click', function() {
+    var expirationDate = new Date();
+    expirationDate.setFullYear(expirationDate.getFullYear() + 1);
+    document.cookie = 'cookiesAccept=true; expires=' + expirationDate.toUTCString() + '; path=/';
+    window.location.replace('index.html');
+  });
+
+  document.getElementById('declineCookiesButton').addEventListener('click', function() {
+    window.location.replace('NoCookies/index.html');
+  });
+</script>
+
+</body>
+
+</html>

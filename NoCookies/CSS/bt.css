@@ -17,7 +17,6 @@
         background-color: #153f00;
         padding: 15px 50px;
         margin: 0 auto;
-        transition: transform 500ms linear;
       }
       .bt span {
         position: relative;
@@ -40,7 +39,3 @@
         -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
         transform: translateX(-9%) translateY(-25%) rotate(45deg);
       }
-      .bt:hover {
-        transform: scale(1.2);
-      }
-      
